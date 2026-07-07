@@ -1,0 +1,1 @@
+cb621ccb1b81a6f7c173bad020fdc6d35b7c137d4824b94def4a5fd81fa7f762  out/target/product/I001D/bliss_I001D-ota.zip

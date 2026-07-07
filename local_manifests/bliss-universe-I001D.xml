@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <manifest>
+    <remote name="bliss-devices" fetch="https://github.com/BlissRoms-Devices" />
+
+    <project name="android_device_asus_I001D"
+             path="device/asus/I001D"
+             remote="bliss-devices"
+             revision="universe" />
+
+    <project name="android_device_asus_sm8150-common"
+             path="device/asus/sm8150-common"
+             remote="bliss-devices"
+             revision="universe" />
+
+    <project name="android_kernel_asus_I001D"
+             path="kernel/asus/I001D"
+             remote="bliss-devices"
+             revision="universe" />
+
+    <project name="proprietary_vendor_asus_I001D"
+             path="vendor/asus/I001D"
+             remote="bliss-devices"
+             revision="universe" />
+
+    <project name="proprietary_vendor_asus_sm8150-common"
+             path="vendor/asus/sm8150-common"
+             remote="bliss-devices"
+             revision="universe" />
+
+    <remote name="blisslabs-gitlab" fetch="https://gitlab.com/BlissLabs/BlissRoms" />
+
+      <remove-project name="platform_vendor_prebuilts" />
+
+      <project name="platform_vendor_prebuilts"
+               path="vendor/prebuilts"
+               remote="blisslabs-gitlab"
+               revision="universe"
+               clone-depth="1" />
+      <project name="hardware_dolby"
+               path="hardware/dolby"
+               remote="blisslabs-gitlab"
+               revision="universe"
+               clone-depth="1" />
+  </manifest>
