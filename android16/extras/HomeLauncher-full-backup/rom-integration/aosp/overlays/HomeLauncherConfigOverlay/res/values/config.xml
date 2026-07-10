@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Enable only after HomeLauncher provides a compatible Overview/QuickStep implementation. -->
+    <string name="config_recentsComponentName" translatable="false">
+        com.home.launcher/com.home.launcher.MainActivity
+    </string>
+</resources>

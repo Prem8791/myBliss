@@ -1,0 +1,31 @@
+# Local machine / IDE state
+.idea/
+.settings/
+.project
+.classpath
+local.properties
+
+# Gradle / Android build output
+.gradle/
+build/
+**/build/
+
+# Android generated artifacts
+*.apk
+*.apks
+*.aab
+*.idsig
+
+# Signing material - do not publish private platform keys
+*.pk8
+*.pem
+signing/
+
+# Tooling binaries and temporary extracted artifacts
+bundletool.jar
+*.tmp
+*.log
+
+# OS noise
+Thumbs.db
+desktop.ini

@@ -1,0 +1,33 @@
+diff --git a/packages/apps/HomeLauncher/Android.bp b/packages/apps/HomeLauncher/Android.bp
+new file mode 100644
+--- /dev/null
++++ b/packages/apps/HomeLauncher/Android.bp
+@@
++android_app {
++    name: "HomeLauncher",
++    manifest: "app/src/main/AndroidManifest.xml",
++    srcs: ["app/src/main/java/**/*.kt"],
++    resource_dirs: ["app/src/main/res"],
++    platform_apis: true,
++    certificate: "platform",
++    privileged: true,
++    static_libs: [
++        "androidx.appcompat_appcompat",
++        "androidx.constraintlayout_constraintlayout",
++        "androidx.core_core-ktx",
++        "androidx.lifecycle_lifecycle-runtime-ktx",
++        "androidx.localbroadcastmanager_localbroadcastmanager",
++        "androidx.recyclerview_recyclerview",
++    ],
++    kotlincflags: ["-Xjvm-default=all"],
++    optimize: {
++        enabled: false,
++    },
++}
++
++prebuilt_etc {
++    name: "privapp-permissions-com.home.launcher",
++    src: "permissions/privapp-permissions-com.home.launcher.xml",
++    sub_dir: "permissions",
++    filename: "privapp-permissions-com.home.launcher.xml",
++}

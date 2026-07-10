@@ -1,0 +1,9 @@
+// Optional future overlay. Do not include in PRODUCT_PACKAGES until
+// com.home.launcher implements the QuickStep/Overview service contract.
+
+runtime_resource_overlay {
+    name: "HomeLauncherConfigOverlay",
+    resource_dirs: ["res"],
+    manifest: "AndroidManifest.xml",
+    certificate: "platform",
+}
