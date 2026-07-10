@@ -1,0 +1,24 @@
+diff --git a/AndroidProducts.mk b/AndroidProducts.mk
+index deed2b6..ea250a6 100644
+--- a/AndroidProducts.mk
++++ b/AndroidProducts.mk
+@@ -6,3 +6,5 @@
+ 
+ PRODUCT_MAKEFILES := \
+     $(LOCAL_DIR)/bliss_I001D.mk
++
++COMMON_LUNCH_CHOICES := bliss_I001D-userdebug
+diff --git a/bliss_I001D.mk b/bliss_I001D.mk
+index d83827e..b3bb27a 100644
+--- a/bliss_I001D.mk
++++ b/bliss_I001D.mk
+@@ -36,3 +36,9 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
+     TARGET_DEVICE=ZS660KL \
+     PRODUCT_NAME=WW_I001D
+     BUILD_FINGERPRINT := asus/WW_I001D/ASUS_I001_1:11/RKQ1.200710.002/18.0210.2201.215-0:user/release-keys
++
++# HomeLauncher
++PRODUCT_PACKAGES += \
++    HomeLauncher \
++    privapp-permissions-com.home.launcher
++

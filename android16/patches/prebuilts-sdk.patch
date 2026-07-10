@@ -1,0 +1,1768 @@
+diff --git a/current/androidx/m2repository/androidx/activity/activity-ktx/1.9.0-alpha03/manifest/AndroidManifest.xml b/current/androidx/m2repository/androidx/activity/activity-ktx/1.9.0-alpha03/manifest/AndroidManifest.xml
+index a5988cd..8d82b36 100644
+--- a/current/androidx/m2repository/androidx/activity/activity-ktx/1.9.0-alpha03/manifest/AndroidManifest.xml
++++ b/current/androidx/m2repository/androidx/activity/activity-ktx/1.9.0-alpha03/manifest/AndroidManifest.xml
+@@ -2,6 +2,6 @@
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     package="androidx.activity.ktx" >
+ 
+-    <uses-sdk android:minSdkVersion="19" />
++    <uses-sdk android:minSdkVersion="21" />
+ 
+ </manifest>
+\ No newline at end of file
+diff --git a/current/androidx/m2repository/androidx/activity/activity/1.9.0-alpha03/manifest/AndroidManifest.xml b/current/androidx/m2repository/androidx/activity/activity/1.9.0-alpha03/manifest/AndroidManifest.xml
+index 612c6de..b5c453d 100644
+--- a/current/androidx/m2repository/androidx/activity/activity/1.9.0-alpha03/manifest/AndroidManifest.xml
++++ b/current/androidx/m2repository/androidx/activity/activity/1.9.0-alpha03/manifest/AndroidManifest.xml
+@@ -17,6 +17,6 @@
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     package="androidx.activity" >
+ 
+-    <uses-sdk android:minSdkVersion="19" />
++    <uses-sdk android:minSdkVersion="21" />
+ 
+ </manifest>
+\ No newline at end of file
+diff --git a/current/androidx/m2repository/androidx/annotation/annotation-experimental/1.4.0-rc01/manifest/AndroidManifest.xml b/current/androidx/m2repository/androidx/annotation/annotation-experimental/1.4.0-rc01/manifest/AndroidManifest.xml
+index d2ba992..38f56b8 100644
+--- a/current/androidx/m2repository/androidx/annotation/annotation-experimental/1.4.0-rc01/manifest/AndroidManifest.xml
++++ b/current/androidx/m2repository/androidx/annotation/annotation-experimental/1.4.0-rc01/manifest/AndroidManifest.xml
+@@ -2,6 +2,6 @@
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     package="androidx.annotation.experimental" >
+ 
+-    <uses-sdk android:minSdkVersion="19" />
++    <uses-sdk android:minSdkVersion="21" />
+ 
+ </manifest>
+\ No newline at end of file
+diff --git a/current/androidx/m2repository/androidx/appcompat/appcompat-resources/1.7.0-alpha04/manifest/AndroidManifest.xml b/current/androidx/m2repository/androidx/appcompat/appcompat-resources/1.7.0-alpha04/manifest/AndroidManifest.xml
+index 6fbc143..0c8319b 100644
+--- a/current/androidx/m2repository/androidx/appcompat/appcompat-resources/1.7.0-alpha04/manifest/AndroidManifest.xml
++++ b/current/androidx/m2repository/androidx/appcompat/appcompat-resources/1.7.0-alpha04/manifest/AndroidManifest.xml
+@@ -2,6 +2,6 @@
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     package="androidx.appcompat.resources" >
+ 
+-    <uses-sdk android:minSdkVersion="19" />
++    <uses-sdk android:minSdkVersion="21" />
+ 
+ </manifest>
+\ No newline at end of file
+diff --git a/current/androidx/m2repository/androidx/appcompat/appcompat/1.7.0-alpha04/manifest/AndroidManifest.xml b/current/androidx/m2repository/androidx/appcompat/appcompat/1.7.0-alpha04/manifest/AndroidManifest.xml
+index a5aa71c..0190bf8 100644
+--- a/current/androidx/m2repository/androidx/appcompat/appcompat/1.7.0-alpha04/manifest/AndroidManifest.xml
++++ b/current/androidx/m2repository/androidx/appcompat/appcompat/1.7.0-alpha04/manifest/AndroidManifest.xml
+@@ -2,6 +2,6 @@
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     package="androidx.appcompat" >
+ 
+-    <uses-sdk android:minSdkVersion="19" />
++    <uses-sdk android:minSdkVersion="21" />
+ 
+ </manifest>
+\ No newline at end of file
+diff --git a/current/androidx/m2repository/androidx/appsearch/appsearch-builtin-types/1.1.0-alpha04/manifest/AndroidManifest.xml b/current/androidx/m2repository/androidx/appsearch/appsearch-builtin-types/1.1.0-alpha04/manifest/AndroidManifest.xml
+index 36e153a..ba2bb39 100644
+--- a/current/androidx/m2repository/androidx/appsearch/appsearch-builtin-types/1.1.0-alpha04/manifest/AndroidManifest.xml
++++ b/current/androidx/m2repository/androidx/appsearch/appsearch-builtin-types/1.1.0-alpha04/manifest/AndroidManifest.xml
+@@ -2,6 +2,6 @@
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     package="androidx.appsearch.builtintypes" >
+ 
+-    <uses-sdk android:minSdkVersion="19" />
++    <uses-sdk android:minSdkVersion="21" />
+ 
+ </manifest>
+\ No newline at end of file
+diff --git a/current/androidx/m2repository/androidx/appsearch/appsearch-local-storage/1.1.0-alpha04/manifest/AndroidManifest.xml b/current/androidx/m2repository/androidx/appsearch/appsearch-local-storage/1.1.0-alpha04/manifest/AndroidManifest.xml
+index 87584aa..085b818 100644
+--- a/current/androidx/m2repository/androidx/appsearch/appsearch-local-storage/1.1.0-alpha04/manifest/AndroidManifest.xml
++++ b/current/androidx/m2repository/androidx/appsearch/appsearch-local-storage/1.1.0-alpha04/manifest/AndroidManifest.xml
+@@ -2,6 +2,6 @@
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     package="androidx.appsearch.localstorage" >
+ 
+-    <uses-sdk android:minSdkVersion="19" />
++    <uses-sdk android:minSdkVersion="21" />
+ 
+ </manifest>
+\ No newline at end of file
+diff --git a/current/androidx/m2repository/androidx/appsearch/appsearch-platform-storage/1.1.0-alpha04/manifest/AndroidManifest.xml b/current/androidx/m2repository/androidx/appsearch/appsearch-platform-storage/1.1.0-alpha04/manifest/AndroidManifest.xml
+index 92797c7..9cf4309 100644
+--- a/current/androidx/m2repository/androidx/appsearch/appsearch-platform-storage/1.1.0-alpha04/manifest/AndroidManifest.xml
++++ b/current/androidx/m2repository/androidx/appsearch/appsearch-platform-storage/1.1.0-alpha04/manifest/AndroidManifest.xml
+@@ -2,6 +2,6 @@
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     package="androidx.appsearch.platformstorage" >
+ 
+-    <uses-sdk android:minSdkVersion="19" />
++    <uses-sdk android:minSdkVersion="21" />
+ 
+ </manifest>
+\ No newline at end of file
+diff --git a/current/androidx/m2repository/androidx/appsearch/appsearch/1.1.0-alpha04/manifest/AndroidManifest.xml b/current/androidx/m2repository/androidx/appsearch/appsearch/1.1.0-alpha04/manifest/AndroidManifest.xml
+index 8b5c7bb..9b862d1 100644
+--- a/current/androidx/m2repository/androidx/appsearch/appsearch/1.1.0-alpha04/manifest/AndroidManifest.xml
++++ b/current/androidx/m2repository/androidx/appsearch/appsearch/1.1.0-alpha04/manifest/AndroidManifest.xml
+@@ -2,6 +2,6 @@
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     package="androidx.appsearch" >
+ 
+-    <uses-sdk android:minSdkVersion="19" />
++    <uses-sdk android:minSdkVersion="21" />
+ 
+ </manifest>
+\ No newline at end of file
+diff --git a/current/androidx/m2repository/androidx/arch/core/core-runtime/2.2.0-alpha01/manifest/AndroidManifest.xml b/current/androidx/m2repository/androidx/arch/core/core-runtime/2.2.0-alpha01/manifest/AndroidManifest.xml
+index d6fa191..44fe911 100644
+--- a/current/androidx/m2repository/androidx/arch/core/core-runtime/2.2.0-alpha01/manifest/AndroidManifest.xml
++++ b/current/androidx/m2repository/androidx/arch/core/core-runtime/2.2.0-alpha01/manifest/AndroidManifest.xml
+@@ -17,6 +17,6 @@
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     package="androidx.arch.core" >
+ 
+-    <uses-sdk android:minSdkVersion="19" />
++    <uses-sdk android:minSdkVersion="21" />
+ 
+ </manifest>
+\ No newline at end of file
+diff --git a/current/androidx/m2repository/androidx/arch/core/core-testing/2.2.0-alpha01/manifest/AndroidManifest.xml b/current/androidx/m2repository/androidx/arch/core/core-testing/2.2.0-alpha01/manifest/AndroidManifest.xml
+index f6312d6..3e0ad9e 100644
+--- a/current/androidx/m2repository/androidx/arch/core/core-testing/2.2.0-alpha01/manifest/AndroidManifest.xml
++++ b/current/androidx/m2repository/androidx/arch/core/core-testing/2.2.0-alpha01/manifest/AndroidManifest.xml
+@@ -17,6 +17,6 @@
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     package="androidx.arch.core.testing" >
+ 
+-    <uses-sdk android:minSdkVersion="19" />
++    <uses-sdk android:minSdkVersion="21" />
+ 
+ </manifest>
+\ No newline at end of file
+diff --git a/current/androidx/m2repository/androidx/asynclayoutinflater/asynclayoutinflater/1.1.0-alpha02/manifest/AndroidManifest.xml b/current/androidx/m2repository/androidx/asynclayoutinflater/asynclayoutinflater/1.1.0-alpha02/manifest/AndroidManifest.xml
+index a71f90e..a4c364d 100644
+--- a/current/androidx/m2repository/androidx/asynclayoutinflater/asynclayoutinflater/1.1.0-alpha02/manifest/AndroidManifest.xml
++++ b/current/androidx/m2repository/androidx/asynclayoutinflater/asynclayoutinflater/1.1.0-alpha02/manifest/AndroidManifest.xml
+@@ -17,6 +17,6 @@
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     package="androidx.asynclayoutinflater" >
+ 
+-    <uses-sdk android:minSdkVersion="19" />
++    <uses-sdk android:minSdkVersion="21" />
+ 
+ </manifest>
+\ No newline at end of file
+diff --git a/current/androidx/m2repository/androidx/autofill/autofill/1.2.0-beta02/manifest/AndroidManifest.xml b/current/androidx/m2repository/androidx/autofill/autofill/1.2.0-beta02/manifest/AndroidManifest.xml
+index c1714c4..d5c779a 100644
+--- a/current/androidx/m2repository/androidx/autofill/autofill/1.2.0-beta02/manifest/AndroidManifest.xml
++++ b/current/androidx/m2repository/androidx/autofill/autofill/1.2.0-beta02/manifest/AndroidManifest.xml
+@@ -17,6 +17,6 @@
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     package="androidx.autofill" >
+ 
+-    <uses-sdk android:minSdkVersion="19" />
++    <uses-sdk android:minSdkVersion="21" />
+ 
+ </manifest>
+\ No newline at end of file
+diff --git a/current/androidx/m2repository/androidx/benchmark/benchmark-common/1.3.0-alpha01/manifest/AndroidManifest.xml b/current/androidx/m2repository/androidx/benchmark/benchmark-common/1.3.0-alpha01/manifest/AndroidManifest.xml
+index 6aed38f..55daa46 100644
+--- a/current/androidx/m2repository/androidx/benchmark/benchmark-common/1.3.0-alpha01/manifest/AndroidManifest.xml
++++ b/current/androidx/m2repository/androidx/benchmark/benchmark-common/1.3.0-alpha01/manifest/AndroidManifest.xml
+@@ -17,7 +17,7 @@
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     package="androidx.benchmark" >
+ 
+-    <uses-sdk android:minSdkVersion="19" />
++    <uses-sdk android:minSdkVersion="21" />
+ 
+     <!--
+     This is needed to write benchmark report data to an external directory during instrumented
+diff --git a/current/androidx/m2repository/androidx/benchmark/benchmark-junit4/1.3.0-alpha01/manifest/AndroidManifest.xml b/current/androidx/m2repository/androidx/benchmark/benchmark-junit4/1.3.0-alpha01/manifest/AndroidManifest.xml
+index 6307d2c..eef7011 100644
+--- a/current/androidx/m2repository/androidx/benchmark/benchmark-junit4/1.3.0-alpha01/manifest/AndroidManifest.xml
++++ b/current/androidx/m2repository/androidx/benchmark/benchmark-junit4/1.3.0-alpha01/manifest/AndroidManifest.xml
+@@ -2,6 +2,6 @@
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     package="androidx.benchmark.junit4" >
+ 
+-    <uses-sdk android:minSdkVersion="19" />
++    <uses-sdk android:minSdkVersion="21" />
+ 
+ </manifest>
+\ No newline at end of file
+diff --git a/current/androidx/m2repository/androidx/biometric/biometric/1.2.0-alpha06/manifest/AndroidManifest.xml b/current/androidx/m2repository/androidx/biometric/biometric/1.2.0-alpha06/manifest/AndroidManifest.xml
+index 05d767c..a189446 100644
+--- a/current/androidx/m2repository/androidx/biometric/biometric/1.2.0-alpha06/manifest/AndroidManifest.xml
++++ b/current/androidx/m2repository/androidx/biometric/biometric/1.2.0-alpha06/manifest/AndroidManifest.xml
+@@ -17,7 +17,7 @@
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     package="androidx.biometric" >
+ 
+-    <uses-sdk android:minSdkVersion="19" />
++    <uses-sdk android:minSdkVersion="21" />
+ 
+     <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+ 
+diff --git a/current/androidx/m2repository/androidx/browser/browser/1.9.0-alpha01/manifest/AndroidManifest.xml b/current/androidx/m2repository/androidx/browser/browser/1.9.0-alpha01/manifest/AndroidManifest.xml
+index 4ba97fe..645acfa 100644
+--- a/current/androidx/m2repository/androidx/browser/browser/1.9.0-alpha01/manifest/AndroidManifest.xml
++++ b/current/androidx/m2repository/androidx/browser/browser/1.9.0-alpha01/manifest/AndroidManifest.xml
+@@ -2,6 +2,6 @@
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     package="androidx.browser" >
+ 
+-    <uses-sdk android:minSdkVersion="19" />
++    <uses-sdk android:minSdkVersion="21" />
+ 
+ </manifest>
+\ No newline at end of file
+diff --git a/current/androidx/m2repository/androidx/camera/camera-camera2-pipe-integration/1.0.0-alpha01/manifest/AndroidManifest.xml b/current/androidx/m2repository/androidx/camera/camera-camera2-pipe-integration/1.0.0-alpha01/manifest/AndroidManifest.xml
+index 40777b8..c31ed8e 100644
+--- a/current/androidx/m2repository/androidx/camera/camera-camera2-pipe-integration/1.0.0-alpha01/manifest/AndroidManifest.xml
++++ b/current/androidx/m2repository/androidx/camera/camera-camera2-pipe-integration/1.0.0-alpha01/manifest/AndroidManifest.xml
+@@ -2,6 +2,6 @@
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     package="androidx.camera.camera2.pipe.integration" >
+ 
+-    <uses-sdk android:minSdkVersion="19" />
++    <uses-sdk android:minSdkVersion="21" />
+ 
+ </manifest>
+\ No newline at end of file
+diff --git a/current/androidx/m2repository/androidx/camera/camera-camera2-pipe/1.0.0-alpha01/manifest/AndroidManifest.xml b/current/androidx/m2repository/androidx/camera/camera-camera2-pipe/1.0.0-alpha01/manifest/AndroidManifest.xml
+index 81aae8a..2d2ed86 100644
+--- a/current/androidx/m2repository/androidx/camera/camera-camera2-pipe/1.0.0-alpha01/manifest/AndroidManifest.xml
++++ b/current/androidx/m2repository/androidx/camera/camera-camera2-pipe/1.0.0-alpha01/manifest/AndroidManifest.xml
+@@ -2,6 +2,6 @@
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     package="androidx.camera.camera2.pipe" >
+ 
+-    <uses-sdk android:minSdkVersion="19" />
++    <uses-sdk android:minSdkVersion="21" />
+ 
+ </manifest>
+\ No newline at end of file
+diff --git a/current/androidx/m2repository/androidx/camera/camera-camera2/1.4.0-alpha04/manifest/AndroidManifest.xml b/current/androidx/m2repository/androidx/camera/camera-camera2/1.4.0-alpha04/manifest/AndroidManifest.xml
+index ac4e478..13fc0c5 100644
+--- a/current/androidx/m2repository/androidx/camera/camera-camera2/1.4.0-alpha04/manifest/AndroidManifest.xml
++++ b/current/androidx/m2repository/androidx/camera/camera-camera2/1.4.0-alpha04/manifest/AndroidManifest.xml
+@@ -18,7 +18,7 @@ limitations under the License.
+     xmlns:tools="http://schemas.android.com/tools"
+     package="androidx.camera.camera2" >
+ 
+-    <uses-sdk android:minSdkVersion="19" />
++    <uses-sdk android:minSdkVersion="21" />
+ 
+     <application>
+         <service
+diff --git a/current/androidx/m2repository/androidx/camera/camera-core/1.4.0-alpha04/manifest/AndroidManifest.xml b/current/androidx/m2repository/androidx/camera/camera-core/1.4.0-alpha04/manifest/AndroidManifest.xml
+index 1a10035..ab739d0 100644
+--- a/current/androidx/m2repository/androidx/camera/camera-core/1.4.0-alpha04/manifest/AndroidManifest.xml
++++ b/current/androidx/m2repository/androidx/camera/camera-core/1.4.0-alpha04/manifest/AndroidManifest.xml
+@@ -18,7 +18,7 @@ limitations under the License.
+     xmlns:tools="http://schemas.android.com/tools"
+     package="androidx.camera.core" >
+ 
+-    <uses-sdk android:minSdkVersion="19" />
++    <uses-sdk android:minSdkVersion="21" />
+ 
+     <application>
+ 
+diff --git a/current/androidx/m2repository/androidx/camera/camera-extensions/1.4.0-alpha04/manifest/AndroidManifest.xml b/current/androidx/m2repository/androidx/camera/camera-extensions/1.4.0-alpha04/manifest/AndroidManifest.xml
+index 945450c..5b60f00 100644
+--- a/current/androidx/m2repository/androidx/camera/camera-extensions/1.4.0-alpha04/manifest/AndroidManifest.xml
++++ b/current/androidx/m2repository/androidx/camera/camera-extensions/1.4.0-alpha04/manifest/AndroidManifest.xml
+@@ -17,7 +17,7 @@
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     package="androidx.camera.extensions" >
+ 
+-    <uses-sdk android:minSdkVersion="19" />
++    <uses-sdk android:minSdkVersion="21" />
+ 
+     <queries>
+         <intent>
+diff --git a/current/androidx/m2repository/androidx/camera/camera-lifecycle/1.4.0-alpha04/manifest/AndroidManifest.xml b/current/androidx/m2repository/androidx/camera/camera-lifecycle/1.4.0-alpha04/manifest/AndroidManifest.xml
+index a311364..a57761e 100644
+--- a/current/androidx/m2repository/androidx/camera/camera-lifecycle/1.4.0-alpha04/manifest/AndroidManifest.xml
++++ b/current/androidx/m2repository/androidx/camera/camera-lifecycle/1.4.0-alpha04/manifest/AndroidManifest.xml
+@@ -2,6 +2,6 @@
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     package="androidx.camera.lifecycle" >
+ 
+-    <uses-sdk android:minSdkVersion="19" />
++    <uses-sdk android:minSdkVersion="21" />
+ 
+ </manifest>
+\ No newline at end of file
+diff --git a/current/androidx/m2repository/androidx/camera/camera-video/1.4.0-alpha04/manifest/AndroidManifest.xml b/current/androidx/m2repository/androidx/camera/camera-video/1.4.0-alpha04/manifest/AndroidManifest.xml
+index 20f51b3..fdaa9c9 100644
+--- a/current/androidx/m2repository/androidx/camera/camera-video/1.4.0-alpha04/manifest/AndroidManifest.xml
++++ b/current/androidx/m2repository/androidx/camera/camera-video/1.4.0-alpha04/manifest/AndroidManifest.xml
+@@ -2,6 +2,6 @@
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     package="androidx.camera.video" >
+ 
+-    <uses-sdk android:minSdkVersion="19" />
++    <uses-sdk android:minSdkVersion="21" />
+ 
+ </manifest>
+\ No newline at end of file
+diff --git a/current/androidx/m2repository/androidx/camera/camera-viewfinder-core/1.4.0-alpha04/manifest/AndroidManifest.xml b/current/androidx/m2repository/androidx/camera/camera-viewfinder-core/1.4.0-alpha04/manifest/AndroidManifest.xml
+index f06fa24..15f9973 100644
+--- a/current/androidx/m2repository/androidx/camera/camera-viewfinder-core/1.4.0-alpha04/manifest/AndroidManifest.xml
++++ b/current/androidx/m2repository/androidx/camera/camera-viewfinder-core/1.4.0-alpha04/manifest/AndroidManifest.xml
+@@ -2,6 +2,6 @@
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     package="androidx.camera.viewfinder.core" >
+ 
+-    <uses-sdk android:minSdkVersion="19" />
++    <uses-sdk android:minSdkVersion="21" />
+ 
+ </manifest>
+\ No newline at end of file
+diff --git a/current/androidx/m2repository/androidx/camera/camera-viewfinder/1.4.0-alpha04/manifest/AndroidManifest.xml b/current/androidx/m2repository/androidx/camera/camera-viewfinder/1.4.0-alpha04/manifest/AndroidManifest.xml
+index b8ce408..ab9e6ff 100644
+--- a/current/androidx/m2repository/androidx/camera/camera-viewfinder/1.4.0-alpha04/manifest/AndroidManifest.xml
++++ b/current/androidx/m2repository/androidx/camera/camera-viewfinder/1.4.0-alpha04/manifest/AndroidManifest.xml
+@@ -17,6 +17,6 @@
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     package="androidx.camera.viewfinder" >
+ 
+-    <uses-sdk android:minSdkVersion="19" />
++    <uses-sdk android:minSdkVersion="21" />
+ 
+ </manifest>
+\ No newline at end of file
+diff --git a/current/androidx/m2repository/androidx/cardview/cardview/1.1.0-alpha01/manifest/AndroidManifest.xml b/current/androidx/m2repository/androidx/cardview/cardview/1.1.0-alpha01/manifest/AndroidManifest.xml
+index b663f98..f2c8449 100644
+--- a/current/androidx/m2repository/androidx/cardview/cardview/1.1.0-alpha01/manifest/AndroidManifest.xml
++++ b/current/androidx/m2repository/androidx/cardview/cardview/1.1.0-alpha01/manifest/AndroidManifest.xml
+@@ -2,6 +2,6 @@
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     package="androidx.cardview" >
+ 
+-    <uses-sdk android:minSdkVersion="19" />
++    <uses-sdk android:minSdkVersion="21" />
+ 
+ </manifest>
+\ No newline at end of file
+diff --git a/current/androidx/m2repository/androidx/constraintlayout/constraintlayout/2.2.0-alpha13/manifest/AndroidManifest.xml b/current/androidx/m2repository/androidx/constraintlayout/constraintlayout/2.2.0-alpha13/manifest/AndroidManifest.xml
+index ebd701b..49ce8aa 100644
+--- a/current/androidx/m2repository/androidx/constraintlayout/constraintlayout/2.2.0-alpha13/manifest/AndroidManifest.xml
++++ b/current/androidx/m2repository/androidx/constraintlayout/constraintlayout/2.2.0-alpha13/manifest/AndroidManifest.xml
+@@ -2,7 +2,7 @@
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     package="androidx.constraintlayout.widget" >
+ 
+-    <uses-sdk android:minSdkVersion="19" />
++    <uses-sdk android:minSdkVersion="21" />
+     <!-- package="androidx.constraintlayout.widget" -->
+     <application />
+ 
+diff --git a/current/androidx/m2repository/androidx/coordinatorlayout/coordinatorlayout/1.3.0-alpha01/manifest/AndroidManifest.xml b/current/androidx/m2repository/androidx/coordinatorlayout/coordinatorlayout/1.3.0-alpha01/manifest/AndroidManifest.xml
+index 2a565e1..077325e 100644
+--- a/current/androidx/m2repository/androidx/coordinatorlayout/coordinatorlayout/1.3.0-alpha01/manifest/AndroidManifest.xml
++++ b/current/androidx/m2repository/androidx/coordinatorlayout/coordinatorlayout/1.3.0-alpha01/manifest/AndroidManifest.xml
+@@ -2,6 +2,6 @@
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     package="androidx.coordinatorlayout" >
+ 
+-    <uses-sdk android:minSdkVersion="19" />
++    <uses-sdk android:minSdkVersion="21" />
+ 
+ </manifest>
+\ No newline at end of file
+diff --git a/current/androidx/m2repository/androidx/core/core-animation-testing/1.0.0-rc01/manifest/AndroidManifest.xml b/current/androidx/m2repository/androidx/core/core-animation-testing/1.0.0-rc01/manifest/AndroidManifest.xml
+index 6691293..17cfadf 100644
+--- a/current/androidx/m2repository/androidx/core/core-animation-testing/1.0.0-rc01/manifest/AndroidManifest.xml
++++ b/current/androidx/m2repository/androidx/core/core-animation-testing/1.0.0-rc01/manifest/AndroidManifest.xml
+@@ -2,6 +2,6 @@
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     package="androidx.core.animation.testing" >
+ 
+-    <uses-sdk android:minSdkVersion="19" />
++    <uses-sdk android:minSdkVersion="21" />
+ 
+ </manifest>
+\ No newline at end of file
+diff --git a/current/androidx/m2repository/androidx/core/core-animation/1.0.0-rc01/manifest/AndroidManifest.xml b/current/androidx/m2repository/androidx/core/core-animation/1.0.0-rc01/manifest/AndroidManifest.xml
+index 8a4c17d..ebdf0fe 100644
+--- a/current/androidx/m2repository/androidx/core/core-animation/1.0.0-rc01/manifest/AndroidManifest.xml
++++ b/current/androidx/m2repository/androidx/core/core-animation/1.0.0-rc01/manifest/AndroidManifest.xml
+@@ -2,6 +2,6 @@
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     package="androidx.core.animation" >
+ 
+-    <uses-sdk android:minSdkVersion="19" />
++    <uses-sdk android:minSdkVersion="21" />
+ 
+ </manifest>
+\ No newline at end of file
+diff --git a/current/androidx/m2repository/androidx/core/core-ktx/1.13.0-beta01/manifest/AndroidManifest.xml b/current/androidx/m2repository/androidx/core/core-ktx/1.13.0-beta01/manifest/AndroidManifest.xml
+index 9dc2c48..ba7e22d 100644
+--- a/current/androidx/m2repository/androidx/core/core-ktx/1.13.0-beta01/manifest/AndroidManifest.xml
++++ b/current/androidx/m2repository/androidx/core/core-ktx/1.13.0-beta01/manifest/AndroidManifest.xml
+@@ -2,6 +2,6 @@
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     package="androidx.core.ktx" >
+ 
+-    <uses-sdk android:minSdkVersion="19" />
++    <uses-sdk android:minSdkVersion="21" />
+ 
+ </manifest>
+\ No newline at end of file
+diff --git a/current/androidx/m2repository/androidx/core/core/1.13.0-beta01/manifest/AndroidManifest.xml b/current/androidx/m2repository/androidx/core/core/1.13.0-beta01/manifest/AndroidManifest.xml
+index 4adb174..913352b 100644
+--- a/current/androidx/m2repository/androidx/core/core/1.13.0-beta01/manifest/AndroidManifest.xml
++++ b/current/androidx/m2repository/androidx/core/core/1.13.0-beta01/manifest/AndroidManifest.xml
+@@ -17,7 +17,7 @@
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     package="androidx.core" >
+ 
+-    <uses-sdk android:minSdkVersion="19" />
++    <uses-sdk android:minSdkVersion="21" />
+ 
+     <permission
+         android:name="${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+diff --git a/current/androidx/m2repository/androidx/credentials/credentials/1.3.0-alpha01/manifest/AndroidManifest.xml b/current/androidx/m2repository/androidx/credentials/credentials/1.3.0-alpha01/manifest/AndroidManifest.xml
+index b360abf..ce64002 100644
+--- a/current/androidx/m2repository/androidx/credentials/credentials/1.3.0-alpha01/manifest/AndroidManifest.xml
++++ b/current/androidx/m2repository/androidx/credentials/credentials/1.3.0-alpha01/manifest/AndroidManifest.xml
+@@ -2,6 +2,6 @@
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     package="androidx.credentials" >
+ 
+-    <uses-sdk android:minSdkVersion="19" />
++    <uses-sdk android:minSdkVersion="21" />
+ 
+ </manifest>
+\ No newline at end of file
+diff --git a/current/androidx/m2repository/androidx/cursoradapter/cursoradapter/1.1.0-alpha01/manifest/AndroidManifest.xml b/current/androidx/m2repository/androidx/cursoradapter/cursoradapter/1.1.0-alpha01/manifest/AndroidManifest.xml
+index c0e22e8..806cb1c 100644
+--- a/current/androidx/m2repository/androidx/cursoradapter/cursoradapter/1.1.0-alpha01/manifest/AndroidManifest.xml
++++ b/current/androidx/m2repository/androidx/cursoradapter/cursoradapter/1.1.0-alpha01/manifest/AndroidManifest.xml
+@@ -2,6 +2,6 @@
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     package="androidx.cursoradapter" >
+ 
+-    <uses-sdk android:minSdkVersion="19" />
++    <uses-sdk android:minSdkVersion="21" />
+ 
+ </manifest>
+\ No newline at end of file
+diff --git a/current/androidx/m2repository/androidx/customview/customview-poolingcontainer/1.1.0-alpha01/manifest/AndroidManifest.xml b/current/androidx/m2repository/androidx/customview/customview-poolingcontainer/1.1.0-alpha01/manifest/AndroidManifest.xml
+index fdb9a55..05b5d57 100644
+--- a/current/androidx/m2repository/androidx/customview/customview-poolingcontainer/1.1.0-alpha01/manifest/AndroidManifest.xml
++++ b/current/androidx/m2repository/androidx/customview/customview-poolingcontainer/1.1.0-alpha01/manifest/AndroidManifest.xml
+@@ -17,6 +17,6 @@
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     package="androidx.customview.poolingcontainer" >
+ 
+-    <uses-sdk android:minSdkVersion="19" />
++    <uses-sdk android:minSdkVersion="21" />
+ 
+ </manifest>
+\ No newline at end of file
+diff --git a/current/androidx/m2repository/androidx/customview/customview/1.2.0-alpha03/manifest/AndroidManifest.xml b/current/androidx/m2repository/androidx/customview/customview/1.2.0-alpha03/manifest/AndroidManifest.xml
+index b233c0c..bb4e54b 100644
+--- a/current/androidx/m2repository/androidx/customview/customview/1.2.0-alpha03/manifest/AndroidManifest.xml
++++ b/current/androidx/m2repository/androidx/customview/customview/1.2.0-alpha03/manifest/AndroidManifest.xml
+@@ -2,6 +2,6 @@
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     package="androidx.customview" >
+ 
+-    <uses-sdk android:minSdkVersion="19" />
++    <uses-sdk android:minSdkVersion="21" />
+ 
+ </manifest>
+\ No newline at end of file
+diff --git a/current/androidx/m2repository/androidx/datastore/datastore-android/1.1.0-beta01/manifest/AndroidManifest.xml b/current/androidx/m2repository/androidx/datastore/datastore-android/1.1.0-beta01/manifest/AndroidManifest.xml
+index afad725..d3e6ccf 100644
+--- a/current/androidx/m2repository/androidx/datastore/datastore-android/1.1.0-beta01/manifest/AndroidManifest.xml
++++ b/current/androidx/m2repository/androidx/datastore/datastore-android/1.1.0-beta01/manifest/AndroidManifest.xml
+@@ -17,6 +17,6 @@
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     package="androidx.datastore.datastore" >
+ 
+-    <uses-sdk android:minSdkVersion="19" />
++    <uses-sdk android:minSdkVersion="21" />
+ 
+ </manifest>
+\ No newline at end of file
+diff --git a/current/androidx/m2repository/androidx/datastore/datastore-core-android/1.1.0-beta01/manifest/AndroidManifest.xml b/current/androidx/m2repository/androidx/datastore/datastore-core-android/1.1.0-beta01/manifest/AndroidManifest.xml
+index c1d2a0f..1bcf1bb 100644
+--- a/current/androidx/m2repository/androidx/datastore/datastore-core-android/1.1.0-beta01/manifest/AndroidManifest.xml
++++ b/current/androidx/m2repository/androidx/datastore/datastore-core-android/1.1.0-beta01/manifest/AndroidManifest.xml
+@@ -2,6 +2,6 @@
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     package="androidx.datastore.core" >
+ 
+-    <uses-sdk android:minSdkVersion="19" />
++    <uses-sdk android:minSdkVersion="21" />
+ 
+ </manifest>
+\ No newline at end of file
+diff --git a/current/androidx/m2repository/androidx/datastore/datastore-preferences-android/1.1.0-beta01/manifest/AndroidManifest.xml b/current/androidx/m2repository/androidx/datastore/datastore-preferences-android/1.1.0-beta01/manifest/AndroidManifest.xml
+index 62cdf5c..80f3690 100644
+--- a/current/androidx/m2repository/androidx/datastore/datastore-preferences-android/1.1.0-beta01/manifest/AndroidManifest.xml
++++ b/current/androidx/m2repository/androidx/datastore/datastore-preferences-android/1.1.0-beta01/manifest/AndroidManifest.xml
+@@ -17,6 +17,6 @@
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     package="androidx.datastore.preferences" >
+ 
+-    <uses-sdk android:minSdkVersion="19" />
++    <uses-sdk android:minSdkVersion="21" />
+ 
+ </manifest>
+\ No newline at end of file
+diff --git a/current/androidx/m2repository/androidx/datastore/datastore-preferences-rxjava2/1.1.0-beta01/manifest/AndroidManifest.xml b/current/androidx/m2repository/androidx/datastore/datastore-preferences-rxjava2/1.1.0-beta01/manifest/AndroidManifest.xml
+index dab44cf..d9ea4c6 100644
+--- a/current/androidx/m2repository/androidx/datastore/datastore-preferences-rxjava2/1.1.0-beta01/manifest/AndroidManifest.xml
++++ b/current/androidx/m2repository/androidx/datastore/datastore-preferences-rxjava2/1.1.0-beta01/manifest/AndroidManifest.xml
+@@ -17,6 +17,6 @@
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     package="androidx.datastore.preferences.rxjava2" >
+ 
+-    <uses-sdk android:minSdkVersion="19" />
++    <uses-sdk android:minSdkVersion="21" />
+ 
+ </manifest>
+\ No newline at end of file
+diff --git a/current/androidx/m2repository/androidx/datastore/datastore-rxjava2/1.1.0-beta01/manifest/AndroidManifest.xml b/current/androidx/m2repository/androidx/datastore/datastore-rxjava2/1.1.0-beta01/manifest/AndroidManifest.xml
+index 33be83c..95df51d 100644
+--- a/current/androidx/m2repository/androidx/datastore/datastore-rxjava2/1.1.0-beta01/manifest/AndroidManifest.xml
++++ b/current/androidx/m2repository/androidx/datastore/datastore-rxjava2/1.1.0-beta01/manifest/AndroidManifest.xml
+@@ -17,6 +17,6 @@
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     package="androidx.datastore.rxjava2" >
+ 
+-    <uses-sdk android:minSdkVersion="19" />
++    <uses-sdk android:minSdkVersion="21" />
+ 
+ </manifest>
+\ No newline at end of file
+diff --git a/current/androidx/m2repository/androidx/documentfile/documentfile/1.1.0-alpha02/manifest/AndroidManifest.xml b/current/androidx/m2repository/androidx/documentfile/documentfile/1.1.0-alpha02/manifest/AndroidManifest.xml
+index 7a3b4a7..e605d6d 100644
+--- a/current/androidx/m2repository/androidx/documentfile/documentfile/1.1.0-alpha02/manifest/AndroidManifest.xml
++++ b/current/androidx/m2repository/androidx/documentfile/documentfile/1.1.0-alpha02/manifest/AndroidManifest.xml
+@@ -17,6 +17,6 @@
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     package="androidx.documentfile" >
+ 
+-    <uses-sdk android:minSdkVersion="19" />
++    <uses-sdk android:minSdkVersion="21" />
+ 
+ </manifest>
+\ No newline at end of file
+diff --git a/current/androidx/m2repository/androidx/drawerlayout/drawerlayout/1.3.0-alpha01/manifest/AndroidManifest.xml b/current/androidx/m2repository/androidx/drawerlayout/drawerlayout/1.3.0-alpha01/manifest/AndroidManifest.xml
+index e3847ea..fc9f0cd 100644
+--- a/current/androidx/m2repository/androidx/drawerlayout/drawerlayout/1.3.0-alpha01/manifest/AndroidManifest.xml
++++ b/current/androidx/m2repository/androidx/drawerlayout/drawerlayout/1.3.0-alpha01/manifest/AndroidManifest.xml
+@@ -17,6 +17,6 @@
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     package="androidx.drawerlayout" >
+ 
+-    <uses-sdk android:minSdkVersion="19" />
++    <uses-sdk android:minSdkVersion="21" />
+ 
+ </manifest>
+\ No newline at end of file
+diff --git a/current/androidx/m2repository/androidx/dynamicanimation/dynamicanimation/1.1.0-alpha04/manifest/AndroidManifest.xml b/current/androidx/m2repository/androidx/dynamicanimation/dynamicanimation/1.1.0-alpha04/manifest/AndroidManifest.xml
+index e9914a8..acdeeb0 100644
+--- a/current/androidx/m2repository/androidx/dynamicanimation/dynamicanimation/1.1.0-alpha04/manifest/AndroidManifest.xml
++++ b/current/androidx/m2repository/androidx/dynamicanimation/dynamicanimation/1.1.0-alpha04/manifest/AndroidManifest.xml
+@@ -17,6 +17,6 @@
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     package="androidx.dynamicanimation" >
+ 
+-    <uses-sdk android:minSdkVersion="19" />
++    <uses-sdk android:minSdkVersion="21" />
+ 
+ </manifest>
+\ No newline at end of file
+diff --git a/current/androidx/m2repository/androidx/emoji/emoji-appcompat/1.2.0-alpha03/manifest/AndroidManifest.xml b/current/androidx/m2repository/androidx/emoji/emoji-appcompat/1.2.0-alpha03/manifest/AndroidManifest.xml
+index 281715d..d26bd59 100644
+--- a/current/androidx/m2repository/androidx/emoji/emoji-appcompat/1.2.0-alpha03/manifest/AndroidManifest.xml
++++ b/current/androidx/m2repository/androidx/emoji/emoji-appcompat/1.2.0-alpha03/manifest/AndroidManifest.xml
+@@ -2,6 +2,6 @@
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     package="androidx.emoji.appcompat" >
+ 
+-    <uses-sdk android:minSdkVersion="19" />
++    <uses-sdk android:minSdkVersion="21" />
+ 
+ </manifest>
+\ No newline at end of file
+diff --git a/current/androidx/m2repository/androidx/emoji/emoji-bundled/1.2.0-alpha03/manifest/AndroidManifest.xml b/current/androidx/m2repository/androidx/emoji/emoji-bundled/1.2.0-alpha03/manifest/AndroidManifest.xml
+index 6a0553d..ee85bee 100644
+--- a/current/androidx/m2repository/androidx/emoji/emoji-bundled/1.2.0-alpha03/manifest/AndroidManifest.xml
++++ b/current/androidx/m2repository/androidx/emoji/emoji-bundled/1.2.0-alpha03/manifest/AndroidManifest.xml
+@@ -2,6 +2,6 @@
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     package="androidx.emoji.bundled" >
+ 
+-    <uses-sdk android:minSdkVersion="19" />
++    <uses-sdk android:minSdkVersion="21" />
+ 
+ </manifest>
+\ No newline at end of file
+diff --git a/current/androidx/m2repository/androidx/emoji/emoji/1.2.0-alpha03/manifest/AndroidManifest.xml b/current/androidx/m2repository/androidx/emoji/emoji/1.2.0-alpha03/manifest/AndroidManifest.xml
+index b406d65..fa324d8 100644
+--- a/current/androidx/m2repository/androidx/emoji/emoji/1.2.0-alpha03/manifest/AndroidManifest.xml
++++ b/current/androidx/m2repository/androidx/emoji/emoji/1.2.0-alpha03/manifest/AndroidManifest.xml
+@@ -2,6 +2,6 @@
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     package="androidx.emoji" >
+ 
+-    <uses-sdk android:minSdkVersion="19" />
++    <uses-sdk android:minSdkVersion="21" />
+ 
+ </manifest>
+\ No newline at end of file
+diff --git a/current/androidx/m2repository/androidx/emoji2/emoji2-views-helper/1.5.0-alpha01/manifest/AndroidManifest.xml b/current/androidx/m2repository/androidx/emoji2/emoji2-views-helper/1.5.0-alpha01/manifest/AndroidManifest.xml
+index 3f0f3d1..181f8f5 100644
+--- a/current/androidx/m2repository/androidx/emoji2/emoji2-views-helper/1.5.0-alpha01/manifest/AndroidManifest.xml
++++ b/current/androidx/m2repository/androidx/emoji2/emoji2-views-helper/1.5.0-alpha01/manifest/AndroidManifest.xml
+@@ -2,6 +2,6 @@
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     package="androidx.emoji2.viewsintegration" >
+ 
+-    <uses-sdk android:minSdkVersion="19" />
++    <uses-sdk android:minSdkVersion="21" />
+ 
+ </manifest>
+\ No newline at end of file
+diff --git a/current/androidx/m2repository/androidx/emoji2/emoji2/1.5.0-alpha01/manifest/AndroidManifest.xml b/current/androidx/m2repository/androidx/emoji2/emoji2/1.5.0-alpha01/manifest/AndroidManifest.xml
+index b4711f2..dd1737e 100644
+--- a/current/androidx/m2repository/androidx/emoji2/emoji2/1.5.0-alpha01/manifest/AndroidManifest.xml
++++ b/current/androidx/m2repository/androidx/emoji2/emoji2/1.5.0-alpha01/manifest/AndroidManifest.xml
+@@ -14,7 +14,7 @@
+   limitations under the License.
+ --><manifest xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools" package="androidx.emoji2">
+ 
+-    <uses-sdk android:minSdkVersion="19"/>
++    <uses-sdk android:minSdkVersion="21"/>
+ 
+     <application>
+         <provider android:authorities="${applicationId}.androidx-startup" android:exported="false" android:name="androidx.startup.InitializationProvider" tools:node="merge">
+diff --git a/current/androidx/m2repository/androidx/exifinterface/exifinterface/1.4.0-alpha01/manifest/AndroidManifest.xml b/current/androidx/m2repository/androidx/exifinterface/exifinterface/1.4.0-alpha01/manifest/AndroidManifest.xml
+index 6ad6661..2759cf5 100644
+--- a/current/androidx/m2repository/androidx/exifinterface/exifinterface/1.4.0-alpha01/manifest/AndroidManifest.xml
++++ b/current/androidx/m2repository/androidx/exifinterface/exifinterface/1.4.0-alpha01/manifest/AndroidManifest.xml
+@@ -17,6 +17,6 @@
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     package="androidx.exifinterface" >
+ 
+-    <uses-sdk android:minSdkVersion="19" />
++    <uses-sdk android:minSdkVersion="21" />
+ 
+ </manifest>
+\ No newline at end of file
+diff --git a/current/androidx/m2repository/androidx/fragment/fragment-ktx/1.7.0-beta01/manifest/AndroidManifest.xml b/current/androidx/m2repository/androidx/fragment/fragment-ktx/1.7.0-beta01/manifest/AndroidManifest.xml
+index 4cf4645..c3ad513 100644
+--- a/current/androidx/m2repository/androidx/fragment/fragment-ktx/1.7.0-beta01/manifest/AndroidManifest.xml
++++ b/current/androidx/m2repository/androidx/fragment/fragment-ktx/1.7.0-beta01/manifest/AndroidManifest.xml
+@@ -2,6 +2,6 @@
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     package="androidx.fragment.ktx" >
+ 
+-    <uses-sdk android:minSdkVersion="19" />
++    <uses-sdk android:minSdkVersion="21" />
+ 
+ </manifest>
+\ No newline at end of file
+diff --git a/current/androidx/m2repository/androidx/fragment/fragment-testing-manifest/1.7.0-beta01/manifest/AndroidManifest.xml b/current/androidx/m2repository/androidx/fragment/fragment-testing-manifest/1.7.0-beta01/manifest/AndroidManifest.xml
+index 7c5e900..958decf 100644
+--- a/current/androidx/m2repository/androidx/fragment/fragment-testing-manifest/1.7.0-beta01/manifest/AndroidManifest.xml
++++ b/current/androidx/m2repository/androidx/fragment/fragment-testing-manifest/1.7.0-beta01/manifest/AndroidManifest.xml
+@@ -18,7 +18,7 @@
+     xmlns:tools="http://schemas.android.com/tools"
+     package="androidx.fragment.testing.manifest" >
+ 
+-    <uses-sdk android:minSdkVersion="19" />
++    <uses-sdk android:minSdkVersion="21" />
+ 
+     <uses-permission android:name="android.permission.REORDER_TASKS" />
+ 
+diff --git a/current/androidx/m2repository/androidx/fragment/fragment-testing/1.7.0-beta01/manifest/AndroidManifest.xml b/current/androidx/m2repository/androidx/fragment/fragment-testing/1.7.0-beta01/manifest/AndroidManifest.xml
+index e04a8d7..3d1e157 100644
+--- a/current/androidx/m2repository/androidx/fragment/fragment-testing/1.7.0-beta01/manifest/AndroidManifest.xml
++++ b/current/androidx/m2repository/androidx/fragment/fragment-testing/1.7.0-beta01/manifest/AndroidManifest.xml
+@@ -18,7 +18,7 @@
+     xmlns:tools="http://schemas.android.com/tools"
+     package="androidx.fragment.testing" > <!-- TODO: Remove this override after androidx.test:core lowers the level -->
+     <uses-sdk
+-        android:minSdkVersion="19"
++        android:minSdkVersion="21"
+         tools:overrideLibrary="androidx.test.core" />
+ 
+     <application>
+diff --git a/current/androidx/m2repository/androidx/fragment/fragment/1.7.0-beta01/manifest/AndroidManifest.xml b/current/androidx/m2repository/androidx/fragment/fragment/1.7.0-beta01/manifest/AndroidManifest.xml
+index 2ae26ab..c91d2be 100644
+--- a/current/androidx/m2repository/androidx/fragment/fragment/1.7.0-beta01/manifest/AndroidManifest.xml
++++ b/current/androidx/m2repository/androidx/fragment/fragment/1.7.0-beta01/manifest/AndroidManifest.xml
+@@ -2,6 +2,6 @@
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     package="androidx.fragment" >
+ 
+-    <uses-sdk android:minSdkVersion="19" />
++    <uses-sdk android:minSdkVersion="21" />
+ 
+ </manifest>
+\ No newline at end of file
+diff --git a/current/androidx/m2repository/androidx/gridlayout/gridlayout/1.1.0-alpha02/manifest/AndroidManifest.xml b/current/androidx/m2repository/androidx/gridlayout/gridlayout/1.1.0-alpha02/manifest/AndroidManifest.xml
+index c658a0f..0285eff 100644
+--- a/current/androidx/m2repository/androidx/gridlayout/gridlayout/1.1.0-alpha02/manifest/AndroidManifest.xml
++++ b/current/androidx/m2repository/androidx/gridlayout/gridlayout/1.1.0-alpha02/manifest/AndroidManifest.xml
+@@ -17,6 +17,6 @@
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     package="androidx.gridlayout" >
+ 
+-    <uses-sdk android:minSdkVersion="19" />
++    <uses-sdk android:minSdkVersion="21" />
+ 
+ </manifest>
+\ No newline at end of file
+diff --git a/current/androidx/m2repository/androidx/hilt/hilt-navigation/1.1.0-beta01/manifest/AndroidManifest.xml b/current/androidx/m2repository/androidx/hilt/hilt-navigation/1.1.0-beta01/manifest/AndroidManifest.xml
+index 6a3a6ff..80aa9f9 100644
+--- a/current/androidx/m2repository/androidx/hilt/hilt-navigation/1.1.0-beta01/manifest/AndroidManifest.xml
++++ b/current/androidx/m2repository/androidx/hilt/hilt-navigation/1.1.0-beta01/manifest/AndroidManifest.xml
+@@ -2,6 +2,6 @@
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     package="androidx.hilt.navigation" >
+ 
+-    <uses-sdk android:minSdkVersion="19" />
++    <uses-sdk android:minSdkVersion="21" />
+ 
+ </manifest>
+\ No newline at end of file
+diff --git a/current/androidx/m2repository/androidx/interpolator/interpolator/1.1.0-alpha01/manifest/AndroidManifest.xml b/current/androidx/m2repository/androidx/interpolator/interpolator/1.1.0-alpha01/manifest/AndroidManifest.xml
+index 34ce40f..7d5b892 100644
+--- a/current/androidx/m2repository/androidx/interpolator/interpolator/1.1.0-alpha01/manifest/AndroidManifest.xml
++++ b/current/androidx/m2repository/androidx/interpolator/interpolator/1.1.0-alpha01/manifest/AndroidManifest.xml
+@@ -17,6 +17,6 @@
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     package="androidx.interpolator" >
+ 
+-    <uses-sdk android:minSdkVersion="19" />
++    <uses-sdk android:minSdkVersion="21" />
+ 
+ </manifest>
+\ No newline at end of file
+diff --git a/current/androidx/m2repository/androidx/leanback/leanback-grid/1.0.0-alpha02/manifest/AndroidManifest.xml b/current/androidx/m2repository/androidx/leanback/leanback-grid/1.0.0-alpha02/manifest/AndroidManifest.xml
+index 873c2ca..231d0a2 100644
+--- a/current/androidx/m2repository/androidx/leanback/leanback-grid/1.0.0-alpha02/manifest/AndroidManifest.xml
++++ b/current/androidx/m2repository/androidx/leanback/leanback-grid/1.0.0-alpha02/manifest/AndroidManifest.xml
+@@ -17,6 +17,6 @@
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     package="androidx.leanback.widget" >
+ 
+-    <uses-sdk android:minSdkVersion="19" />
++    <uses-sdk android:minSdkVersion="21" />
+ 
+ </manifest>
+\ No newline at end of file
+diff --git a/current/androidx/m2repository/androidx/leanback/leanback/1.2.0-alpha03/manifest/AndroidManifest.xml b/current/androidx/m2repository/androidx/leanback/leanback/1.2.0-alpha03/manifest/AndroidManifest.xml
+index cde0aca..cedc0e9 100644
+--- a/current/androidx/m2repository/androidx/leanback/leanback/1.2.0-alpha03/manifest/AndroidManifest.xml
++++ b/current/androidx/m2repository/androidx/leanback/leanback/1.2.0-alpha03/manifest/AndroidManifest.xml
+@@ -17,6 +17,6 @@
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     package="androidx.leanback" >
+ 
+-    <uses-sdk android:minSdkVersion="19" />
++    <uses-sdk android:minSdkVersion="21" />
+ 
+ </manifest>
+\ No newline at end of file
+diff --git a/current/androidx/m2repository/androidx/lifecycle/lifecycle-livedata-core-ktx/2.8.0-alpha02/manifest/AndroidManifest.xml b/current/androidx/m2repository/androidx/lifecycle/lifecycle-livedata-core-ktx/2.8.0-alpha02/manifest/AndroidManifest.xml
+index 6bcf5e6..3a9d04d 100644
+--- a/current/androidx/m2repository/androidx/lifecycle/lifecycle-livedata-core-ktx/2.8.0-alpha02/manifest/AndroidManifest.xml
++++ b/current/androidx/m2repository/androidx/lifecycle/lifecycle-livedata-core-ktx/2.8.0-alpha02/manifest/AndroidManifest.xml
+@@ -2,6 +2,6 @@
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     package="androidx.lifecycle.livedata.core.ktx" >
+ 
+-    <uses-sdk android:minSdkVersion="19" />
++    <uses-sdk android:minSdkVersion="21" />
+ 
+ </manifest>
+\ No newline at end of file
+diff --git a/current/androidx/m2repository/androidx/lifecycle/lifecycle-livedata-core/2.8.0-alpha02/manifest/AndroidManifest.xml b/current/androidx/m2repository/androidx/lifecycle/lifecycle-livedata-core/2.8.0-alpha02/manifest/AndroidManifest.xml
+index 52b6b10..a851b49 100644
+--- a/current/androidx/m2repository/androidx/lifecycle/lifecycle-livedata-core/2.8.0-alpha02/manifest/AndroidManifest.xml
++++ b/current/androidx/m2repository/androidx/lifecycle/lifecycle-livedata-core/2.8.0-alpha02/manifest/AndroidManifest.xml
+@@ -17,6 +17,6 @@
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     package="androidx.lifecycle.livedata.core" >
+ 
+-    <uses-sdk android:minSdkVersion="19" />
++    <uses-sdk android:minSdkVersion="21" />
+ 
+ </manifest>
+\ No newline at end of file
+diff --git a/current/androidx/m2repository/androidx/lifecycle/lifecycle-livedata-ktx/2.8.0-alpha02/manifest/AndroidManifest.xml b/current/androidx/m2repository/androidx/lifecycle/lifecycle-livedata-ktx/2.8.0-alpha02/manifest/AndroidManifest.xml
+index b020758..36f2c6d 100644
+--- a/current/androidx/m2repository/androidx/lifecycle/lifecycle-livedata-ktx/2.8.0-alpha02/manifest/AndroidManifest.xml
++++ b/current/androidx/m2repository/androidx/lifecycle/lifecycle-livedata-ktx/2.8.0-alpha02/manifest/AndroidManifest.xml
+@@ -2,6 +2,6 @@
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     package="androidx.lifecycle.livedata.ktx" >
+ 
+-    <uses-sdk android:minSdkVersion="19" />
++    <uses-sdk android:minSdkVersion="21" />
+ 
+ </manifest>
+\ No newline at end of file
+diff --git a/current/androidx/m2repository/androidx/lifecycle/lifecycle-livedata/2.8.0-alpha02/manifest/AndroidManifest.xml b/current/androidx/m2repository/androidx/lifecycle/lifecycle-livedata/2.8.0-alpha02/manifest/AndroidManifest.xml
+index d2cce8e..aa4b681 100644
+--- a/current/androidx/m2repository/androidx/lifecycle/lifecycle-livedata/2.8.0-alpha02/manifest/AndroidManifest.xml
++++ b/current/androidx/m2repository/androidx/lifecycle/lifecycle-livedata/2.8.0-alpha02/manifest/AndroidManifest.xml
+@@ -17,6 +17,6 @@
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     package="androidx.lifecycle.livedata" >
+ 
+-    <uses-sdk android:minSdkVersion="19" />
++    <uses-sdk android:minSdkVersion="21" />
+ 
+ </manifest>
+\ No newline at end of file
+diff --git a/current/androidx/m2repository/androidx/lifecycle/lifecycle-process/2.8.0-alpha02/manifest/AndroidManifest.xml b/current/androidx/m2repository/androidx/lifecycle/lifecycle-process/2.8.0-alpha02/manifest/AndroidManifest.xml
+index c8101c7..cae0f2d 100644
+--- a/current/androidx/m2repository/androidx/lifecycle/lifecycle-process/2.8.0-alpha02/manifest/AndroidManifest.xml
++++ b/current/androidx/m2repository/androidx/lifecycle/lifecycle-process/2.8.0-alpha02/manifest/AndroidManifest.xml
+@@ -18,7 +18,7 @@
+     xmlns:tools="http://schemas.android.com/tools"
+     package="androidx.lifecycle.process" >
+ 
+-    <uses-sdk android:minSdkVersion="19" />
++    <uses-sdk android:minSdkVersion="21" />
+ 
+     <application>
+         <provider
+diff --git a/current/androidx/m2repository/androidx/lifecycle/lifecycle-runtime-android/2.8.0-alpha02/manifest/AndroidManifest.xml b/current/androidx/m2repository/androidx/lifecycle/lifecycle-runtime-android/2.8.0-alpha02/manifest/AndroidManifest.xml
+index 7f48070..d20c6c5 100644
+--- a/current/androidx/m2repository/androidx/lifecycle/lifecycle-runtime-android/2.8.0-alpha02/manifest/AndroidManifest.xml
++++ b/current/androidx/m2repository/androidx/lifecycle/lifecycle-runtime-android/2.8.0-alpha02/manifest/AndroidManifest.xml
+@@ -17,6 +17,6 @@
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     package="androidx.lifecycle.runtime" >
+ 
+-    <uses-sdk android:minSdkVersion="19" />
++    <uses-sdk android:minSdkVersion="21" />
+ 
+ </manifest>
+\ No newline at end of file
+diff --git a/current/androidx/m2repository/androidx/lifecycle/lifecycle-runtime-ktx-android/2.8.0-alpha02/manifest/AndroidManifest.xml b/current/androidx/m2repository/androidx/lifecycle/lifecycle-runtime-ktx-android/2.8.0-alpha02/manifest/AndroidManifest.xml
+index 2836c95..1a38b98 100644
+--- a/current/androidx/m2repository/androidx/lifecycle/lifecycle-runtime-ktx-android/2.8.0-alpha02/manifest/AndroidManifest.xml
++++ b/current/androidx/m2repository/androidx/lifecycle/lifecycle-runtime-ktx-android/2.8.0-alpha02/manifest/AndroidManifest.xml
+@@ -2,6 +2,6 @@
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     package="androidx.lifecycle.ktx" >
+ 
+-    <uses-sdk android:minSdkVersion="19" />
++    <uses-sdk android:minSdkVersion="21" />
+ 
+ </manifest>
+\ No newline at end of file
+diff --git a/current/androidx/m2repository/androidx/lifecycle/lifecycle-runtime-testing/2.8.0-alpha02/manifest/AndroidManifest.xml b/current/androidx/m2repository/androidx/lifecycle/lifecycle-runtime-testing/2.8.0-alpha02/manifest/AndroidManifest.xml
+index d60ce76..1f2f8e2 100644
+--- a/current/androidx/m2repository/androidx/lifecycle/lifecycle-runtime-testing/2.8.0-alpha02/manifest/AndroidManifest.xml
++++ b/current/androidx/m2repository/androidx/lifecycle/lifecycle-runtime-testing/2.8.0-alpha02/manifest/AndroidManifest.xml
+@@ -17,6 +17,6 @@
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     package="androidx.lifecycle.testing" >
+ 
+-    <uses-sdk android:minSdkVersion="19" />
++    <uses-sdk android:minSdkVersion="21" />
+ 
+ </manifest>
+\ No newline at end of file
+diff --git a/current/androidx/m2repository/androidx/lifecycle/lifecycle-service/2.8.0-alpha02/manifest/AndroidManifest.xml b/current/androidx/m2repository/androidx/lifecycle/lifecycle-service/2.8.0-alpha02/manifest/AndroidManifest.xml
+index 764fbc4..b063c2e 100644
+--- a/current/androidx/m2repository/androidx/lifecycle/lifecycle-service/2.8.0-alpha02/manifest/AndroidManifest.xml
++++ b/current/androidx/m2repository/androidx/lifecycle/lifecycle-service/2.8.0-alpha02/manifest/AndroidManifest.xml
+@@ -2,6 +2,6 @@
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     package="androidx.lifecycle.service" >
+ 
+-    <uses-sdk android:minSdkVersion="19" />
++    <uses-sdk android:minSdkVersion="21" />
+ 
+ </manifest>
+\ No newline at end of file
+diff --git a/current/androidx/m2repository/androidx/lifecycle/lifecycle-viewmodel-android/2.8.0-alpha02/manifest/AndroidManifest.xml b/current/androidx/m2repository/androidx/lifecycle/lifecycle-viewmodel-android/2.8.0-alpha02/manifest/AndroidManifest.xml
+index 3f52477..3fe60c3 100644
+--- a/current/androidx/m2repository/androidx/lifecycle/lifecycle-viewmodel-android/2.8.0-alpha02/manifest/AndroidManifest.xml
++++ b/current/androidx/m2repository/androidx/lifecycle/lifecycle-viewmodel-android/2.8.0-alpha02/manifest/AndroidManifest.xml
+@@ -17,6 +17,6 @@
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     package="androidx.lifecycle.viewmodel" >
+ 
+-    <uses-sdk android:minSdkVersion="19" />
++    <uses-sdk android:minSdkVersion="21" />
+ 
+ </manifest>
+\ No newline at end of file
+diff --git a/current/androidx/m2repository/androidx/lifecycle/lifecycle-viewmodel-ktx/2.8.0-alpha02/manifest/AndroidManifest.xml b/current/androidx/m2repository/androidx/lifecycle/lifecycle-viewmodel-ktx/2.8.0-alpha02/manifest/AndroidManifest.xml
+index b40a5cc..cce724e 100644
+--- a/current/androidx/m2repository/androidx/lifecycle/lifecycle-viewmodel-ktx/2.8.0-alpha02/manifest/AndroidManifest.xml
++++ b/current/androidx/m2repository/androidx/lifecycle/lifecycle-viewmodel-ktx/2.8.0-alpha02/manifest/AndroidManifest.xml
+@@ -2,6 +2,6 @@
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     package="androidx.lifecycle.viewmodel.ktx" >
+ 
+-    <uses-sdk android:minSdkVersion="19" />
++    <uses-sdk android:minSdkVersion="21" />
+ 
+ </manifest>
+\ No newline at end of file
+diff --git a/current/androidx/m2repository/androidx/lifecycle/lifecycle-viewmodel-savedstate/2.8.0-alpha02/manifest/AndroidManifest.xml b/current/androidx/m2repository/androidx/lifecycle/lifecycle-viewmodel-savedstate/2.8.0-alpha02/manifest/AndroidManifest.xml
+index 891815d..43fdb73 100644
+--- a/current/androidx/m2repository/androidx/lifecycle/lifecycle-viewmodel-savedstate/2.8.0-alpha02/manifest/AndroidManifest.xml
++++ b/current/androidx/m2repository/androidx/lifecycle/lifecycle-viewmodel-savedstate/2.8.0-alpha02/manifest/AndroidManifest.xml
+@@ -17,6 +17,6 @@
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     package="androidx.lifecycle.viewmodel.savedstate" >
+ 
+-    <uses-sdk android:minSdkVersion="19" />
++    <uses-sdk android:minSdkVersion="21" />
+ 
+ </manifest>
+\ No newline at end of file
+diff --git a/current/androidx/m2repository/androidx/loader/loader/1.2.0-alpha01/manifest/AndroidManifest.xml b/current/androidx/m2repository/androidx/loader/loader/1.2.0-alpha01/manifest/AndroidManifest.xml
+index 204e408..634c778 100644
+--- a/current/androidx/m2repository/androidx/loader/loader/1.2.0-alpha01/manifest/AndroidManifest.xml
++++ b/current/androidx/m2repository/androidx/loader/loader/1.2.0-alpha01/manifest/AndroidManifest.xml
+@@ -17,6 +17,6 @@
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     package="androidx.loader" >
+ 
+-    <uses-sdk android:minSdkVersion="19" />
++    <uses-sdk android:minSdkVersion="21" />
+ 
+ </manifest>
+\ No newline at end of file
+diff --git a/current/androidx/m2repository/androidx/media/media/1.7.0-alpha02/manifest/AndroidManifest.xml b/current/androidx/m2repository/androidx/media/media/1.7.0-alpha02/manifest/AndroidManifest.xml
+index 8c69070..825ff3a 100644
+--- a/current/androidx/m2repository/androidx/media/media/1.7.0-alpha02/manifest/AndroidManifest.xml
++++ b/current/androidx/m2repository/androidx/media/media/1.7.0-alpha02/manifest/AndroidManifest.xml
+@@ -2,6 +2,6 @@
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     package="androidx.media" >
+ 
+-    <uses-sdk android:minSdkVersion="19" />
++    <uses-sdk android:minSdkVersion="21" />
+ 
+ </manifest>
+\ No newline at end of file
+diff --git a/current/androidx/m2repository/androidx/media2/media2-common/1.3.0-alpha01/manifest/AndroidManifest.xml b/current/androidx/m2repository/androidx/media2/media2-common/1.3.0-alpha01/manifest/AndroidManifest.xml
+index 75838b7..f2ac917 100644
+--- a/current/androidx/m2repository/androidx/media2/media2-common/1.3.0-alpha01/manifest/AndroidManifest.xml
++++ b/current/androidx/m2repository/androidx/media2/media2-common/1.3.0-alpha01/manifest/AndroidManifest.xml
+@@ -2,6 +2,6 @@
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     package="androidx.media2.common" >
+ 
+-    <uses-sdk android:minSdkVersion="19" />
++    <uses-sdk android:minSdkVersion="21" />
+ 
+ </manifest>
+\ No newline at end of file
+diff --git a/current/androidx/m2repository/androidx/media2/media2-exoplayer/1.3.0-alpha01/manifest/AndroidManifest.xml b/current/androidx/m2repository/androidx/media2/media2-exoplayer/1.3.0-alpha01/manifest/AndroidManifest.xml
+index 93f0a50..00a0b63 100644
+--- a/current/androidx/m2repository/androidx/media2/media2-exoplayer/1.3.0-alpha01/manifest/AndroidManifest.xml
++++ b/current/androidx/m2repository/androidx/media2/media2-exoplayer/1.3.0-alpha01/manifest/AndroidManifest.xml
+@@ -2,6 +2,6 @@
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     package="androidx.media2.exoplayer.external" >
+ 
+-    <uses-sdk android:minSdkVersion="19" />
++    <uses-sdk android:minSdkVersion="21" />
+ 
+ </manifest>
+\ No newline at end of file
+diff --git a/current/androidx/m2repository/androidx/media2/media2-player/1.3.0-alpha01/manifest/AndroidManifest.xml b/current/androidx/m2repository/androidx/media2/media2-player/1.3.0-alpha01/manifest/AndroidManifest.xml
+index e51394e..b681dc3 100644
+--- a/current/androidx/m2repository/androidx/media2/media2-player/1.3.0-alpha01/manifest/AndroidManifest.xml
++++ b/current/androidx/m2repository/androidx/media2/media2-player/1.3.0-alpha01/manifest/AndroidManifest.xml
+@@ -2,6 +2,6 @@
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     package="androidx.media2.player" >
+ 
+-    <uses-sdk android:minSdkVersion="19" />
++    <uses-sdk android:minSdkVersion="21" />
+ 
+ </manifest>
+\ No newline at end of file
+diff --git a/current/androidx/m2repository/androidx/media2/media2-session/1.3.0-alpha01/manifest/AndroidManifest.xml b/current/androidx/m2repository/androidx/media2/media2-session/1.3.0-alpha01/manifest/AndroidManifest.xml
+index 68faaa4..597d45d 100644
+--- a/current/androidx/m2repository/androidx/media2/media2-session/1.3.0-alpha01/manifest/AndroidManifest.xml
++++ b/current/androidx/m2repository/androidx/media2/media2-session/1.3.0-alpha01/manifest/AndroidManifest.xml
+@@ -2,6 +2,6 @@
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     package="androidx.media2.session" >
+ 
+-    <uses-sdk android:minSdkVersion="19" />
++    <uses-sdk android:minSdkVersion="21" />
+ 
+ </manifest>
+\ No newline at end of file
+diff --git a/current/androidx/m2repository/androidx/media2/media2-widget/1.3.0-alpha01/manifest/AndroidManifest.xml b/current/androidx/m2repository/androidx/media2/media2-widget/1.3.0-alpha01/manifest/AndroidManifest.xml
+index 6391861..ade81d5 100644
+--- a/current/androidx/m2repository/androidx/media2/media2-widget/1.3.0-alpha01/manifest/AndroidManifest.xml
++++ b/current/androidx/m2repository/androidx/media2/media2-widget/1.3.0-alpha01/manifest/AndroidManifest.xml
+@@ -2,6 +2,6 @@
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     package="androidx.media2.widget" >
+ 
+-    <uses-sdk android:minSdkVersion="19" />
++    <uses-sdk android:minSdkVersion="21" />
+ 
+ </manifest>
+\ No newline at end of file
+diff --git a/current/androidx/m2repository/androidx/mediarouter/mediarouter/1.5.0-alpha01/manifest/AndroidManifest.xml b/current/androidx/m2repository/androidx/mediarouter/mediarouter/1.5.0-alpha01/manifest/AndroidManifest.xml
+index 03cef1a..1533d22 100644
+--- a/current/androidx/m2repository/androidx/mediarouter/mediarouter/1.5.0-alpha01/manifest/AndroidManifest.xml
++++ b/current/androidx/m2repository/androidx/mediarouter/mediarouter/1.5.0-alpha01/manifest/AndroidManifest.xml
+@@ -2,6 +2,6 @@
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     package="androidx.mediarouter" >
+ 
+-    <uses-sdk android:minSdkVersion="19" />
++    <uses-sdk android:minSdkVersion="21" />
+ 
+ </manifest>
+\ No newline at end of file
+diff --git a/current/androidx/m2repository/androidx/navigation/navigation-common-ktx/2.8.0-alpha03/manifest/AndroidManifest.xml b/current/androidx/m2repository/androidx/navigation/navigation-common-ktx/2.8.0-alpha03/manifest/AndroidManifest.xml
+index 94312ba..e661540 100644
+--- a/current/androidx/m2repository/androidx/navigation/navigation-common-ktx/2.8.0-alpha03/manifest/AndroidManifest.xml
++++ b/current/androidx/m2repository/androidx/navigation/navigation-common-ktx/2.8.0-alpha03/manifest/AndroidManifest.xml
+@@ -2,6 +2,6 @@
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     package="androidx.navigation.common.ktx" >
+ 
+-    <uses-sdk android:minSdkVersion="19" />
++    <uses-sdk android:minSdkVersion="21" />
+ 
+ </manifest>
+\ No newline at end of file
+diff --git a/current/androidx/m2repository/androidx/navigation/navigation-common/2.8.0-alpha03/manifest/AndroidManifest.xml b/current/androidx/m2repository/androidx/navigation/navigation-common/2.8.0-alpha03/manifest/AndroidManifest.xml
+index 6ea05d5..4dd33b6 100644
+--- a/current/androidx/m2repository/androidx/navigation/navigation-common/2.8.0-alpha03/manifest/AndroidManifest.xml
++++ b/current/androidx/m2repository/androidx/navigation/navigation-common/2.8.0-alpha03/manifest/AndroidManifest.xml
+@@ -17,6 +17,6 @@
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     package="androidx.navigation.common" >
+ 
+-    <uses-sdk android:minSdkVersion="19" />
++    <uses-sdk android:minSdkVersion="21" />
+ 
+ </manifest>
+\ No newline at end of file
+diff --git a/current/androidx/m2repository/androidx/navigation/navigation-fragment-ktx/2.8.0-alpha03/manifest/AndroidManifest.xml b/current/androidx/m2repository/androidx/navigation/navigation-fragment-ktx/2.8.0-alpha03/manifest/AndroidManifest.xml
+index 6780e95..bec5c29 100644
+--- a/current/androidx/m2repository/androidx/navigation/navigation-fragment-ktx/2.8.0-alpha03/manifest/AndroidManifest.xml
++++ b/current/androidx/m2repository/androidx/navigation/navigation-fragment-ktx/2.8.0-alpha03/manifest/AndroidManifest.xml
+@@ -2,6 +2,6 @@
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     package="androidx.navigation.fragment.ktx" >
+ 
+-    <uses-sdk android:minSdkVersion="19" />
++    <uses-sdk android:minSdkVersion="21" />
+ 
+ </manifest>
+\ No newline at end of file
+diff --git a/current/androidx/m2repository/androidx/navigation/navigation-fragment/2.8.0-alpha03/manifest/AndroidManifest.xml b/current/androidx/m2repository/androidx/navigation/navigation-fragment/2.8.0-alpha03/manifest/AndroidManifest.xml
+index 80215c4..6ad963b 100644
+--- a/current/androidx/m2repository/androidx/navigation/navigation-fragment/2.8.0-alpha03/manifest/AndroidManifest.xml
++++ b/current/androidx/m2repository/androidx/navigation/navigation-fragment/2.8.0-alpha03/manifest/AndroidManifest.xml
+@@ -17,6 +17,6 @@
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     package="androidx.navigation.fragment" >
+ 
+-    <uses-sdk android:minSdkVersion="19" />
++    <uses-sdk android:minSdkVersion="21" />
+ 
+ </manifest>
+\ No newline at end of file
+diff --git a/current/androidx/m2repository/androidx/navigation/navigation-runtime-ktx/2.8.0-alpha03/manifest/AndroidManifest.xml b/current/androidx/m2repository/androidx/navigation/navigation-runtime-ktx/2.8.0-alpha03/manifest/AndroidManifest.xml
+index 4e29f20..355abeb 100644
+--- a/current/androidx/m2repository/androidx/navigation/navigation-runtime-ktx/2.8.0-alpha03/manifest/AndroidManifest.xml
++++ b/current/androidx/m2repository/androidx/navigation/navigation-runtime-ktx/2.8.0-alpha03/manifest/AndroidManifest.xml
+@@ -2,6 +2,6 @@
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     package="androidx.navigation.ktx" >
+ 
+-    <uses-sdk android:minSdkVersion="19" />
++    <uses-sdk android:minSdkVersion="21" />
+ 
+ </manifest>
+\ No newline at end of file
+diff --git a/current/androidx/m2repository/androidx/navigation/navigation-runtime/2.8.0-alpha03/manifest/AndroidManifest.xml b/current/androidx/m2repository/androidx/navigation/navigation-runtime/2.8.0-alpha03/manifest/AndroidManifest.xml
+index 6247afd..d7401f7 100644
+--- a/current/androidx/m2repository/androidx/navigation/navigation-runtime/2.8.0-alpha03/manifest/AndroidManifest.xml
++++ b/current/androidx/m2repository/androidx/navigation/navigation-runtime/2.8.0-alpha03/manifest/AndroidManifest.xml
+@@ -17,6 +17,6 @@
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     package="androidx.navigation" >
+ 
+-    <uses-sdk android:minSdkVersion="19" />
++    <uses-sdk android:minSdkVersion="21" />
+ 
+ </manifest>
+\ No newline at end of file
+diff --git a/current/androidx/m2repository/androidx/navigation/navigation-testing/2.8.0-alpha03/manifest/AndroidManifest.xml b/current/androidx/m2repository/androidx/navigation/navigation-testing/2.8.0-alpha03/manifest/AndroidManifest.xml
+index 01498ec..4a7eb8d 100644
+--- a/current/androidx/m2repository/androidx/navigation/navigation-testing/2.8.0-alpha03/manifest/AndroidManifest.xml
++++ b/current/androidx/m2repository/androidx/navigation/navigation-testing/2.8.0-alpha03/manifest/AndroidManifest.xml
+@@ -17,6 +17,6 @@
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     package="androidx.navigation.testing" >
+ 
+-    <uses-sdk android:minSdkVersion="19" />
++    <uses-sdk android:minSdkVersion="21" />
+ 
+ </manifest>
+\ No newline at end of file
+diff --git a/current/androidx/m2repository/androidx/navigation/navigation-ui-ktx/2.8.0-alpha03/manifest/AndroidManifest.xml b/current/androidx/m2repository/androidx/navigation/navigation-ui-ktx/2.8.0-alpha03/manifest/AndroidManifest.xml
+index df7bbc1..3438af9 100644
+--- a/current/androidx/m2repository/androidx/navigation/navigation-ui-ktx/2.8.0-alpha03/manifest/AndroidManifest.xml
++++ b/current/androidx/m2repository/androidx/navigation/navigation-ui-ktx/2.8.0-alpha03/manifest/AndroidManifest.xml
+@@ -2,6 +2,6 @@
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     package="androidx.navigation.ui.ktx" >
+ 
+-    <uses-sdk android:minSdkVersion="19" />
++    <uses-sdk android:minSdkVersion="21" />
+ 
+ </manifest>
+\ No newline at end of file
+diff --git a/current/androidx/m2repository/androidx/navigation/navigation-ui/2.8.0-alpha03/manifest/AndroidManifest.xml b/current/androidx/m2repository/androidx/navigation/navigation-ui/2.8.0-alpha03/manifest/AndroidManifest.xml
+index 0af8379..5c7dd2f 100644
+--- a/current/androidx/m2repository/androidx/navigation/navigation-ui/2.8.0-alpha03/manifest/AndroidManifest.xml
++++ b/current/androidx/m2repository/androidx/navigation/navigation-ui/2.8.0-alpha03/manifest/AndroidManifest.xml
+@@ -17,6 +17,6 @@
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     package="androidx.navigation.ui" >
+ 
+-    <uses-sdk android:minSdkVersion="19" />
++    <uses-sdk android:minSdkVersion="21" />
+ 
+ </manifest>
+\ No newline at end of file
+diff --git a/current/androidx/m2repository/androidx/paging/paging-common-android/3.3.0-alpha03/manifest/AndroidManifest.xml b/current/androidx/m2repository/androidx/paging/paging-common-android/3.3.0-alpha03/manifest/AndroidManifest.xml
+index bdc42b2..853938a 100644
+--- a/current/androidx/m2repository/androidx/paging/paging-common-android/3.3.0-alpha03/manifest/AndroidManifest.xml
++++ b/current/androidx/m2repository/androidx/paging/paging-common-android/3.3.0-alpha03/manifest/AndroidManifest.xml
+@@ -2,6 +2,6 @@
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     package="androidx.paging.common" >
+ 
+-    <uses-sdk android:minSdkVersion="19" />
++    <uses-sdk android:minSdkVersion="21" />
+ 
+ </manifest>
+\ No newline at end of file
+diff --git a/current/androidx/m2repository/androidx/paging/paging-guava/3.3.0-alpha03/manifest/AndroidManifest.xml b/current/androidx/m2repository/androidx/paging/paging-guava/3.3.0-alpha03/manifest/AndroidManifest.xml
+index a7091fb..b3979b5 100644
+--- a/current/androidx/m2repository/androidx/paging/paging-guava/3.3.0-alpha03/manifest/AndroidManifest.xml
++++ b/current/androidx/m2repository/androidx/paging/paging-guava/3.3.0-alpha03/manifest/AndroidManifest.xml
+@@ -17,6 +17,6 @@
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     package="androidx.paging.guava" >
+ 
+-    <uses-sdk android:minSdkVersion="19" />
++    <uses-sdk android:minSdkVersion="21" />
+ 
+ </manifest>
+\ No newline at end of file
+diff --git a/current/androidx/m2repository/androidx/paging/paging-runtime/3.3.0-alpha03/manifest/AndroidManifest.xml b/current/androidx/m2repository/androidx/paging/paging-runtime/3.3.0-alpha03/manifest/AndroidManifest.xml
+index c163b6a..749a136 100644
+--- a/current/androidx/m2repository/androidx/paging/paging-runtime/3.3.0-alpha03/manifest/AndroidManifest.xml
++++ b/current/androidx/m2repository/androidx/paging/paging-runtime/3.3.0-alpha03/manifest/AndroidManifest.xml
+@@ -2,6 +2,6 @@
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     package="androidx.paging.runtime" >
+ 
+-    <uses-sdk android:minSdkVersion="19" />
++    <uses-sdk android:minSdkVersion="21" />
+ 
+ </manifest>
+\ No newline at end of file
+diff --git a/current/androidx/m2repository/androidx/palette/palette/1.1.0-alpha01/manifest/AndroidManifest.xml b/current/androidx/m2repository/androidx/palette/palette/1.1.0-alpha01/manifest/AndroidManifest.xml
+index 8a70603..54318ec 100644
+--- a/current/androidx/m2repository/androidx/palette/palette/1.1.0-alpha01/manifest/AndroidManifest.xml
++++ b/current/androidx/m2repository/androidx/palette/palette/1.1.0-alpha01/manifest/AndroidManifest.xml
+@@ -2,6 +2,6 @@
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     package="androidx.palette" >
+ 
+-    <uses-sdk android:minSdkVersion="19" />
++    <uses-sdk android:minSdkVersion="21" />
+ 
+ </manifest>
+\ No newline at end of file
+diff --git a/current/androidx/m2repository/androidx/percentlayout/percentlayout/1.1.0-alpha01/manifest/AndroidManifest.xml b/current/androidx/m2repository/androidx/percentlayout/percentlayout/1.1.0-alpha01/manifest/AndroidManifest.xml
+index 74c6f47..b9b8121 100644
+--- a/current/androidx/m2repository/androidx/percentlayout/percentlayout/1.1.0-alpha01/manifest/AndroidManifest.xml
++++ b/current/androidx/m2repository/androidx/percentlayout/percentlayout/1.1.0-alpha01/manifest/AndroidManifest.xml
+@@ -2,6 +2,6 @@
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     package="androidx.percentlayout" >
+ 
+-    <uses-sdk android:minSdkVersion="19" />
++    <uses-sdk android:minSdkVersion="21" />
+ 
+ </manifest>
+\ No newline at end of file
+diff --git a/current/androidx/m2repository/androidx/preference/preference/1.3.0-alpha01/manifest/AndroidManifest.xml b/current/androidx/m2repository/androidx/preference/preference/1.3.0-alpha01/manifest/AndroidManifest.xml
+index 74b449a..1cda3ac 100644
+--- a/current/androidx/m2repository/androidx/preference/preference/1.3.0-alpha01/manifest/AndroidManifest.xml
++++ b/current/androidx/m2repository/androidx/preference/preference/1.3.0-alpha01/manifest/AndroidManifest.xml
+@@ -2,6 +2,6 @@
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     package="androidx.preference" >
+ 
+-    <uses-sdk android:minSdkVersion="19" />
++    <uses-sdk android:minSdkVersion="21" />
+ 
+ </manifest>
+\ No newline at end of file
+diff --git a/current/androidx/m2repository/androidx/print/print/1.1.0-beta01/manifest/AndroidManifest.xml b/current/androidx/m2repository/androidx/print/print/1.1.0-beta01/manifest/AndroidManifest.xml
+index 1b490c0..21b7db8 100644
+--- a/current/androidx/m2repository/androidx/print/print/1.1.0-beta01/manifest/AndroidManifest.xml
++++ b/current/androidx/m2repository/androidx/print/print/1.1.0-beta01/manifest/AndroidManifest.xml
+@@ -2,6 +2,6 @@
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     package="androidx.print" >
+ 
+-    <uses-sdk android:minSdkVersion="19" />
++    <uses-sdk android:minSdkVersion="21" />
+ 
+ </manifest>
+\ No newline at end of file
+diff --git a/current/androidx/m2repository/androidx/privacysandbox/ads/ads-adservices-java/1.1.0-beta04/manifest/AndroidManifest.xml b/current/androidx/m2repository/androidx/privacysandbox/ads/ads-adservices-java/1.1.0-beta04/manifest/AndroidManifest.xml
+index 0aaee8d..2e82cac 100644
+--- a/current/androidx/m2repository/androidx/privacysandbox/ads/ads-adservices-java/1.1.0-beta04/manifest/AndroidManifest.xml
++++ b/current/androidx/m2repository/androidx/privacysandbox/ads/ads-adservices-java/1.1.0-beta04/manifest/AndroidManifest.xml
+@@ -2,6 +2,6 @@
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     package="androidx.privacysandbox.ads.adservices.java" >
+ 
+-    <uses-sdk android:minSdkVersion="19" />
++    <uses-sdk android:minSdkVersion="21" />
+ 
+ </manifest>
+\ No newline at end of file
+diff --git a/current/androidx/m2repository/androidx/privacysandbox/ads/ads-adservices/1.1.0-beta04/manifest/AndroidManifest.xml b/current/androidx/m2repository/androidx/privacysandbox/ads/ads-adservices/1.1.0-beta04/manifest/AndroidManifest.xml
+index 290d1cc..1e32045 100644
+--- a/current/androidx/m2repository/androidx/privacysandbox/ads/ads-adservices/1.1.0-beta04/manifest/AndroidManifest.xml
++++ b/current/androidx/m2repository/androidx/privacysandbox/ads/ads-adservices/1.1.0-beta04/manifest/AndroidManifest.xml
+@@ -17,7 +17,7 @@
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     package="androidx.privacysandbox.ads.adservices" >
+ 
+-    <uses-sdk android:minSdkVersion="19" />
++    <uses-sdk android:minSdkVersion="21" />
+ 
+     <application>
+         <uses-library
+diff --git a/current/androidx/m2repository/androidx/privacysandbox/sdkruntime/sdkruntime-client/1.0.0-alpha12/manifest/AndroidManifest.xml b/current/androidx/m2repository/androidx/privacysandbox/sdkruntime/sdkruntime-client/1.0.0-alpha12/manifest/AndroidManifest.xml
+index f5992aa..1e0cae6 100644
+--- a/current/androidx/m2repository/androidx/privacysandbox/sdkruntime/sdkruntime-client/1.0.0-alpha12/manifest/AndroidManifest.xml
++++ b/current/androidx/m2repository/androidx/privacysandbox/sdkruntime/sdkruntime-client/1.0.0-alpha12/manifest/AndroidManifest.xml
+@@ -17,7 +17,7 @@
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     package="androidx.privacysandbox.sdkruntime.client" >
+ 
+-    <uses-sdk android:minSdkVersion="19" />
++    <uses-sdk android:minSdkVersion="21" />
+ 
+     <application>
+         <activity
+diff --git a/current/androidx/m2repository/androidx/privacysandbox/sdkruntime/sdkruntime-core/1.0.0-alpha12/manifest/AndroidManifest.xml b/current/androidx/m2repository/androidx/privacysandbox/sdkruntime/sdkruntime-core/1.0.0-alpha12/manifest/AndroidManifest.xml
+index dbe123e..33c18ac 100644
+--- a/current/androidx/m2repository/androidx/privacysandbox/sdkruntime/sdkruntime-core/1.0.0-alpha12/manifest/AndroidManifest.xml
++++ b/current/androidx/m2repository/androidx/privacysandbox/sdkruntime/sdkruntime-core/1.0.0-alpha12/manifest/AndroidManifest.xml
+@@ -2,6 +2,6 @@
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     package="androidx.privacysandbox.sdkruntime.core" >
+ 
+-    <uses-sdk android:minSdkVersion="19" />
++    <uses-sdk android:minSdkVersion="21" />
+ 
+ </manifest>
+\ No newline at end of file
+diff --git a/current/androidx/m2repository/androidx/profileinstaller/profileinstaller/1.4.0-alpha01/manifest/AndroidManifest.xml b/current/androidx/m2repository/androidx/profileinstaller/profileinstaller/1.4.0-alpha01/manifest/AndroidManifest.xml
+index 1f36add..967ee5f 100644
+--- a/current/androidx/m2repository/androidx/profileinstaller/profileinstaller/1.4.0-alpha01/manifest/AndroidManifest.xml
++++ b/current/androidx/m2repository/androidx/profileinstaller/profileinstaller/1.4.0-alpha01/manifest/AndroidManifest.xml
+@@ -14,7 +14,7 @@
+   limitations under the License.
+ --><manifest xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools" package="androidx.profileinstaller">
+ 
+-    <uses-sdk android:minSdkVersion="19"/>
++    <uses-sdk android:minSdkVersion="21"/>
+ 
+     <application>
+         <provider android:authorities="${applicationId}.androidx-startup" android:exported="false" android:name="androidx.startup.InitializationProvider" tools:node="merge">
+diff --git a/current/androidx/m2repository/androidx/recyclerview/recyclerview-selection/1.2.0-alpha02/manifest/AndroidManifest.xml b/current/androidx/m2repository/androidx/recyclerview/recyclerview-selection/1.2.0-alpha02/manifest/AndroidManifest.xml
+index 35c0a33..ccf771c 100644
+--- a/current/androidx/m2repository/androidx/recyclerview/recyclerview-selection/1.2.0-alpha02/manifest/AndroidManifest.xml
++++ b/current/androidx/m2repository/androidx/recyclerview/recyclerview-selection/1.2.0-alpha02/manifest/AndroidManifest.xml
+@@ -2,6 +2,6 @@
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     package="androidx.recyclerview.selection" >
+ 
+-    <uses-sdk android:minSdkVersion="19" />
++    <uses-sdk android:minSdkVersion="21" />
+ 
+ </manifest>
+\ No newline at end of file
+diff --git a/current/androidx/m2repository/androidx/recyclerview/recyclerview/1.4.0-alpha01/manifest/AndroidManifest.xml b/current/androidx/m2repository/androidx/recyclerview/recyclerview/1.4.0-alpha01/manifest/AndroidManifest.xml
+index c114466..739e3ad 100644
+--- a/current/androidx/m2repository/androidx/recyclerview/recyclerview/1.4.0-alpha01/manifest/AndroidManifest.xml
++++ b/current/androidx/m2repository/androidx/recyclerview/recyclerview/1.4.0-alpha01/manifest/AndroidManifest.xml
+@@ -2,6 +2,6 @@
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     package="androidx.recyclerview" >
+ 
+-    <uses-sdk android:minSdkVersion="19" />
++    <uses-sdk android:minSdkVersion="21" />
+ 
+ </manifest>
+\ No newline at end of file
+diff --git a/current/androidx/m2repository/androidx/remotecallback/remotecallback/1.0.0-alpha02/manifest/AndroidManifest.xml b/current/androidx/m2repository/androidx/remotecallback/remotecallback/1.0.0-alpha02/manifest/AndroidManifest.xml
+index c83d5d5..d49a10b 100644
+--- a/current/androidx/m2repository/androidx/remotecallback/remotecallback/1.0.0-alpha02/manifest/AndroidManifest.xml
++++ b/current/androidx/m2repository/androidx/remotecallback/remotecallback/1.0.0-alpha02/manifest/AndroidManifest.xml
+@@ -17,7 +17,7 @@
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     package="androidx.remotecallback" >
+ 
+-    <uses-sdk android:minSdkVersion="19" />
++    <uses-sdk android:minSdkVersion="21" />
+ 
+     <application>
+         <receiver android:name="androidx.remotecallback.ProviderRelayReceiver" />
+diff --git a/current/androidx/m2repository/androidx/room/room-guava/2.7.0-alpha01/manifest/AndroidManifest.xml b/current/androidx/m2repository/androidx/room/room-guava/2.7.0-alpha01/manifest/AndroidManifest.xml
+index 1fdf92b..865292c 100644
+--- a/current/androidx/m2repository/androidx/room/room-guava/2.7.0-alpha01/manifest/AndroidManifest.xml
++++ b/current/androidx/m2repository/androidx/room/room-guava/2.7.0-alpha01/manifest/AndroidManifest.xml
+@@ -17,6 +17,6 @@
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     package="androidx.room.guava" >
+ 
+-    <uses-sdk android:minSdkVersion="19" />
++    <uses-sdk android:minSdkVersion="21" />
+ 
+ </manifest>
+\ No newline at end of file
+diff --git a/current/androidx/m2repository/androidx/room/room-ktx/2.7.0-alpha01/manifest/AndroidManifest.xml b/current/androidx/m2repository/androidx/room/room-ktx/2.7.0-alpha01/manifest/AndroidManifest.xml
+index 2755440..2df4e3b 100644
+--- a/current/androidx/m2repository/androidx/room/room-ktx/2.7.0-alpha01/manifest/AndroidManifest.xml
++++ b/current/androidx/m2repository/androidx/room/room-ktx/2.7.0-alpha01/manifest/AndroidManifest.xml
+@@ -17,6 +17,6 @@
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     package="androidx.room.ktx" >
+ 
+-    <uses-sdk android:minSdkVersion="19" />
++    <uses-sdk android:minSdkVersion="21" />
+ 
+ </manifest>
+\ No newline at end of file
+diff --git a/current/androidx/m2repository/androidx/room/room-paging-guava/2.7.0-alpha01/manifest/AndroidManifest.xml b/current/androidx/m2repository/androidx/room/room-paging-guava/2.7.0-alpha01/manifest/AndroidManifest.xml
+index ebc6f49..52692fe 100644
+--- a/current/androidx/m2repository/androidx/room/room-paging-guava/2.7.0-alpha01/manifest/AndroidManifest.xml
++++ b/current/androidx/m2repository/androidx/room/room-paging-guava/2.7.0-alpha01/manifest/AndroidManifest.xml
+@@ -17,6 +17,6 @@
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     package="androidx.room.paging.guava" >
+ 
+-    <uses-sdk android:minSdkVersion="19" />
++    <uses-sdk android:minSdkVersion="21" />
+ 
+ </manifest>
+\ No newline at end of file
+diff --git a/current/androidx/m2repository/androidx/room/room-paging/2.7.0-alpha01/manifest/AndroidManifest.xml b/current/androidx/m2repository/androidx/room/room-paging/2.7.0-alpha01/manifest/AndroidManifest.xml
+index e203a6d..f5a8756 100644
+--- a/current/androidx/m2repository/androidx/room/room-paging/2.7.0-alpha01/manifest/AndroidManifest.xml
++++ b/current/androidx/m2repository/androidx/room/room-paging/2.7.0-alpha01/manifest/AndroidManifest.xml
+@@ -17,6 +17,6 @@
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     package="androidx.room.paging" >
+ 
+-    <uses-sdk android:minSdkVersion="19" />
++    <uses-sdk android:minSdkVersion="21" />
+ 
+ </manifest>
+\ No newline at end of file
+diff --git a/current/androidx/m2repository/androidx/room/room-runtime-android/2.7.0-alpha01/manifest/AndroidManifest.xml b/current/androidx/m2repository/androidx/room/room-runtime-android/2.7.0-alpha01/manifest/AndroidManifest.xml
+index 1913a82..698049c 100644
+--- a/current/androidx/m2repository/androidx/room/room-runtime-android/2.7.0-alpha01/manifest/AndroidManifest.xml
++++ b/current/androidx/m2repository/androidx/room/room-runtime-android/2.7.0-alpha01/manifest/AndroidManifest.xml
+@@ -18,7 +18,7 @@
+     xmlns:tools="http://schemas.android.com/tools"
+     package="androidx.room" >
+ 
+-    <uses-sdk android:minSdkVersion="19" />
++    <uses-sdk android:minSdkVersion="21" />
+ 
+     <application>
+         <service
+diff --git a/current/androidx/m2repository/androidx/room/room-testing/2.7.0-alpha01/manifest/AndroidManifest.xml b/current/androidx/m2repository/androidx/room/room-testing/2.7.0-alpha01/manifest/AndroidManifest.xml
+index 7e773cf..b1428dc 100644
+--- a/current/androidx/m2repository/androidx/room/room-testing/2.7.0-alpha01/manifest/AndroidManifest.xml
++++ b/current/androidx/m2repository/androidx/room/room-testing/2.7.0-alpha01/manifest/AndroidManifest.xml
+@@ -17,6 +17,6 @@
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     package="androidx.room.testing" >
+ 
+-    <uses-sdk android:minSdkVersion="19" />
++    <uses-sdk android:minSdkVersion="21" />
+ 
+ </manifest>
+\ No newline at end of file
+diff --git a/current/androidx/m2repository/androidx/savedstate/savedstate-ktx/1.3.0-alpha01/manifest/AndroidManifest.xml b/current/androidx/m2repository/androidx/savedstate/savedstate-ktx/1.3.0-alpha01/manifest/AndroidManifest.xml
+index ace0bab..e746e14 100644
+--- a/current/androidx/m2repository/androidx/savedstate/savedstate-ktx/1.3.0-alpha01/manifest/AndroidManifest.xml
++++ b/current/androidx/m2repository/androidx/savedstate/savedstate-ktx/1.3.0-alpha01/manifest/AndroidManifest.xml
+@@ -2,6 +2,6 @@
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     package="androidx.savedstate.ktx" >
+ 
+-    <uses-sdk android:minSdkVersion="19" />
++    <uses-sdk android:minSdkVersion="21" />
+ 
+ </manifest>
+\ No newline at end of file
+diff --git a/current/androidx/m2repository/androidx/savedstate/savedstate/1.3.0-alpha01/manifest/AndroidManifest.xml b/current/androidx/m2repository/androidx/savedstate/savedstate/1.3.0-alpha01/manifest/AndroidManifest.xml
+index 32e4c91..75483c5 100644
+--- a/current/androidx/m2repository/androidx/savedstate/savedstate/1.3.0-alpha01/manifest/AndroidManifest.xml
++++ b/current/androidx/m2repository/androidx/savedstate/savedstate/1.3.0-alpha01/manifest/AndroidManifest.xml
+@@ -17,6 +17,6 @@
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     package="androidx.savedstate" >
+ 
+-    <uses-sdk android:minSdkVersion="19" />
++    <uses-sdk android:minSdkVersion="21" />
+ 
+ </manifest>
+\ No newline at end of file
+diff --git a/current/androidx/m2repository/androidx/slice/slice-builders/1.1.0-alpha02/manifest/AndroidManifest.xml b/current/androidx/m2repository/androidx/slice/slice-builders/1.1.0-alpha02/manifest/AndroidManifest.xml
+index f1b1019..5cf9525 100644
+--- a/current/androidx/m2repository/androidx/slice/slice-builders/1.1.0-alpha02/manifest/AndroidManifest.xml
++++ b/current/androidx/m2repository/androidx/slice/slice-builders/1.1.0-alpha02/manifest/AndroidManifest.xml
+@@ -17,6 +17,6 @@
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     package="androidx.slice.builders" >
+ 
+-    <uses-sdk android:minSdkVersion="19" />
++    <uses-sdk android:minSdkVersion="21" />
+ 
+ </manifest>
+\ No newline at end of file
+diff --git a/current/androidx/m2repository/androidx/slice/slice-core/1.1.0-alpha02/manifest/AndroidManifest.xml b/current/androidx/m2repository/androidx/slice/slice-core/1.1.0-alpha02/manifest/AndroidManifest.xml
+index b1e0cd6..0476882 100644
+--- a/current/androidx/m2repository/androidx/slice/slice-core/1.1.0-alpha02/manifest/AndroidManifest.xml
++++ b/current/androidx/m2repository/androidx/slice/slice-core/1.1.0-alpha02/manifest/AndroidManifest.xml
+@@ -17,7 +17,7 @@
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     package="androidx.slice.core" >
+ 
+-    <uses-sdk android:minSdkVersion="19" />
++    <uses-sdk android:minSdkVersion="21" />
+ 
+     <application>
+         <activity
+diff --git a/current/androidx/m2repository/androidx/slice/slice-view/1.1.0-alpha02/manifest/AndroidManifest.xml b/current/androidx/m2repository/androidx/slice/slice-view/1.1.0-alpha02/manifest/AndroidManifest.xml
+index e843e61..4334121 100644
+--- a/current/androidx/m2repository/androidx/slice/slice-view/1.1.0-alpha02/manifest/AndroidManifest.xml
++++ b/current/androidx/m2repository/androidx/slice/slice-view/1.1.0-alpha02/manifest/AndroidManifest.xml
+@@ -17,6 +17,6 @@
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     package="androidx.slice.view" >
+ 
+-    <uses-sdk android:minSdkVersion="19" />
++    <uses-sdk android:minSdkVersion="21" />
+ 
+ </manifest>
+\ No newline at end of file
+diff --git a/current/androidx/m2repository/androidx/slidingpanelayout/slidingpanelayout/1.3.0-alpha01/manifest/AndroidManifest.xml b/current/androidx/m2repository/androidx/slidingpanelayout/slidingpanelayout/1.3.0-alpha01/manifest/AndroidManifest.xml
+index 09d773a..3239561 100644
+--- a/current/androidx/m2repository/androidx/slidingpanelayout/slidingpanelayout/1.3.0-alpha01/manifest/AndroidManifest.xml
++++ b/current/androidx/m2repository/androidx/slidingpanelayout/slidingpanelayout/1.3.0-alpha01/manifest/AndroidManifest.xml
+@@ -17,6 +17,6 @@
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     package="androidx.slidingpanelayout" >
+ 
+-    <uses-sdk android:minSdkVersion="19" />
++    <uses-sdk android:minSdkVersion="21" />
+ 
+ </manifest>
+\ No newline at end of file
+diff --git a/current/androidx/m2repository/androidx/sqlite/sqlite-android/2.5.0-alpha01/manifest/AndroidManifest.xml b/current/androidx/m2repository/androidx/sqlite/sqlite-android/2.5.0-alpha01/manifest/AndroidManifest.xml
+index 2cf6306..2a4ae5e 100644
+--- a/current/androidx/m2repository/androidx/sqlite/sqlite-android/2.5.0-alpha01/manifest/AndroidManifest.xml
++++ b/current/androidx/m2repository/androidx/sqlite/sqlite-android/2.5.0-alpha01/manifest/AndroidManifest.xml
+@@ -17,6 +17,6 @@
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     package="androidx.sqlite.db" >
+ 
+-    <uses-sdk android:minSdkVersion="19" />
++    <uses-sdk android:minSdkVersion="21" />
+ 
+ </manifest>
+\ No newline at end of file
+diff --git a/current/androidx/m2repository/androidx/sqlite/sqlite-framework-android/2.5.0-alpha01/manifest/AndroidManifest.xml b/current/androidx/m2repository/androidx/sqlite/sqlite-framework-android/2.5.0-alpha01/manifest/AndroidManifest.xml
+index 1ee538c..8391c2c 100644
+--- a/current/androidx/m2repository/androidx/sqlite/sqlite-framework-android/2.5.0-alpha01/manifest/AndroidManifest.xml
++++ b/current/androidx/m2repository/androidx/sqlite/sqlite-framework-android/2.5.0-alpha01/manifest/AndroidManifest.xml
+@@ -17,6 +17,6 @@
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     package="androidx.sqlite.db.framework" >
+ 
+-    <uses-sdk android:minSdkVersion="19" />
++    <uses-sdk android:minSdkVersion="21" />
+ 
+ </manifest>
+\ No newline at end of file
+diff --git a/current/androidx/m2repository/androidx/startup/startup-runtime/1.2.0-alpha02/manifest/AndroidManifest.xml b/current/androidx/m2repository/androidx/startup/startup-runtime/1.2.0-alpha02/manifest/AndroidManifest.xml
+index 55106a9..bc1b401 100644
+--- a/current/androidx/m2repository/androidx/startup/startup-runtime/1.2.0-alpha02/manifest/AndroidManifest.xml
++++ b/current/androidx/m2repository/androidx/startup/startup-runtime/1.2.0-alpha02/manifest/AndroidManifest.xml
+@@ -18,7 +18,7 @@
+     xmlns:tools="http://schemas.android.com/tools"
+     package="androidx.startup" >
+ 
+-    <uses-sdk android:minSdkVersion="19" />
++    <uses-sdk android:minSdkVersion="21" />
+ 
+     <application>
+         <provider
+diff --git a/current/androidx/m2repository/androidx/swiperefreshlayout/swiperefreshlayout/1.2.0-alpha01/manifest/AndroidManifest.xml b/current/androidx/m2repository/androidx/swiperefreshlayout/swiperefreshlayout/1.2.0-alpha01/manifest/AndroidManifest.xml
+index 42b1944..2bfbf5c 100644
+--- a/current/androidx/m2repository/androidx/swiperefreshlayout/swiperefreshlayout/1.2.0-alpha01/manifest/AndroidManifest.xml
++++ b/current/androidx/m2repository/androidx/swiperefreshlayout/swiperefreshlayout/1.2.0-alpha01/manifest/AndroidManifest.xml
+@@ -17,6 +17,6 @@
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     package="androidx.swiperefreshlayout" >
+ 
+-    <uses-sdk android:minSdkVersion="19" />
++    <uses-sdk android:minSdkVersion="21" />
+ 
+ </manifest>
+\ No newline at end of file
+diff --git a/current/androidx/m2repository/androidx/test/uiautomator/uiautomator/2.4.0-alpha01/manifest/AndroidManifest.xml b/current/androidx/m2repository/androidx/test/uiautomator/uiautomator/2.4.0-alpha01/manifest/AndroidManifest.xml
+index c6a9cc2..c632ad1 100644
+--- a/current/androidx/m2repository/androidx/test/uiautomator/uiautomator/2.4.0-alpha01/manifest/AndroidManifest.xml
++++ b/current/androidx/m2repository/androidx/test/uiautomator/uiautomator/2.4.0-alpha01/manifest/AndroidManifest.xml
+@@ -2,6 +2,6 @@
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     package="androidx.test.uiautomator" >
+ 
+-    <uses-sdk android:minSdkVersion="19" />
++    <uses-sdk android:minSdkVersion="21" />
+ 
+ </manifest>
+\ No newline at end of file
+diff --git a/current/androidx/m2repository/androidx/tracing/tracing-ktx/1.3.0-alpha02/manifest/AndroidManifest.xml b/current/androidx/m2repository/androidx/tracing/tracing-ktx/1.3.0-alpha02/manifest/AndroidManifest.xml
+index 7136d18..02264d2 100644
+--- a/current/androidx/m2repository/androidx/tracing/tracing-ktx/1.3.0-alpha02/manifest/AndroidManifest.xml
++++ b/current/androidx/m2repository/androidx/tracing/tracing-ktx/1.3.0-alpha02/manifest/AndroidManifest.xml
+@@ -17,6 +17,6 @@
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     package="androidx.tracing.ktx" >
+ 
+-    <uses-sdk android:minSdkVersion="19" />
++    <uses-sdk android:minSdkVersion="21" />
+ 
+ </manifest>
+\ No newline at end of file
+diff --git a/current/androidx/m2repository/androidx/tracing/tracing-perfetto-binary/1.0.0/manifest/AndroidManifest.xml b/current/androidx/m2repository/androidx/tracing/tracing-perfetto-binary/1.0.0/manifest/AndroidManifest.xml
+index 6311110..43e9df8 100644
+--- a/current/androidx/m2repository/androidx/tracing/tracing-perfetto-binary/1.0.0/manifest/AndroidManifest.xml
++++ b/current/androidx/m2repository/androidx/tracing/tracing-perfetto-binary/1.0.0/manifest/AndroidManifest.xml
+@@ -17,6 +17,6 @@
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     package="androidx.tracing.perfetto.binary" >
+ 
+-    <uses-sdk android:minSdkVersion="19" />
++    <uses-sdk android:minSdkVersion="21" />
+ 
+ </manifest>
+\ No newline at end of file
+diff --git a/current/androidx/m2repository/androidx/tracing/tracing-perfetto/1.0.0/manifest/AndroidManifest.xml b/current/androidx/m2repository/androidx/tracing/tracing-perfetto/1.0.0/manifest/AndroidManifest.xml
+index 34a6c99..eaa55d8 100644
+--- a/current/androidx/m2repository/androidx/tracing/tracing-perfetto/1.0.0/manifest/AndroidManifest.xml
++++ b/current/androidx/m2repository/androidx/tracing/tracing-perfetto/1.0.0/manifest/AndroidManifest.xml
+@@ -14,7 +14,7 @@
+   ~ limitations under the License.
+ --><manifest xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools" package="androidx.tracing.perfetto">
+ 
+-    <uses-sdk android:minSdkVersion="19"/>
++    <uses-sdk android:minSdkVersion="21"/>
+ 
+     <application>
+         <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.tracing.perfetto.TracingReceiver" android:permission="android.permission.DUMP">
+diff --git a/current/androidx/m2repository/androidx/tracing/tracing/1.3.0-alpha02/manifest/AndroidManifest.xml b/current/androidx/m2repository/androidx/tracing/tracing/1.3.0-alpha02/manifest/AndroidManifest.xml
+index 5aa708e..ec1aa8d 100644
+--- a/current/androidx/m2repository/androidx/tracing/tracing/1.3.0-alpha02/manifest/AndroidManifest.xml
++++ b/current/androidx/m2repository/androidx/tracing/tracing/1.3.0-alpha02/manifest/AndroidManifest.xml
+@@ -17,6 +17,6 @@
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     package="androidx.tracing" >
+ 
+-    <uses-sdk android:minSdkVersion="19" />
++    <uses-sdk android:minSdkVersion="21" />
+ 
+ </manifest>
+\ No newline at end of file
+diff --git a/current/androidx/m2repository/androidx/transition/transition-ktx/1.5.0-alpha01/manifest/AndroidManifest.xml b/current/androidx/m2repository/androidx/transition/transition-ktx/1.5.0-alpha01/manifest/AndroidManifest.xml
+index 551b773..1d54276 100644
+--- a/current/androidx/m2repository/androidx/transition/transition-ktx/1.5.0-alpha01/manifest/AndroidManifest.xml
++++ b/current/androidx/m2repository/androidx/transition/transition-ktx/1.5.0-alpha01/manifest/AndroidManifest.xml
+@@ -2,6 +2,6 @@
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     package="androidx.transition.ktx" >
+ 
+-    <uses-sdk android:minSdkVersion="19" />
++    <uses-sdk android:minSdkVersion="21" />
+ 
+ </manifest>
+\ No newline at end of file
+diff --git a/current/androidx/m2repository/androidx/transition/transition/1.5.0-alpha01/manifest/AndroidManifest.xml b/current/androidx/m2repository/androidx/transition/transition/1.5.0-alpha01/manifest/AndroidManifest.xml
+index e57de94..0b522ea 100644
+--- a/current/androidx/m2repository/androidx/transition/transition/1.5.0-alpha01/manifest/AndroidManifest.xml
++++ b/current/androidx/m2repository/androidx/transition/transition/1.5.0-alpha01/manifest/AndroidManifest.xml
+@@ -2,6 +2,6 @@
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     package="androidx.transition" >
+ 
+-    <uses-sdk android:minSdkVersion="19" />
++    <uses-sdk android:minSdkVersion="21" />
+ 
+ </manifest>
+\ No newline at end of file
+diff --git a/current/androidx/m2repository/androidx/vectordrawable/vectordrawable-animated/1.2.0-beta01/manifest/AndroidManifest.xml b/current/androidx/m2repository/androidx/vectordrawable/vectordrawable-animated/1.2.0-beta01/manifest/AndroidManifest.xml
+index 93f6946..a3e453e 100644
+--- a/current/androidx/m2repository/androidx/vectordrawable/vectordrawable-animated/1.2.0-beta01/manifest/AndroidManifest.xml
++++ b/current/androidx/m2repository/androidx/vectordrawable/vectordrawable-animated/1.2.0-beta01/manifest/AndroidManifest.xml
+@@ -17,6 +17,6 @@
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     package="androidx.vectordrawable.animated" >
+ 
+-    <uses-sdk android:minSdkVersion="19" />
++    <uses-sdk android:minSdkVersion="21" />
+ 
+ </manifest>
+\ No newline at end of file
+diff --git a/current/androidx/m2repository/androidx/vectordrawable/vectordrawable/1.2.0-beta02/manifest/AndroidManifest.xml b/current/androidx/m2repository/androidx/vectordrawable/vectordrawable/1.2.0-beta02/manifest/AndroidManifest.xml
+index eeaff76..e01f240 100644
+--- a/current/androidx/m2repository/androidx/vectordrawable/vectordrawable/1.2.0-beta02/manifest/AndroidManifest.xml
++++ b/current/androidx/m2repository/androidx/vectordrawable/vectordrawable/1.2.0-beta02/manifest/AndroidManifest.xml
+@@ -17,6 +17,6 @@
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     package="androidx.vectordrawable" >
+ 
+-    <uses-sdk android:minSdkVersion="19" />
++    <uses-sdk android:minSdkVersion="21" />
+ 
+ </manifest>
+\ No newline at end of file
+diff --git a/current/androidx/m2repository/androidx/versionedparcelable/versionedparcelable/1.2.0-alpha01/manifest/AndroidManifest.xml b/current/androidx/m2repository/androidx/versionedparcelable/versionedparcelable/1.2.0-alpha01/manifest/AndroidManifest.xml
+index dc1e263..222de78 100644
+--- a/current/androidx/m2repository/androidx/versionedparcelable/versionedparcelable/1.2.0-alpha01/manifest/AndroidManifest.xml
++++ b/current/androidx/m2repository/androidx/versionedparcelable/versionedparcelable/1.2.0-alpha01/manifest/AndroidManifest.xml
+@@ -17,7 +17,7 @@
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     package="androidx.versionedparcelable" >
+ 
+-    <uses-sdk android:minSdkVersion="19" />
++    <uses-sdk android:minSdkVersion="21" />
+ 
+     <application>
+     </application>
+diff --git a/current/androidx/m2repository/androidx/viewpager/viewpager/1.1.0-alpha02/manifest/AndroidManifest.xml b/current/androidx/m2repository/androidx/viewpager/viewpager/1.1.0-alpha02/manifest/AndroidManifest.xml
+index 897ebec..a0d8129 100644
+--- a/current/androidx/m2repository/androidx/viewpager/viewpager/1.1.0-alpha02/manifest/AndroidManifest.xml
++++ b/current/androidx/m2repository/androidx/viewpager/viewpager/1.1.0-alpha02/manifest/AndroidManifest.xml
+@@ -17,6 +17,6 @@
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     package="androidx.viewpager" >
+ 
+-    <uses-sdk android:minSdkVersion="19" />
++    <uses-sdk android:minSdkVersion="21" />
+ 
+ </manifest>
+\ No newline at end of file
+diff --git a/current/androidx/m2repository/androidx/viewpager2/viewpager2/1.2.0-alpha01/manifest/AndroidManifest.xml b/current/androidx/m2repository/androidx/viewpager2/viewpager2/1.2.0-alpha01/manifest/AndroidManifest.xml
+index 6ec53b9..ed5b57f 100644
+--- a/current/androidx/m2repository/androidx/viewpager2/viewpager2/1.2.0-alpha01/manifest/AndroidManifest.xml
++++ b/current/androidx/m2repository/androidx/viewpager2/viewpager2/1.2.0-alpha01/manifest/AndroidManifest.xml
+@@ -17,6 +17,6 @@
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     package="androidx.viewpager2" >
+ 
+-    <uses-sdk android:minSdkVersion="19" />
++    <uses-sdk android:minSdkVersion="21" />
+ 
+ </manifest>
+\ No newline at end of file
+diff --git a/current/androidx/m2repository/androidx/webkit/webkit/1.7.0-alpha02/manifest/AndroidManifest.xml b/current/androidx/m2repository/androidx/webkit/webkit/1.7.0-alpha02/manifest/AndroidManifest.xml
+index c4d1e99..cfa4bd2 100644
+--- a/current/androidx/m2repository/androidx/webkit/webkit/1.7.0-alpha02/manifest/AndroidManifest.xml
++++ b/current/androidx/m2repository/androidx/webkit/webkit/1.7.0-alpha02/manifest/AndroidManifest.xml
+@@ -17,6 +17,6 @@
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     package="androidx.webkit" >
+ 
+-    <uses-sdk android:minSdkVersion="19" />
++    <uses-sdk android:minSdkVersion="21" />
+ 
+ </manifest>
+\ No newline at end of file
+diff --git a/current/androidx/m2repository/androidx/work/work-runtime-ktx/2.10.0-alpha01/manifest/AndroidManifest.xml b/current/androidx/m2repository/androidx/work/work-runtime-ktx/2.10.0-alpha01/manifest/AndroidManifest.xml
+index 22b93f2..cc6b7bf 100644
+--- a/current/androidx/m2repository/androidx/work/work-runtime-ktx/2.10.0-alpha01/manifest/AndroidManifest.xml
++++ b/current/androidx/m2repository/androidx/work/work-runtime-ktx/2.10.0-alpha01/manifest/AndroidManifest.xml
+@@ -17,6 +17,6 @@
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     package="androidx.work.ktx" >
+ 
+-    <uses-sdk android:minSdkVersion="19" />
++    <uses-sdk android:minSdkVersion="21" />
+ 
+ </manifest>
+\ No newline at end of file
+diff --git a/current/androidx/m2repository/androidx/work/work-runtime/2.10.0-alpha01/manifest/AndroidManifest.xml b/current/androidx/m2repository/androidx/work/work-runtime/2.10.0-alpha01/manifest/AndroidManifest.xml
+index 2e089c5..3c47f98 100644
+--- a/current/androidx/m2repository/androidx/work/work-runtime/2.10.0-alpha01/manifest/AndroidManifest.xml
++++ b/current/androidx/m2repository/androidx/work/work-runtime/2.10.0-alpha01/manifest/AndroidManifest.xml
+@@ -18,7 +18,7 @@
+     xmlns:tools="http://schemas.android.com/tools"
+     package="androidx.work" >
+ 
+-    <uses-sdk android:minSdkVersion="19" />
++    <uses-sdk android:minSdkVersion="21" />
+ 
+     <uses-permission android:name="android.permission.WAKE_LOCK" />
+     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+diff --git a/current/androidx/m2repository/androidx/work/work-testing/2.10.0-alpha01/manifest/AndroidManifest.xml b/current/androidx/m2repository/androidx/work/work-testing/2.10.0-alpha01/manifest/AndroidManifest.xml
+index 63832a6..d2f1dae 100644
+--- a/current/androidx/m2repository/androidx/work/work-testing/2.10.0-alpha01/manifest/AndroidManifest.xml
++++ b/current/androidx/m2repository/androidx/work/work-testing/2.10.0-alpha01/manifest/AndroidManifest.xml
+@@ -17,6 +17,6 @@
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     package="androidx.work.testing" >
+ 
+-    <uses-sdk android:minSdkVersion="19" />
++    <uses-sdk android:minSdkVersion="21" />
+ 
+ </manifest>
+\ No newline at end of file

@@ -1,0 +1,315 @@
+diff --git a/app/src/main/AndroidManifest.xml b/app/src/main/AndroidManifest.xml
+index 1480d4f..3a8b5e3 100644
+--- a/app/src/main/AndroidManifest.xml
++++ b/app/src/main/AndroidManifest.xml
+@@ -1,5 +1,5 @@
+ <?xml version="1.0" encoding="utf-8"?>
+-<manifest xmlns:android="http://schemas.android.com/apk/res/android">
++<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.home.launcher">
+ 
+     <!-- ============ RECENT APPS (signature|system) ============ -->
+     <uses-permission android:name="android.permission.REAL_GET_TASKS" />
+diff --git a/app/src/main/java/com/home/launcher/MainActivity.kt b/app/src/main/java/com/home/launcher/MainActivity.kt
+index 8cbfcc2..7d3cdf1 100644
+--- a/app/src/main/java/com/home/launcher/MainActivity.kt
++++ b/app/src/main/java/com/home/launcher/MainActivity.kt
+@@ -137,10 +137,10 @@ class MainActivity : AppCompatActivity() {
+     // ============ VIEW INITIALIZATION ============
+ 
+     private fun initViews() {
+-        rootLayout = findViewById(R.id.rootLayout)
+-        leftColumn = findViewById(R.id.leftColumn)
+-        centerColumn = findViewById(R.id.centerColumn)
+-        rightColumn = findViewById(R.id.rightColumn)
++        rootLayout = findViewById<LinearLayout>(R.id.rootLayout)!!
++        leftColumn = findViewById<LinearLayout>(R.id.leftColumn)!!
++        centerColumn = findViewById<LinearLayout>(R.id.centerColumn)!!
++        rightColumn = findViewById<LinearLayout>(R.id.rightColumn)!!
+     }
+ 
+     // ============ ALPHABET COLUMNS ============
+@@ -198,8 +198,8 @@ class MainActivity : AppCompatActivity() {
+     // ============ RECENT APPS ============
+ 
+     private fun initRecentApps() {
+-        recentAppsGrid = findViewById(R.id.recentAppsGrid)
+-        killAllButton = findViewById(R.id.killAllButton)
++        recentAppsGrid = findViewById<RecyclerView>(R.id.recentAppsGrid)!!
++        killAllButton = findViewById<TextView>(R.id.killAllButton)!!
+ 
+         recentAppsAdapter = RecentAppsAdapter(
+             context = this,
+@@ -289,7 +289,7 @@ class MainActivity : AppCompatActivity() {
+     // ============ SETTINGS ============
+ 
+     private fun initSettings() {
+-        findViewById<View>(R.id.settingsButton).setOnClickListener { showSettingsDialog() }
++        findViewById<View>(R.id.settingsButton)!!.setOnClickListener { showSettingsDialog() }
+     }
+ 
+     private fun showSettingsDialog() {
+@@ -363,9 +363,9 @@ class MainActivity : AppCompatActivity() {
+     // ============ NOTIFICATIONS ============
+ 
+     private fun initNotifications() {
+-        notificationContainer = findViewById(R.id.notificationIcons)
+-        notificationPlaceholder = findViewById(R.id.notificationPlaceholder)
+-        notificationScroll = findViewById(R.id.notificationScroll)
++        notificationContainer = findViewById<LinearLayout>(R.id.notificationIcons)!!
++        notificationPlaceholder = findViewById<TextView>(R.id.notificationPlaceholder)!!
++        notificationScroll = findViewById<View>(R.id.notificationScroll)!!
+ 
+         val enabledListeners = Settings.Secure.getString(contentResolver, "enabled_notification_listeners")
+         val ourComponent = "$packageName/.service.NotificationListener"
+@@ -391,8 +391,9 @@ class MainActivity : AppCompatActivity() {
+         notificationPlaceholder.text = getString(R.string.no_notifications)
+         notificationPlaceholder.setOnClickListener(null)
+ 
+-        if (expandedPackage != null && packages.containsKey(expandedPackage)) {
+-            showExpandedNotifications(expandedPackage!!)
++        val currentExpandedPackage = expandedPackage
++        if (currentExpandedPackage != null && packages.containsKey(currentExpandedPackage)) {
++            showExpandedNotifications(currentExpandedPackage)
+             return
+         }
+         expandedPackage = null
+@@ -556,9 +557,9 @@ class MainActivity : AppCompatActivity() {
+     // ============ TODAY SECTION ============
+ 
+     private fun initToday() {
+-        todayDate = findViewById(R.id.todayDate)
+-        todayEvent = findViewById(R.id.todayEvent)
+-        todayTasks = findViewById(R.id.todayTasks)
++        todayDate = findViewById<TextView>(R.id.todayDate)!!
++        todayEvent = findViewById<TextView>(R.id.todayEvent)!!
++        todayTasks = findViewById<TextView>(R.id.todayTasks)!!
+         refreshToday()
+     }
+ 
+@@ -634,14 +635,14 @@ class MainActivity : AppCompatActivity() {
+     private fun initStatsBar() {
+         statsBar = SystemStatsBar(
+             context = this,
+-            batteryView = findViewById(R.id.statBattery),
+-            ramView = findViewById(R.id.statRam),
+-            cpuView = findViewById(R.id.statCpu),
+-            tempView = findViewById(R.id.statTemp),
+-            storageView = findViewById(R.id.statStorage)
++            batteryView = findViewById<TextView>(R.id.statBattery)!!,
++            ramView = findViewById<TextView>(R.id.statRam)!!,
++            cpuView = findViewById<TextView>(R.id.statCpu)!!,
++            tempView = findViewById<TextView>(R.id.statTemp)!!,
++            storageView = findViewById<TextView>(R.id.statStorage)!!
+         )
+ 
+-        findViewById<LinearLayout>(R.id.statusStatsCenter).setOnClickListener {
++        findViewById<LinearLayout>(R.id.statusStatsCenter)!!.setOnClickListener {
+             startActivity(Intent(Settings.ACTION_BATTERY_SAVER_SETTINGS))
+         }
+     }
+diff --git a/app/src/main/java/com/home/launcher/adapter/RecentAppsAdapter.kt b/app/src/main/java/com/home/launcher/adapter/RecentAppsAdapter.kt
+index 47e4810..26f1b0f 100644
+--- a/app/src/main/java/com/home/launcher/adapter/RecentAppsAdapter.kt
++++ b/app/src/main/java/com/home/launcher/adapter/RecentAppsAdapter.kt
+@@ -109,10 +109,10 @@ class RecentAppsAdapter(
+     override fun getItemCount(): Int = tiles.size
+ 
+     inner class TileViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+-        private val thumbnail: ImageView = itemView.findViewById(R.id.tileThumbnail)
+-        private val appIcon: ImageView = itemView.findViewById(R.id.tileAppIcon)
+-        private val appLabel: TextView = itemView.findViewById(R.id.tileAppLabel)
+-        private val closeButton: ImageButton = itemView.findViewById(R.id.tileCloseButton)
++        private val thumbnail: ImageView = itemView.findViewById<ImageView>(R.id.tileThumbnail)!!
++        private val appIcon: ImageView = itemView.findViewById<ImageView>(R.id.tileAppIcon)!!
++        private val appLabel: TextView = itemView.findViewById<TextView>(R.id.tileAppLabel)!!
++        private val closeButton: ImageButton = itemView.findViewById<ImageButton>(R.id.tileCloseButton)!!
+ 
+         fun bind(tile: RecentTaskTile) {
+             val label = tile.appLabel ?: getAppLabel(tile.packageName)
+@@ -136,7 +136,7 @@ class RecentAppsAdapter(
+             closeButton.setOnClickListener { onClose(tile) }
+             itemView.setOnClickListener { onResume(tile) }
+ 
+-            val taskIdView: TextView = itemView.findViewById(R.id.tileTaskId)
++            val taskIdView: TextView = itemView.findViewById<TextView>(R.id.tileTaskId)!!
+             taskIdView.text = "#${tile.taskId}"
+         }
+ 
+diff --git a/app/src/main/java/com/home/launcher/data/AppIndex.kt b/app/src/main/java/com/home/launcher/data/AppIndex.kt
+index 6b8cc2a..7361573 100644
+--- a/app/src/main/java/com/home/launcher/data/AppIndex.kt
++++ b/app/src/main/java/com/home/launcher/data/AppIndex.kt
+@@ -17,7 +17,7 @@ class AppIndex(private val context: Context) {
+     private var appMap: MutableMap<Char, MutableList<AppEntry>> = mutableMapOf()
+     private var favourites: MutableList<AppEntry> = mutableListOf()
+     private var numericApps: MutableList<AppEntry> = mutableListOf()
+-    private var allApps: List<AppEntry> = emptyList()
++    private var allApps: List<AppEntry> = emptyList<AppEntry>()
+     private var isLoaded = false
+ 
+     fun load() {
+@@ -57,7 +57,7 @@ class AppIndex(private val context: Context) {
+         }
+ 
+         val prefs = context.getSharedPreferences("favourites", Context.MODE_PRIVATE)
+-        val favSet = prefs.getStringSet("favs", emptySet()) ?: emptySet()
++        val favSet = prefs.getStringSet("favs", emptySet<String>()) ?: emptySet<String>()
+         favourites = entries.filter { it.packageName in favSet }
+             .toMutableList()
+ 
+@@ -69,15 +69,15 @@ class AppIndex(private val context: Context) {
+         return when {
+             letter == '#' -> numericApps
+             letter == '*' -> favourites
+-            letter in 'A'..'Z' -> appMap[letter] ?: emptyList()
+-            else -> emptyList()
++            letter in 'A'..'Z' -> appMap[letter] ?: emptyList<AppEntry>()
++            else -> emptyList<AppEntry>()
+         }
+     }
+ 
+     fun toggleFavourite(packageName: String) {
+         val entry = allApps.find { it.packageName == packageName } ?: return
+         val prefs = context.getSharedPreferences("favourites", Context.MODE_PRIVATE)
+-        val favSet = prefs.getStringSet("favs", emptySet())?.toMutableSet() ?: mutableSetOf()
++        val favSet = prefs.getStringSet("favs", emptySet<String>())?.toMutableSet() ?: mutableSetOf<String>()
+         if (favSet.contains(packageName)) {
+             favSet.remove(packageName)
+             favourites.removeAll { it.packageName == packageName }
+diff --git a/app/src/main/java/com/home/launcher/data/SystemStatsProvider.kt b/app/src/main/java/com/home/launcher/data/SystemStatsProvider.kt
+index 40cbf0c..d0eccb9 100644
+--- a/app/src/main/java/com/home/launcher/data/SystemStatsProvider.kt
++++ b/app/src/main/java/com/home/launcher/data/SystemStatsProvider.kt
+@@ -86,9 +86,10 @@ class SystemStatsProvider(private val context: Context) {
+             val currentTicks = longArrayOf(user, nice, system, idle)
+             val currentTime = SystemClock.elapsedRealtime()
+ 
+-            if (lastCpuTicks != null && lastCpuTime > 0) {
+-                val deltaIdle = idle - lastCpuTicks!![3]
+-                val deltaTotal = total - lastCpuTicks!!.sum()
++            val previousTicks = lastCpuTicks
++            if (previousTicks != null && lastCpuTime > 0) {
++                val deltaIdle = idle - previousTicks[3]
++                val deltaTotal = total - previousTicks.sum()
+ 
+                 val percent = if (deltaTotal > 0) {
+                     ((deltaTotal - deltaIdle) * 100) / deltaTotal
+diff --git a/app/src/main/java/com/home/launcher/system/hiddenapi/ReflectionRecentTasksBackend.kt b/app/src/main/java/com/home/launcher/system/hiddenapi/ReflectionRecentTasksBackend.kt
+index bea45b0..86c684a 100644
+--- a/app/src/main/java/com/home/launcher/system/hiddenapi/ReflectionRecentTasksBackend.kt
++++ b/app/src/main/java/com/home/launcher/system/hiddenapi/ReflectionRecentTasksBackend.kt
+@@ -17,9 +17,9 @@ class ReflectionRecentTasksBackend(private val context: Context) : RecentTasksBa
+         get() = HiddenApiBridge.activityTaskManager
+ 
+     override fun getRecentTasks(maxNum: Int): List<RecentTask> {
+-        val service = iAtm ?: return emptyList()
++        val service = iAtm ?: return emptyList<RecentTask>()
+         val raw = HiddenApiBridge.invoke(service, "getRecentTasks", maxNum, RECENT_WITH_EXCLUDED, USER_CURRENT)
+-        val taskList = unwrapParceledList(raw) ?: return emptyList()
++        val taskList = unwrapParceledList(raw) ?: return emptyList<RecentTask>()
+         return parseRecentTasks(taskList)
+     }
+ 
+@@ -161,9 +161,9 @@ class ReflectionRecentTasksBackend(private val context: Context) : RecentTasksBa
+     }
+ 
+     private fun parseRecentTasks(taskList: List<*>): List<RecentTask> {
+-        val taskInfoClass = HiddenApiBridge.classForName("android.app.TaskInfo") ?: return emptyList()
+-        val fTaskId = runCatching { taskInfoClass.getField("taskId") }.getOrNull() ?: return emptyList()
+-        val fBaseIntent = runCatching { taskInfoClass.getField("baseIntent") }.getOrNull() ?: return emptyList()
++        val taskInfoClass = HiddenApiBridge.classForName("android.app.TaskInfo") ?: return emptyList<RecentTask>()
++        val fTaskId = runCatching { taskInfoClass.getField("taskId") }.getOrNull() ?: return emptyList<RecentTask>()
++        val fBaseIntent = runCatching { taskInfoClass.getField("baseIntent") }.getOrNull() ?: return emptyList<RecentTask>()
+         val fUserId = runCatching { taskInfoClass.getField("userId") }.getOrNull()
+         val fTaskDescription = runCatching { taskInfoClass.getField("taskDescription") }.getOrNull()
+ 
+diff --git a/app/src/main/java/com/home/launcher/task/TaskOrganizerRecentTasksBackend.kt b/app/src/main/java/com/home/launcher/task/TaskOrganizerRecentTasksBackend.kt
+index 41771b8..6883842 100644
+--- a/app/src/main/java/com/home/launcher/task/TaskOrganizerRecentTasksBackend.kt
++++ b/app/src/main/java/com/home/launcher/task/TaskOrganizerRecentTasksBackend.kt
+@@ -12,7 +12,7 @@ import android.util.Log
+ class TaskOrganizerRecentTasksBackend : RecentTasksBackend {
+     override fun getRecentTasks(maxNum: Int): List<RecentTask> {
+         Log.w(TAG, "TaskOrganizer backend is not implemented yet")
+-        return emptyList()
++        return emptyList<RecentTask>()
+     }
+ 
+     override fun removeTask(taskId: Int): Boolean = false
+diff --git a/app/src/main/java/com/home/launcher/ui/AppListOverlay.kt b/app/src/main/java/com/home/launcher/ui/AppListOverlay.kt
+index d620e4b..dedf413 100644
+--- a/app/src/main/java/com/home/launcher/ui/AppListOverlay.kt
++++ b/app/src/main/java/com/home/launcher/ui/AppListOverlay.kt
+@@ -23,9 +23,9 @@ class AppListOverlay {
+             val builder = AlertDialog.Builder(activity, android.R.style.Theme_DeviceDefault_Dialog_NoActionBar)
+             val view = LayoutInflater.from(activity).inflate(R.layout.overlay_app_list, null)
+ 
+-            val titleView: TextView = view.findViewById(R.id.overlayTitle)
+-            val recyclerView: RecyclerView = view.findViewById(R.id.overlayAppList)
+-            val closeButton: View = view.findViewById(R.id.overlayClose)
++            val titleView: TextView = view.findViewById<TextView>(R.id.overlayTitle)!!
++            val recyclerView: RecyclerView = view.findViewById<RecyclerView>(R.id.overlayAppList)!!
++            val closeButton: View = view.findViewById<View>(R.id.overlayClose)!!
+ 
+             titleView.text = title
+ 
+@@ -85,9 +85,9 @@ class AppListOverlay {
+         override fun getItemCount(): Int = apps.size
+ 
+         class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+-            private val icon: ImageView = itemView.findViewById(R.id.appItemIcon)
+-            private val label: TextView = itemView.findViewById(R.id.appItemLabel)
+-            private val favIndicator: View = itemView.findViewById(R.id.appItemFav)
++            private val icon: ImageView = itemView.findViewById<ImageView>(R.id.appItemIcon)!!
++            private val label: TextView = itemView.findViewById<TextView>(R.id.appItemLabel)!!
++            private val favIndicator: View = itemView.findViewById<View>(R.id.appItemFav)!!
+ 
+             fun bind(entry: AppEntry, onTap: (AppEntry) -> Unit) {
+                 label.text = entry.label
+diff --git a/rom-integration/aosp/Android.bp b/rom-integration/aosp/Android.bp
+deleted file mode 100644
+index 4d5dac9..0000000
+--- a/rom-integration/aosp/Android.bp
++++ /dev/null
+@@ -1,41 +0,0 @@
+-// Copy this file to packages/apps/HomeLauncher/Android.bp in the AOSP tree.
+-
+-android_app {
+-    name: "HomeLauncher",
+-
+-    manifest: "app/src/main/AndroidManifest.xml",
+-    srcs: ["app/src/main/java/**/*.kt"],
+-    resource_dirs: ["app/src/main/res"],
+-
+-    platform_apis: true,
+-    certificate: "platform",
+-    privileged: true,
+-
+-    // Keep this on /system/priv-app for the first integration pass.
+-    // Do not set system_ext_specific/product_specific/vendor: true unless the product
+-    // integration deliberately wants a different partition.
+-
+-    static_libs: [
+-        "androidx.appcompat_appcompat",
+-        "androidx.constraintlayout_constraintlayout",
+-        "androidx.core_core-ktx",
+-        "androidx.lifecycle_lifecycle-runtime-ktx",
+-        "androidx.localbroadcastmanager_localbroadcastmanager",
+-        "androidx.recyclerview_recyclerview",
+-    ],
+-
+-    kotlincflags: [
+-        "-Xjvm-default=all",
+-    ],
+-
+-    optimize: {
+-        enabled: false,
+-    },
+-}
+-
+-prebuilt_etc {
+-    name: "privapp-permissions-com.home.launcher",
+-    src: "permissions/privapp-permissions-com.home.launcher.xml",
+-    sub_dir: "permissions",
+-    filename: "privapp-permissions-com.home.launcher.xml",
+-}

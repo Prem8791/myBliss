@@ -1,0 +1,62 @@
+diff --git a/msmnile.mk b/msmnile.mk
+index aed6b13..547def2 100644
+--- a/msmnile.mk
++++ b/msmnile.mk
+@@ -246,8 +246,6 @@ PRODUCT_PACKAGES += \
+ $(call inherit-product, vendor/qcom/opensource/commonsys-intf/display/config/display-interfaces-product.mk)
+ $(call inherit-product, vendor/qcom/opensource/commonsys-intf/display/config/display-product-system.mk)
+ 
+-# Dolby
+-$(call inherit-product, hardware/dolby/dolby.mk)
+ 
+ # DRM
+ PRODUCT_PACKAGES += \
+diff --git a/sepolicy/vendor/genfs_contexts b/sepolicy/vendor/genfs_contexts
+index fbd81f2..bf53169 100644
+--- a/sepolicy/vendor/genfs_contexts
++++ b/sepolicy/vendor/genfs_contexts
+@@ -130,7 +130,6 @@ genfscon sysfs /devices/virtual/sensors
+ genfscon sysfs /devices/platform/soc/soc:asustek_googlekey/googlekey_enable                     u:object_r:vendor_sysfs_gestures:s0
+ 
+ # Wakeup
+-genfscon sysfs /devices/platform/dummy_hcd.0/usb1/wakeup                                                                            u:object_r:sysfs_wakeup:s0
+ genfscon sysfs /devices/platform/soc/17300000.qcom,lpass/subsys6/wakeup                                                             u:object_r:sysfs_wakeup:s0
+ genfscon sysfs /devices/platform/soc/17300000.qcom,lpass/wakeup                                                                     u:object_r:sysfs_wakeup:s0
+ genfscon sysfs /devices/platform/soc/188101c.qcom,spss/subsys5/wakeup                                                               u:object_r:sysfs_wakeup:s0
+@@ -157,12 +156,12 @@ genfscon sysfs /devices/platform/soc/soc:qcom,ipa_fws/subsys0/wakeup
+ genfscon sysfs /devices/platform/soc/soc:qcom,kgsl-hyp/subsys3/wakeup                                                               u:object_r:sysfs_wakeup:s0
+ genfscon sysfs /devices/platform/soc/soc:qcom,pmic_glink/wakeup                                                                     u:object_r:sysfs_wakeup:s0
+ genfscon sysfs /devices/platform/soc/soc:qcom,pmic_glink_log/wakeup                                                                 u:object_r:sysfs_wakeup:s0
+-genfscon sysfs /devices/platform/soc/soc:qcom,smp2p-dsps/wakeup                                                                     u:object_r:sysfs_wakeup:s0
+-genfscon sysfs /devices/platform/soc/soc:qcom,smp2p-modem/wakeup                                                                    u:object_r:sysfs_wakeup:s0
+-genfscon sysfs /devices/platform/soc/soc:qcom,smp2p-nsp/wakeup                                                                      u:object_r:sysfs_wakeup:s0
++# genfscon sysfs /devices/platform/soc/soc:qcom,smp2p-dsps/wakeup                                                                     u:object_r:sysfs_wakeup:s0
++# genfscon sysfs /devices/platform/soc/soc:qcom,smp2p-modem/wakeup                                                                    u:object_r:sysfs_wakeup:s0
++# # genfscon sysfs /devices/platform/soc/soc:qcom,smp2p-nsp/wakeup                                                                      u:object_r:sysfs_wakeup:s0
+ genfscon sysfs /devices/platform/soc/soc:qcom,trustedvm@d0800000/subsys2/wakeup                                                     u:object_r:sysfs_wakeup:s0
+ genfscon sysfs /devices/platform/soc/soc:qcom,trustedvm@d0800000/wakeup                                                             u:object_r:sysfs_wakeup:s0
+-genfscon sysfs /devices/virtual/diag/diag/wakeup                                                                                      u:object_r:sysfs_wakeup:s0
++# genfscon sysfs /devices/virtual/diag/diag/wakeup                                                                                      u:object_r:sysfs_wakeup:s0
+ genfscon sysfs /devices/platform/soc/1c10000.qcom,pcie/pci0002:00/0002:00:00.0/0002:01:00.0/0306_02.01.00_EFS/wakeup                  u:object_r:sysfs_wakeup:s0
+ genfscon sysfs /devices/platform/soc/988000.i2c/i2c-1/1-002c/wakeup                                                                   u:object_r:sysfs_wakeup:s0
+ genfscon sysfs /devices/platform/soc/884000.i2c/i2c-6/6-004e/wakeup                                                                   u:object_r:sysfs_wakeup:s0
+diff --git a/vintf/framework_compatibility_matrix.xml b/vintf/framework_compatibility_matrix.xml
+index b44fdec..fbf6c0b 100644
+--- a/vintf/framework_compatibility_matrix.xml
++++ b/vintf/framework_compatibility_matrix.xml
+@@ -79,15 +79,6 @@
+ 		<instance>default</instance>
+ 	    </interface>
+ 	</hal>
+-        <hal format="hidl" optional="true">
+-            <name>vendor.dolby.hardware.dms</name>
+-            <transport>hwbinder</transport>
+-            <version>2.0</version>
+-            <interface>
+-                <name>IDms</name>
+-                <instance>default</instance>
+-            </interface>
+-        </hal>
+ 	<hal format="hidl" optional="true">
+ 	    <name>vendor.goodix.hardware.biometrics.fingerprint</name>
+ 	    <version>2.0-1</version>
