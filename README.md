@@ -30,7 +30,13 @@ m otapackage
   - `device/` — A16 VINTF manifests, init RC files, fstab, SELinux policy, ramdisk extracted from OTA
   - `vendor/asus/` — vendor blob inventory + SHA256 diffs (A14 vs A16)
   - `kernel/asus/I001D/` — kernel config + 812-line A14→A16 config diff
-  - `patches/` — all `.diff` files (fstab, VINTF, kernel, init-target)
+  - `patches/` — all `.diff` files plus critical build patches:
+    - `I001D.patch` — adds `COMMON_LUNCH_CHOICES` and `HomeLauncher` product packages
+    - `sm8150-common.patch` — removes Dolby, fixes SELinux genfs contexts
+    - `prebuilts-sdk.patch` — bumps minSdkVersion 19→21 in AndroidX manifests
+    - `HomeLauncher-vm-local.patch` — VM-local launcher changes
+    - `fstab-android14-to-16.diff`, `vendor-manifest-android14-to-16.diff`,
+      `kernel-config-android14-to-16.diff`, `init-target-android14-to-16.diff`
   - `bringup-i001d-to-waterlily.sh` — bring-up script
   - `extract-vendor.sh` — blob extraction instructions
   - `local_manifests/waterlily-i001d.xml` — 6 private `StudioKeys-Dumps` repo refs
