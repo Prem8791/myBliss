@@ -1,5 +1,3 @@
-project build/make/                             (*** NO BRANCH ***)
- -m	target/product/media_product.mk
 project device/asus/I001D/                      (*** NO BRANCH ***)
  -m	BoardConfig.mk
  -m	bliss_I001D.mk

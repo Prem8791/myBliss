@@ -3,15 +3,16 @@
 Device: ASUS I001D
 ROM output: bliss_I001D-ota.zip
 
-Important local fix:
-- Removed/commented AOSP `webview` from `build/make/target/product/media_product.mk`
-- This avoids build failure from missing/invalid `external/chromium-webview/prebuilt/arm64/webview.apk`
-- GApps/Trichrome/WebView should provide WebView instead
+Important local fixes:
+- Allows missing required modules for this device build setup.
+- Disables unsupported face unlock.
+- Disables the missing Dolby product inherit.
+- Removes duplicate/problematic wakeup sepolicy entries.
 
 Files:
 - `manifest.xml`: original repo manifest snapshot
 - `local_manifests/`: local device/vendor manifest setup
-- `my-changes.patch`: local source edits, including WebView fix
+- `my-changes.patch`: local source edits
 - `repo-status.txt`: changed repo status
 - `build-sha256.txt`: SHA256 of generated OTA zip
 
