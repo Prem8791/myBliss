@@ -31,6 +31,7 @@ Source: `https://github.com/Prem8791/homelauncher`
 - **Snapshot rotation** — removed `postRotate(orientation)` (orientation is 1/2, not degrees)
 - **App drawer refresh** — `LauncherApps.Callback` reloads on package add/remove/change
 - Removed `FIT_CENTER` runtime override, uses XML `centerCrop`
+- **Letter strip screen nudge fix** — `GONE` → `INVISIBLE` when showing overlay, so centerColumn layout position stays stable
 
 ### Full git history in `homelauncher-git-log.txt`
 

@@ -19,9 +19,20 @@ index 4696b4d..ffe57a3 100644
              Log.w(TAG, "getTaskSnapshot failed for task $taskId", it)
          }.getOrNull()
 diff --git a/app/src/main/java/com/home/launcher/MainActivity.kt b/app/src/main/java/com/home/launcher/MainActivity.kt
-index f8c48e3..c52b9fe 100644
+index f8c48e3..d852abb 100644
 --- a/app/src/main/java/com/home/launcher/MainActivity.kt
 +++ b/app/src/main/java/com/home/launcher/MainActivity.kt
+@@ -292,8 +292,8 @@ class MainActivity : AppCompatActivity() {
+         if (apps.isEmpty()) {
+             return
+         }
+-        leftColumn.visibility = View.GONE
+-        rightColumn.visibility = View.GONE
++        leftColumn.visibility = View.INVISIBLE
++        rightColumn.visibility = View.INVISIBLE
+         AppListOverlay.show(this, centerColumn, title, apps) {
+             leftColumn.visibility = View.VISIBLE
+             rightColumn.visibility = View.VISIBLE
 @@ -322,14 +322,20 @@ class MainActivity : AppCompatActivity() {
  
      private fun updateRecentTileHeight() {
