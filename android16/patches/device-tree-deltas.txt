@@ -1,0 +1,722 @@
+=== I001D: files in A14 but not needed in A16 ===
+1,142c1
+< ./Android.bp
+< ./Android.mk
+< ./AndroidProducts.mk
+< ./BoardConfig.mk
+< ./BoardConfig.mk.gapps-bak-20260710-004019
+< ./I001D/Android.bp
+< ./I001D/Android.mk
+< ./I001D/AndroidProducts.mk
+< ./I001D/BoardConfig.mk
+< ./I001D/BoardConfig.mk.gapps-bak-20260710-004019
+< ./I001D/README.md
+< ./I001D/audio/audio_platform_info.xml
+< ./I001D/audio/audio_policy_configuration.xml
+< ./I001D/audio/mixer_paths_ZS660KL.xml
+< ./I001D/audio/mixer_paths_ZS660KL_EU.xml
+< ./I001D/audio/sound_trigger_platform_info.xml
+< ./I001D/biometrics/Android.bp
+< ./I001D/biometrics/BiometricsFingerprint.cpp
+< ./I001D/biometrics/BiometricsFingerprint.h
+< ./I001D/biometrics/android.hardware.biometrics.fingerprint@2.3-service.I001D.rc
+< ./I001D/biometrics/android.hardware.biometrics.fingerprint@2.3-service.I001D.xml
+< ./I001D/biometrics/concurrent_queue.h
+< ./I001D/biometrics/service.cpp
+< ./I001D/bliss_I001D.mk
+< ./I001D/bliss_I001D.mk.bak
+< ./I001D/bliss_I001D.mk.gapps-bak-20260710-004019
+< ./I001D/configs/idc/goodix_ts.idc
+< ./I001D/configs/idc/goodix_ts_station.idc
+< ./I001D/configs/keychars/goodix_ts.kcm
+< ./I001D/configs/keylayout/goodix_ts.kl
+< ./I001D/device.mk
+< ./I001D/extract-files.sh
+< ./I001D/init/Android.bp
+< ./I001D/init/etc/fstab.qcom
+< ./I001D/proprietary-files.txt
+< ./I001D/recovery/recovery/root/vendor/firmware/goodix_cfg_group.bin
+< ./I001D/recovery/recovery/root/vendor/firmware/goodix_cfg_group_station.bin
+< ./I001D/recovery/recovery/root/vendor/firmware/goodix_config.cfg
+< ./I001D/recovery/recovery/root/vendor/firmware/goodix_config_station.cfg
+< ./I001D/recovery/recovery/root/vendor/firmware/goodix_config_test.cfg
+< ./I001D/recovery/recovery/root/vendor/firmware/goodix_configs_glove.cfg
+< ./I001D/recovery/recovery/root/vendor/firmware/goodix_firmware.bin
+< ./I001D/rro_overlays/FrameworksResOverlay/Android.bp
+< ./I001D/rro_overlays/FrameworksResOverlay/AndroidManifest.xml
+< ./I001D/rro_overlays/FrameworksResOverlay/res/values/config.xml
+< ./I001D/rro_overlays/FrameworksResOverlay/res/xml/power_profile.xml
+< ./I001D/rro_overlays/SettingsProviderRog2/Android.bp
+< ./I001D/rro_overlays/SettingsProviderRog2/AndroidManifest.xml
+< ./I001D/rro_overlays/SettingsProviderRog2/res/values/defaults.xml
+< ./I001D/rro_overlays/SettingsRes/Android.bp
+< ./I001D/rro_overlays/SettingsRes/AndroidManifest.xml
+< ./I001D/rro_overlays/SettingsRes/res/values/config.xml
+< ./I001D/rro_overlays/SettingsRes/res/values/strings.xml
+< ./I001D/rro_overlays/SystemUIRog2/Android.bp
+< ./I001D/rro_overlays/SystemUIRog2/AndroidManifest.xml
+< ./I001D/rro_overlays/SystemUIRog2/res/values/config.xml
+< ./I001D/rro_overlays/SystemUIRog2/res/values/dimens.xml
+< ./I001D/setup-makefiles.sh
+< ./I001D/system.prop
+< ./I001D/touch/.clang-format
+< ./I001D/touch/Android.bp
+< ./I001D/touch/GloveMode.cpp
+< ./I001D/touch/GloveMode.h
+< ./I001D/touch/TouchscreenGesture.cpp
+< ./I001D/touch/TouchscreenGesture.h
+< ./I001D/touch/service.cpp
+< ./I001D/touch/vendor.lineage.touch@1.0-service.asus_msmnile.rc
+< ./I001D/touch/vendor.lineage.touch@1.0-service.asus_msmnile.xml
+< ./I001D/vendor.prop
+< ./I001D/vendorsetup.sh
+< ./I001D/vibrator/Android.bp
+< ./I001D/vibrator/Vibrator.cpp
+< ./I001D/vibrator/Vibrator.h
+< ./I001D/vibrator/android.hardware.vibrator@1.2-service.I001D.rc
+< ./I001D/vibrator/android.hardware.vibrator@1.2-service.I001D.xml
+< ./I001D/vibrator/service.cpp
+< ./README.md
+< ./audio/audio_platform_info.xml
+< ./audio/audio_policy_configuration.xml
+< ./audio/mixer_paths_ZS660KL.xml
+< ./audio/mixer_paths_ZS660KL_EU.xml
+< ./audio/sound_trigger_platform_info.xml
+< ./biometrics/Android.bp
+< ./biometrics/BiometricsFingerprint.cpp
+< ./biometrics/BiometricsFingerprint.h
+< ./biometrics/android.hardware.biometrics.fingerprint@2.3-service.I001D.rc
+< ./biometrics/android.hardware.biometrics.fingerprint@2.3-service.I001D.xml
+< ./biometrics/concurrent_queue.h
+< ./biometrics/service.cpp
+< ./bliss_I001D.mk
+< ./bliss_I001D.mk.bak
+< ./bliss_I001D.mk.gapps-bak-20260710-004019
+< ./configs/idc/goodix_ts.idc
+< ./configs/idc/goodix_ts_station.idc
+< ./configs/keychars/goodix_ts.kcm
+< ./configs/keylayout/goodix_ts.kl
+< ./device.mk
+< ./extract-files.sh
+< ./init/Android.bp
+< ./init/etc/fstab.qcom
+< ./proprietary-files.txt
+< ./recovery/recovery/root/vendor/firmware/goodix_cfg_group.bin
+< ./recovery/recovery/root/vendor/firmware/goodix_cfg_group_station.bin
+< ./recovery/recovery/root/vendor/firmware/goodix_config.cfg
+< ./recovery/recovery/root/vendor/firmware/goodix_config_station.cfg
+< ./recovery/recovery/root/vendor/firmware/goodix_config_test.cfg
+< ./recovery/recovery/root/vendor/firmware/goodix_configs_glove.cfg
+< ./recovery/recovery/root/vendor/firmware/goodix_firmware.bin
+< ./rro_overlays/FrameworksResOverlay/Android.bp
+< ./rro_overlays/FrameworksResOverlay/AndroidManifest.xml
+< ./rro_overlays/FrameworksResOverlay/res/values/config.xml
+< ./rro_overlays/FrameworksResOverlay/res/xml/power_profile.xml
+< ./rro_overlays/SettingsProviderRog2/Android.bp
+< ./rro_overlays/SettingsProviderRog2/AndroidManifest.xml
+< ./rro_overlays/SettingsProviderRog2/res/values/defaults.xml
+< ./rro_overlays/SettingsRes/Android.bp
+< ./rro_overlays/SettingsRes/AndroidManifest.xml
+< ./rro_overlays/SettingsRes/res/values/config.xml
+< ./rro_overlays/SettingsRes/res/values/strings.xml
+< ./rro_overlays/SystemUIRog2/Android.bp
+< ./rro_overlays/SystemUIRog2/AndroidManifest.xml
+< ./rro_overlays/SystemUIRog2/res/values/config.xml
+< ./rro_overlays/SystemUIRog2/res/values/dimens.xml
+< ./setup-makefiles.sh
+< ./system.prop
+< ./touch/.clang-format
+< ./touch/Android.bp
+< ./touch/GloveMode.cpp
+< ./touch/GloveMode.h
+< ./touch/TouchscreenGesture.cpp
+< ./touch/TouchscreenGesture.h
+< ./touch/service.cpp
+< ./touch/vendor.lineage.touch@1.0-service.asus_msmnile.rc
+< ./touch/vendor.lineage.touch@1.0-service.asus_msmnile.xml
+< ./vendor.prop
+< ./vendorsetup.sh
+< ./vibrator/Android.bp
+< ./vibrator/Vibrator.cpp
+< ./vibrator/Vibrator.h
+< ./vibrator/android.hardware.vibrator@1.2-service.I001D.rc
+< ./vibrator/android.hardware.vibrator@1.2-service.I001D.xml
+< ./vibrator/service.cpp
+---
+> reconstructed from OTA
+=== A14 I001D tree listing ===
+./Android.bp
+./Android.mk
+./AndroidProducts.mk
+./BoardConfig.mk
+./BoardConfig.mk.gapps-bak-20260710-004019
+./I001D/Android.bp
+./I001D/Android.mk
+./I001D/AndroidProducts.mk
+./I001D/BoardConfig.mk
+./I001D/BoardConfig.mk.gapps-bak-20260710-004019
+./I001D/README.md
+./I001D/audio/audio_platform_info.xml
+./I001D/audio/audio_policy_configuration.xml
+./I001D/audio/mixer_paths_ZS660KL.xml
+./I001D/audio/mixer_paths_ZS660KL_EU.xml
+./I001D/audio/sound_trigger_platform_info.xml
+./I001D/biometrics/Android.bp
+./I001D/biometrics/BiometricsFingerprint.cpp
+./I001D/biometrics/BiometricsFingerprint.h
+./I001D/biometrics/android.hardware.biometrics.fingerprint@2.3-service.I001D.rc
+./I001D/biometrics/android.hardware.biometrics.fingerprint@2.3-service.I001D.xml
+./I001D/biometrics/concurrent_queue.h
+./I001D/biometrics/service.cpp
+./I001D/bliss_I001D.mk
+./I001D/bliss_I001D.mk.bak
+./I001D/bliss_I001D.mk.gapps-bak-20260710-004019
+./I001D/configs/idc/goodix_ts.idc
+./I001D/configs/idc/goodix_ts_station.idc
+./I001D/configs/keychars/goodix_ts.kcm
+./I001D/configs/keylayout/goodix_ts.kl
+./I001D/device.mk
+./I001D/extract-files.sh
+./I001D/init/Android.bp
+./I001D/init/etc/fstab.qcom
+./I001D/proprietary-files.txt
+./I001D/recovery/recovery/root/vendor/firmware/goodix_cfg_group.bin
+./I001D/recovery/recovery/root/vendor/firmware/goodix_cfg_group_station.bin
+./I001D/recovery/recovery/root/vendor/firmware/goodix_config.cfg
+./I001D/recovery/recovery/root/vendor/firmware/goodix_config_station.cfg
+./I001D/recovery/recovery/root/vendor/firmware/goodix_config_test.cfg
+./I001D/recovery/recovery/root/vendor/firmware/goodix_configs_glove.cfg
+./I001D/recovery/recovery/root/vendor/firmware/goodix_firmware.bin
+./I001D/rro_overlays/FrameworksResOverlay/Android.bp
+./I001D/rro_overlays/FrameworksResOverlay/AndroidManifest.xml
+./I001D/rro_overlays/FrameworksResOverlay/res/values/config.xml
+./I001D/rro_overlays/FrameworksResOverlay/res/xml/power_profile.xml
+./I001D/rro_overlays/SettingsProviderRog2/Android.bp
+./I001D/rro_overlays/SettingsProviderRog2/AndroidManifest.xml
+./I001D/rro_overlays/SettingsProviderRog2/res/values/defaults.xml
+./I001D/rro_overlays/SettingsRes/Android.bp
+./I001D/rro_overlays/SettingsRes/AndroidManifest.xml
+./I001D/rro_overlays/SettingsRes/res/values/config.xml
+./I001D/rro_overlays/SettingsRes/res/values/strings.xml
+./I001D/rro_overlays/SystemUIRog2/Android.bp
+./I001D/rro_overlays/SystemUIRog2/AndroidManifest.xml
+./I001D/rro_overlays/SystemUIRog2/res/values/config.xml
+./I001D/rro_overlays/SystemUIRog2/res/values/dimens.xml
+./I001D/setup-makefiles.sh
+./I001D/system.prop
+./I001D/touch/.clang-format
+./I001D/touch/Android.bp
+./I001D/touch/GloveMode.cpp
+./I001D/touch/GloveMode.h
+./I001D/touch/TouchscreenGesture.cpp
+./I001D/touch/TouchscreenGesture.h
+./I001D/touch/service.cpp
+./I001D/touch/vendor.lineage.touch@1.0-service.asus_msmnile.rc
+./I001D/touch/vendor.lineage.touch@1.0-service.asus_msmnile.xml
+./I001D/vendor.prop
+./I001D/vendorsetup.sh
+./I001D/vibrator/Android.bp
+./I001D/vibrator/Vibrator.cpp
+./I001D/vibrator/Vibrator.h
+./I001D/vibrator/android.hardware.vibrator@1.2-service.I001D.rc
+./I001D/vibrator/android.hardware.vibrator@1.2-service.I001D.xml
+./I001D/vibrator/service.cpp
+./README.md
+./audio/audio_platform_info.xml
+./audio/audio_policy_configuration.xml
+./audio/mixer_paths_ZS660KL.xml
+./audio/mixer_paths_ZS660KL_EU.xml
+./audio/sound_trigger_platform_info.xml
+./biometrics/Android.bp
+./biometrics/BiometricsFingerprint.cpp
+./biometrics/BiometricsFingerprint.h
+./biometrics/android.hardware.biometrics.fingerprint@2.3-service.I001D.rc
+./biometrics/android.hardware.biometrics.fingerprint@2.3-service.I001D.xml
+./biometrics/concurrent_queue.h
+./biometrics/service.cpp
+./bliss_I001D.mk
+./bliss_I001D.mk.bak
+./bliss_I001D.mk.gapps-bak-20260710-004019
+./configs/idc/goodix_ts.idc
+./configs/idc/goodix_ts_station.idc
+./configs/keychars/goodix_ts.kcm
+./configs/keylayout/goodix_ts.kl
+./device.mk
+./extract-files.sh
+./init/Android.bp
+./init/etc/fstab.qcom
+./proprietary-files.txt
+./recovery/recovery/root/vendor/firmware/goodix_cfg_group.bin
+./recovery/recovery/root/vendor/firmware/goodix_cfg_group_station.bin
+./recovery/recovery/root/vendor/firmware/goodix_config.cfg
+./recovery/recovery/root/vendor/firmware/goodix_config_station.cfg
+./recovery/recovery/root/vendor/firmware/goodix_config_test.cfg
+./recovery/recovery/root/vendor/firmware/goodix_configs_glove.cfg
+./recovery/recovery/root/vendor/firmware/goodix_firmware.bin
+./rro_overlays/FrameworksResOverlay/Android.bp
+./rro_overlays/FrameworksResOverlay/AndroidManifest.xml
+./rro_overlays/FrameworksResOverlay/res/values/config.xml
+./rro_overlays/FrameworksResOverlay/res/xml/power_profile.xml
+./rro_overlays/SettingsProviderRog2/Android.bp
+./rro_overlays/SettingsProviderRog2/AndroidManifest.xml
+./rro_overlays/SettingsProviderRog2/res/values/defaults.xml
+./rro_overlays/SettingsRes/Android.bp
+./rro_overlays/SettingsRes/AndroidManifest.xml
+./rro_overlays/SettingsRes/res/values/config.xml
+./rro_overlays/SettingsRes/res/values/strings.xml
+./rro_overlays/SystemUIRog2/Android.bp
+./rro_overlays/SystemUIRog2/AndroidManifest.xml
+./rro_overlays/SystemUIRog2/res/values/config.xml
+./rro_overlays/SystemUIRog2/res/values/dimens.xml
+./setup-makefiles.sh
+./system.prop
+./touch/.clang-format
+./touch/Android.bp
+./touch/GloveMode.cpp
+./touch/GloveMode.h
+./touch/TouchscreenGesture.cpp
+./touch/TouchscreenGesture.h
+./touch/service.cpp
+./touch/vendor.lineage.touch@1.0-service.asus_msmnile.rc
+./touch/vendor.lineage.touch@1.0-service.asus_msmnile.xml
+./vendor.prop
+./vendorsetup.sh
+./vibrator/Android.bp
+./vibrator/Vibrator.cpp
+./vibrator/Vibrator.h
+./vibrator/android.hardware.vibrator@1.2-service.I001D.rc
+./vibrator/android.hardware.vibrator@1.2-service.I001D.xml
+./vibrator/service.cpp
+=== A14 sm8150-common tree listing ===
+./Android.bp
+./Android.mk
+./AsusParts/Android.mk
+./AsusParts/AndroidManifest.xml
+./AsusParts/proguard.flags
+./AsusParts/res/drawable/ic_asusparts.xml
+./AsusParts/res/drawable/ic_charger.xml
+./AsusParts/res/drawable/ic_doze.xml
+./AsusParts/res/drawable/ic_gesture.xml
+./AsusParts/res/drawable/ic_glove.xml
+./AsusParts/res/drawable/ic_hand.xml
+./AsusParts/res/drawable/ic_pickup.xml
+./AsusParts/res/drawable/ic_pocket.xml
+./AsusParts/res/drawable/ic_swipe_up.xml
+./AsusParts/res/layout/preference_category_material_settings.xml
+./AsusParts/res/layout/preference_material_settings.xml
+./AsusParts/res/layout/preference_seek_bar.xml
+./AsusParts/res/values/arrays.xml
+./AsusParts/res/values/config.xml
+./AsusParts/res/values/strings.xml
+./AsusParts/res/values/styles.xml
+./AsusParts/res/xml/asusparts.xml
+./AsusParts/res/xml/doze_panel.xml
+./AsusParts/res/xml/touchscreen_gestures.xml
+./AsusParts/src/org/blissroms/settings/asusparts/AsusParts.java
+./AsusParts/src/org/blissroms/settings/asusparts/AsusPartsActivity.java
+./AsusParts/src/org/blissroms/settings/asusparts/AsusPartsTileService.java
+./AsusParts/src/org/blissroms/settings/asusparts/BootCompletedReceiver.java
+./AsusParts/src/org/blissroms/settings/asusparts/FileUtils.java
+./AsusParts/src/org/blissroms/settings/asusparts/doze/DozeService.java
+./AsusParts/src/org/blissroms/settings/asusparts/doze/DozeSettingsActivity.java
+./AsusParts/src/org/blissroms/settings/asusparts/doze/DozeSettingsFragment.java
+./AsusParts/src/org/blissroms/settings/asusparts/doze/DozeUtils.java
+./AsusParts/src/org/blissroms/settings/asusparts/doze/HandwaveSensor.java
+./AsusParts/src/org/blissroms/settings/asusparts/doze/PickupSensor.java
+./AsusParts/src/org/blissroms/settings/asusparts/doze/PocketSensor.java
+./AsusParts/src/org/blissroms/settings/asusparts/preference/SystemSettingSwitchPreference.java
+./AsusParts/src/org/blissroms/settings/asusparts/preference/SystemSettingsStore.java
+./AsusParts/src/org/blissroms/settings/asusparts/touch/TouchGestureActivity.java
+./AsusParts/src/org/blissroms/settings/asusparts/touch/TouchKeyHandler.java
+./AsusParts/src/org/blissroms/settings/asusparts/touch/TouchscreenGestureConstants.java
+./AsusParts/src/org/blissroms/settings/asusparts/touch/TouchscreenGestureSettings.java
+./AsusParts/src/org/blissroms/settings/asusparts/util/ActionUtils.java
+./AsusParts/src/org/blissroms/settings/asusparts/util/ResourceUtils.java
+./AsusParts/src/org/blissroms/settings/asusparts/util/Utils.java
+./BoardConfigCommon.mk
+./audio/audio_policy_configuration.xml
+./audio/media_profiles_V1_0.xml
+./audio/sound_trigger_mixer_paths_wcd9340_qrd.xml
+./bootctrl/Android.bp
+./config.fs
+./configs/component-overrides.xml
+./configs/excluded-input-devices.xml
+./configs/gps/apdr.conf
+./configs/gps/flp.conf
+./configs/gps/gps.conf
+./configs/gps/izat.conf
+./configs/gps/lowi.conf
+./configs/gps/sap.conf
+./configs/gps/xtwifi.conf
+./configs/msm_irqbalance.conf
+./configs/perf/perfboostsconfig.xml
+./configs/permissions/privapp-permissions-hotword-product.xml
+./configs/permissions/privapp-permissions-qti.xml
+./configs/permissions/privapp-permissions-wfd.xml
+./configs/privapp-permissions-asusparts.xml
+./configs/public.libraries.txt
+./configs/sec_config
+./extract-files.sh
+./gpt-utils/Android.bp
+./gpt-utils/gpt-utils.cpp
+./gpt-utils/gpt-utils.h
+./gpt-utils/sparse_crc32.cpp
+./gpt-utils/sparse_crc32.h
+./init/Android.bp
+./init/etc/init.asus.rc
+./init/etc/init.class_main.sh
+./init/etc/init.qcom.early_boot.sh
+./init/etc/init.qcom.post_boot.sh
+./init/etc/init.qcom.power.rc
+./init/etc/init.qcom.rc
+./init/etc/init.qcom.sh
+./init/etc/init.qti.chg_policy.sh
+./init/etc/init.qti.dcvs.sh
+./init/etc/init.recovery.qcom.rc
+./init/etc/init.target.rc
+./init/etc/ueventd.qcom.rc
+./interfaces/goodix/Android.bp
+./interfaces/goodix/biometrics/fingerprint/2.1/Android.bp
+./interfaces/goodix/biometrics/fingerprint/2.1/IGoodixFingerprintDaemon.hal
+./interfaces/goodix/biometrics/fingerprint/2.1/IGoodixFingerprintDaemonCallback.hal
+./lights/Android.bp
+./lights/Lights.cpp
+./lights/Lights.h
+./lights/lights-asus_msmnile.rc
+./lights/lights-asus_msmnile.xml
+./lights/main.cpp
+./msmnile.mk
+./odm.prop
+./overlay/frameworks/base/core/res/res/values-mcc234-mnc15-en-rGB/config.xml
+./overlay/frameworks/base/core/res/res/values-mcc234-mnc15-en-rIN/config.xml
+./overlay/frameworks/base/core/res/res/values-mcc234-mnc15/config.xml
+./overlay/frameworks/base/core/res/res/values-mcc262-mnc02-en-rGB/config.xml
+./overlay/frameworks/base/core/res/res/values-mcc262-mnc02-en-rIN/config.xml
+./overlay/frameworks/base/core/res/res/values-mcc262-mnc02/config.xml
+./overlay/frameworks/base/core/res/res/values-mcc262-mnc04-en-rGB/config.xml
+./overlay/frameworks/base/core/res/res/values-mcc262-mnc04-en-rIN/config.xml
+./overlay/frameworks/base/core/res/res/values-mcc262-mnc04/config.xml
+./overlay/frameworks/base/core/res/res/values-mcc262-mnc09-en-rGB/config.xml
+./overlay/frameworks/base/core/res/res/values-mcc262-mnc09-en-rIN/config.xml
+./overlay/frameworks/base/core/res/res/values-mcc262-mnc09/config.xml
+./overlay/frameworks/base/core/res/res/values-mcc310-mnc004/config.xml
+./overlay/frameworks/base/core/res/res/values-mcc310-mnc120/config.xml
+./overlay/frameworks/base/core/res/res/values-mcc310-mnc260/config.xml
+./overlay/frameworks/base/core/res/res/values-mcc310-mnc410/config.xml
+./overlay/frameworks/base/core/res/res/values-mcc311-mnc480/config.xml
+./overlay/frameworks/base/core/res/res/values-mcc312-mnc530/config.xml
+./overlay/frameworks/base/core/res/res/values-mcc313-mnc100/config.xml
+./overlay/frameworks/base/core/res/res/values-mcc454-mnc03/config.xml
+./overlay/frameworks/base/core/res/res/values-mcc454-mnc04/config.xml
+./overlay/frameworks/base/core/res/res/values-mcc455-mnc02/config.xml
+./overlay/frameworks/base/core/res/res/values-mcc455-mnc07/config.xml
+./overlay/frameworks/base/core/res/res/values-mcc460-mnc03/config.xml
+./overlay/frameworks/base/core/res/res/values-mcc460-mnc11/config.xml
+./overlay/frameworks/base/core/res/res/values/config.xml
+./overlay/frameworks/base/packages/SystemUI/res/values/config.xml
+./overlay/packages/apps/CellBroadcastReceiver/res/values/config.xml
+./overlay/packages/apps/Settings/res/values/config.xml
+./overlay/packages/services/Telephony/res/values/config.xml
+./proprietary-files.txt
+./rro_overlays/ApertureOverlay/Android.bp
+./rro_overlays/ApertureOverlay/AndroidManifest.xml
+./rro_overlays/ApertureOverlay/res/values/config.xml
+./rro_overlays/CarrierConfigResCommon/Android.bp
+./rro_overlays/CarrierConfigResCommon/AndroidManifest.xml
+./rro_overlays/CarrierConfigResCommon/res/xml/vendor.xml
+./rro_overlays/WifiOverlay/Android.bp
+./rro_overlays/WifiOverlay/AndroidManifest.xml
+./rro_overlays/WifiOverlay/res/values/config.xml
+./sepolicy/private/adbd.te
+./sepolicy/vendor/asus_sensors.te
+./sepolicy/vendor/asus_sp.te
+./sepolicy/vendor/asus_touch.te
+./sepolicy/vendor/asus_usb_host.te
+./sepolicy/vendor/audio_debug.te
+./sepolicy/vendor/audioserver.te
+./sepolicy/vendor/aura_sync.te
+./sepolicy/vendor/boot_vibrate.te
+./sepolicy/vendor/cameraserver.te
+./sepolicy/vendor/device.te
+./sepolicy/vendor/ec_ueventd.te
+./sepolicy/vendor/file.te
+./sepolicy/vendor/file_contexts
+./sepolicy/vendor/fsck.te
+./sepolicy/vendor/genfs_contexts
+./sepolicy/vendor/genfs_contexts.bak
+./sepolicy/vendor/genfs_contexts.bak2
+./sepolicy/vendor/genfs_contexts.bak3
+./sepolicy/vendor/genfs_contexts.gapps-bak-20260710-004019
+./sepolicy/vendor/hal_audio_default.te
+./sepolicy/vendor/hal_bootctl_default.te
+./sepolicy/vendor/hal_camera_default.te
+./sepolicy/vendor/hal_fingerprint_default.te
+./sepolicy/vendor/hal_graphics_composer_default.te
+./sepolicy/vendor/hal_health_default.te
+./sepolicy/vendor/hal_light_default.te
+./sepolicy/vendor/hal_lineage_touch_default.te
+./sepolicy/vendor/hal_nfc_default.te
+./sepolicy/vendor/hal_perf_default.te
+./sepolicy/vendor/hal_power_default.te
+./sepolicy/vendor/hal_sensors_default.te
+./sepolicy/vendor/hal_vibrator_default.te
+./sepolicy/vendor/hwservice.te
+./sepolicy/vendor/hwservice_contexts
+./sepolicy/vendor/init.te
+./sepolicy/vendor/kernel.te
+./sepolicy/vendor/lasercsc.te
+./sepolicy/vendor/mediaserver.te
+./sepolicy/vendor/platform_app.te
+./sepolicy/vendor/priv_app.te
+./sepolicy/vendor/property.te
+./sepolicy/vendor/property_contexts
+./sepolicy/vendor/radio.te
+./sepolicy/vendor/rild.te
+./sepolicy/vendor/seapp_contexts
+./sepolicy/vendor/shell.te
+./sepolicy/vendor/storage_check.te
+./sepolicy/vendor/surfaceflinger.te
+./sepolicy/vendor/system_app.te
+./sepolicy/vendor/system_server.te
+./sepolicy/vendor/tee.te
+./sepolicy/vendor/untrusted_app.te
+./sepolicy/vendor/vendor_hal_gnss_qti.te
+./sepolicy/vendor/vendor_hal_perf_default.te
+./sepolicy/vendor/vendor_hvdcp.te
+./sepolicy/vendor/vendor_init.te
+./sepolicy/vendor/vendor_location.te
+./sepolicy/vendor/vendor_qtelephony.te
+./sepolicy/vendor/vendor_qti_init_shell.te
+./sepolicy/vendor/vendor_sensors.te
+./sepolicy/vendor/vendor_sensors_qti.te
+./sepolicy/vendor/vendor_thermal-engine.te
+./sepolicy/vendor/vendor_wcnss_service.te
+./sepolicy/vendor/vibrate_control.te
+./sepolicy/vendor/yoda_dongle.te
+./setup-makefiles.sh
+./sm8150-common/Android.bp
+./sm8150-common/Android.mk
+./sm8150-common/AsusParts/Android.mk
+./sm8150-common/AsusParts/AndroidManifest.xml
+./sm8150-common/AsusParts/proguard.flags
+./sm8150-common/AsusParts/res/drawable/ic_asusparts.xml
+./sm8150-common/AsusParts/res/drawable/ic_charger.xml
+./sm8150-common/AsusParts/res/drawable/ic_doze.xml
+./sm8150-common/AsusParts/res/drawable/ic_gesture.xml
+./sm8150-common/AsusParts/res/drawable/ic_glove.xml
+./sm8150-common/AsusParts/res/drawable/ic_hand.xml
+./sm8150-common/AsusParts/res/drawable/ic_pickup.xml
+./sm8150-common/AsusParts/res/drawable/ic_pocket.xml
+./sm8150-common/AsusParts/res/drawable/ic_swipe_up.xml
+./sm8150-common/AsusParts/res/layout/preference_category_material_settings.xml
+./sm8150-common/AsusParts/res/layout/preference_material_settings.xml
+./sm8150-common/AsusParts/res/layout/preference_seek_bar.xml
+./sm8150-common/AsusParts/res/values/arrays.xml
+./sm8150-common/AsusParts/res/values/config.xml
+./sm8150-common/AsusParts/res/values/strings.xml
+./sm8150-common/AsusParts/res/values/styles.xml
+./sm8150-common/AsusParts/res/xml/asusparts.xml
+./sm8150-common/AsusParts/res/xml/doze_panel.xml
+./sm8150-common/AsusParts/res/xml/touchscreen_gestures.xml
+./sm8150-common/AsusParts/src/org/blissroms/settings/asusparts/AsusParts.java
+./sm8150-common/AsusParts/src/org/blissroms/settings/asusparts/AsusPartsActivity.java
+./sm8150-common/AsusParts/src/org/blissroms/settings/asusparts/AsusPartsTileService.java
+./sm8150-common/AsusParts/src/org/blissroms/settings/asusparts/BootCompletedReceiver.java
+./sm8150-common/AsusParts/src/org/blissroms/settings/asusparts/FileUtils.java
+./sm8150-common/AsusParts/src/org/blissroms/settings/asusparts/doze/DozeService.java
+./sm8150-common/AsusParts/src/org/blissroms/settings/asusparts/doze/DozeSettingsActivity.java
+./sm8150-common/AsusParts/src/org/blissroms/settings/asusparts/doze/DozeSettingsFragment.java
+./sm8150-common/AsusParts/src/org/blissroms/settings/asusparts/doze/DozeUtils.java
+./sm8150-common/AsusParts/src/org/blissroms/settings/asusparts/doze/HandwaveSensor.java
+./sm8150-common/AsusParts/src/org/blissroms/settings/asusparts/doze/PickupSensor.java
+./sm8150-common/AsusParts/src/org/blissroms/settings/asusparts/doze/PocketSensor.java
+./sm8150-common/AsusParts/src/org/blissroms/settings/asusparts/preference/SystemSettingSwitchPreference.java
+./sm8150-common/AsusParts/src/org/blissroms/settings/asusparts/preference/SystemSettingsStore.java
+./sm8150-common/AsusParts/src/org/blissroms/settings/asusparts/touch/TouchGestureActivity.java
+./sm8150-common/AsusParts/src/org/blissroms/settings/asusparts/touch/TouchKeyHandler.java
+./sm8150-common/AsusParts/src/org/blissroms/settings/asusparts/touch/TouchscreenGestureConstants.java
+./sm8150-common/AsusParts/src/org/blissroms/settings/asusparts/touch/TouchscreenGestureSettings.java
+./sm8150-common/AsusParts/src/org/blissroms/settings/asusparts/util/ActionUtils.java
+./sm8150-common/AsusParts/src/org/blissroms/settings/asusparts/util/ResourceUtils.java
+./sm8150-common/AsusParts/src/org/blissroms/settings/asusparts/util/Utils.java
+./sm8150-common/BoardConfigCommon.mk
+./sm8150-common/audio/audio_policy_configuration.xml
+./sm8150-common/audio/media_profiles_V1_0.xml
+./sm8150-common/audio/sound_trigger_mixer_paths_wcd9340_qrd.xml
+./sm8150-common/bootctrl/Android.bp
+./sm8150-common/config.fs
+./sm8150-common/configs/component-overrides.xml
+./sm8150-common/configs/excluded-input-devices.xml
+./sm8150-common/configs/gps/apdr.conf
+./sm8150-common/configs/gps/flp.conf
+./sm8150-common/configs/gps/gps.conf
+./sm8150-common/configs/gps/izat.conf
+./sm8150-common/configs/gps/lowi.conf
+./sm8150-common/configs/gps/sap.conf
+./sm8150-common/configs/gps/xtwifi.conf
+./sm8150-common/configs/msm_irqbalance.conf
+./sm8150-common/configs/perf/perfboostsconfig.xml
+./sm8150-common/configs/permissions/privapp-permissions-hotword-product.xml
+./sm8150-common/configs/permissions/privapp-permissions-qti.xml
+./sm8150-common/configs/permissions/privapp-permissions-wfd.xml
+./sm8150-common/configs/privapp-permissions-asusparts.xml
+./sm8150-common/configs/public.libraries.txt
+./sm8150-common/configs/sec_config
+./sm8150-common/extract-files.sh
+./sm8150-common/gpt-utils/Android.bp
+./sm8150-common/gpt-utils/gpt-utils.cpp
+./sm8150-common/gpt-utils/gpt-utils.h
+./sm8150-common/gpt-utils/sparse_crc32.cpp
+./sm8150-common/gpt-utils/sparse_crc32.h
+./sm8150-common/init/Android.bp
+./sm8150-common/init/etc/init.asus.rc
+./sm8150-common/init/etc/init.class_main.sh
+./sm8150-common/init/etc/init.qcom.early_boot.sh
+./sm8150-common/init/etc/init.qcom.post_boot.sh
+./sm8150-common/init/etc/init.qcom.power.rc
+./sm8150-common/init/etc/init.qcom.rc
+./sm8150-common/init/etc/init.qcom.sh
+./sm8150-common/init/etc/init.qti.chg_policy.sh
+./sm8150-common/init/etc/init.qti.dcvs.sh
+./sm8150-common/init/etc/init.recovery.qcom.rc
+./sm8150-common/init/etc/init.target.rc
+./sm8150-common/init/etc/ueventd.qcom.rc
+./sm8150-common/interfaces/goodix/Android.bp
+./sm8150-common/interfaces/goodix/biometrics/fingerprint/2.1/Android.bp
+./sm8150-common/interfaces/goodix/biometrics/fingerprint/2.1/IGoodixFingerprintDaemon.hal
+./sm8150-common/interfaces/goodix/biometrics/fingerprint/2.1/IGoodixFingerprintDaemonCallback.hal
+./sm8150-common/lights/Android.bp
+./sm8150-common/lights/Lights.cpp
+./sm8150-common/lights/Lights.h
+./sm8150-common/lights/lights-asus_msmnile.rc
+./sm8150-common/lights/lights-asus_msmnile.xml
+./sm8150-common/lights/main.cpp
+./sm8150-common/msmnile.mk
+./sm8150-common/odm.prop
+./sm8150-common/overlay/frameworks/base/core/res/res/values-mcc234-mnc15-en-rGB/config.xml
+./sm8150-common/overlay/frameworks/base/core/res/res/values-mcc234-mnc15-en-rIN/config.xml
+./sm8150-common/overlay/frameworks/base/core/res/res/values-mcc234-mnc15/config.xml
+./sm8150-common/overlay/frameworks/base/core/res/res/values-mcc262-mnc02-en-rGB/config.xml
+./sm8150-common/overlay/frameworks/base/core/res/res/values-mcc262-mnc02-en-rIN/config.xml
+./sm8150-common/overlay/frameworks/base/core/res/res/values-mcc262-mnc02/config.xml
+./sm8150-common/overlay/frameworks/base/core/res/res/values-mcc262-mnc04-en-rGB/config.xml
+./sm8150-common/overlay/frameworks/base/core/res/res/values-mcc262-mnc04-en-rIN/config.xml
+./sm8150-common/overlay/frameworks/base/core/res/res/values-mcc262-mnc04/config.xml
+./sm8150-common/overlay/frameworks/base/core/res/res/values-mcc262-mnc09-en-rGB/config.xml
+./sm8150-common/overlay/frameworks/base/core/res/res/values-mcc262-mnc09-en-rIN/config.xml
+./sm8150-common/overlay/frameworks/base/core/res/res/values-mcc262-mnc09/config.xml
+./sm8150-common/overlay/frameworks/base/core/res/res/values-mcc310-mnc004/config.xml
+./sm8150-common/overlay/frameworks/base/core/res/res/values-mcc310-mnc120/config.xml
+./sm8150-common/overlay/frameworks/base/core/res/res/values-mcc310-mnc260/config.xml
+./sm8150-common/overlay/frameworks/base/core/res/res/values-mcc310-mnc410/config.xml
+./sm8150-common/overlay/frameworks/base/core/res/res/values-mcc311-mnc480/config.xml
+./sm8150-common/overlay/frameworks/base/core/res/res/values-mcc312-mnc530/config.xml
+./sm8150-common/overlay/frameworks/base/core/res/res/values-mcc313-mnc100/config.xml
+./sm8150-common/overlay/frameworks/base/core/res/res/values-mcc454-mnc03/config.xml
+./sm8150-common/overlay/frameworks/base/core/res/res/values-mcc454-mnc04/config.xml
+./sm8150-common/overlay/frameworks/base/core/res/res/values-mcc455-mnc02/config.xml
+./sm8150-common/overlay/frameworks/base/core/res/res/values-mcc455-mnc07/config.xml
+./sm8150-common/overlay/frameworks/base/core/res/res/values-mcc460-mnc03/config.xml
+./sm8150-common/overlay/frameworks/base/core/res/res/values-mcc460-mnc11/config.xml
+./sm8150-common/overlay/frameworks/base/core/res/res/values/config.xml
+./sm8150-common/overlay/frameworks/base/packages/SystemUI/res/values/config.xml
+./sm8150-common/overlay/packages/apps/CellBroadcastReceiver/res/values/config.xml
+./sm8150-common/overlay/packages/apps/Settings/res/values/config.xml
+./sm8150-common/overlay/packages/services/Telephony/res/values/config.xml
+./sm8150-common/proprietary-files.txt
+./sm8150-common/rro_overlays/ApertureOverlay/Android.bp
+./sm8150-common/rro_overlays/ApertureOverlay/AndroidManifest.xml
+./sm8150-common/rro_overlays/ApertureOverlay/res/values/config.xml
+./sm8150-common/rro_overlays/CarrierConfigResCommon/Android.bp
+./sm8150-common/rro_overlays/CarrierConfigResCommon/AndroidManifest.xml
+./sm8150-common/rro_overlays/CarrierConfigResCommon/res/xml/vendor.xml
+./sm8150-common/rro_overlays/WifiOverlay/Android.bp
+./sm8150-common/rro_overlays/WifiOverlay/AndroidManifest.xml
+./sm8150-common/rro_overlays/WifiOverlay/res/values/config.xml
+./sm8150-common/sepolicy/private/adbd.te
+./sm8150-common/sepolicy/vendor/asus_sensors.te
+./sm8150-common/sepolicy/vendor/asus_sp.te
+./sm8150-common/sepolicy/vendor/asus_touch.te
+./sm8150-common/sepolicy/vendor/asus_usb_host.te
+./sm8150-common/sepolicy/vendor/audio_debug.te
+./sm8150-common/sepolicy/vendor/audioserver.te
+./sm8150-common/sepolicy/vendor/aura_sync.te
+./sm8150-common/sepolicy/vendor/boot_vibrate.te
+./sm8150-common/sepolicy/vendor/cameraserver.te
+./sm8150-common/sepolicy/vendor/device.te
+./sm8150-common/sepolicy/vendor/ec_ueventd.te
+./sm8150-common/sepolicy/vendor/file.te
+./sm8150-common/sepolicy/vendor/file_contexts
+./sm8150-common/sepolicy/vendor/fsck.te
+./sm8150-common/sepolicy/vendor/genfs_contexts
+./sm8150-common/sepolicy/vendor/genfs_contexts.bak
+./sm8150-common/sepolicy/vendor/genfs_contexts.bak2
+./sm8150-common/sepolicy/vendor/genfs_contexts.bak3
+./sm8150-common/sepolicy/vendor/genfs_contexts.gapps-bak-20260710-004019
+./sm8150-common/sepolicy/vendor/hal_audio_default.te
+./sm8150-common/sepolicy/vendor/hal_bootctl_default.te
+./sm8150-common/sepolicy/vendor/hal_camera_default.te
+./sm8150-common/sepolicy/vendor/hal_fingerprint_default.te
+./sm8150-common/sepolicy/vendor/hal_graphics_composer_default.te
+./sm8150-common/sepolicy/vendor/hal_health_default.te
+./sm8150-common/sepolicy/vendor/hal_light_default.te
+./sm8150-common/sepolicy/vendor/hal_lineage_touch_default.te
+./sm8150-common/sepolicy/vendor/hal_nfc_default.te
+./sm8150-common/sepolicy/vendor/hal_perf_default.te
+./sm8150-common/sepolicy/vendor/hal_power_default.te
+./sm8150-common/sepolicy/vendor/hal_sensors_default.te
+./sm8150-common/sepolicy/vendor/hal_vibrator_default.te
+./sm8150-common/sepolicy/vendor/hwservice.te
+./sm8150-common/sepolicy/vendor/hwservice_contexts
+./sm8150-common/sepolicy/vendor/init.te
+./sm8150-common/sepolicy/vendor/kernel.te
+./sm8150-common/sepolicy/vendor/lasercsc.te
+./sm8150-common/sepolicy/vendor/mediaserver.te
+./sm8150-common/sepolicy/vendor/platform_app.te
+./sm8150-common/sepolicy/vendor/priv_app.te
+./sm8150-common/sepolicy/vendor/property.te
+./sm8150-common/sepolicy/vendor/property_contexts
+./sm8150-common/sepolicy/vendor/radio.te
+./sm8150-common/sepolicy/vendor/rild.te
+./sm8150-common/sepolicy/vendor/seapp_contexts
+./sm8150-common/sepolicy/vendor/shell.te
+./sm8150-common/sepolicy/vendor/storage_check.te
+./sm8150-common/sepolicy/vendor/surfaceflinger.te
+./sm8150-common/sepolicy/vendor/system_app.te
+./sm8150-common/sepolicy/vendor/system_server.te
+./sm8150-common/sepolicy/vendor/tee.te
+./sm8150-common/sepolicy/vendor/untrusted_app.te
+./sm8150-common/sepolicy/vendor/vendor_hal_gnss_qti.te
+./sm8150-common/sepolicy/vendor/vendor_hal_perf_default.te
+./sm8150-common/sepolicy/vendor/vendor_hvdcp.te
+./sm8150-common/sepolicy/vendor/vendor_init.te
+./sm8150-common/sepolicy/vendor/vendor_location.te
+./sm8150-common/sepolicy/vendor/vendor_qtelephony.te
+./sm8150-common/sepolicy/vendor/vendor_qti_init_shell.te
+./sm8150-common/sepolicy/vendor/vendor_sensors.te
+./sm8150-common/sepolicy/vendor/vendor_sensors_qti.te
+./sm8150-common/sepolicy/vendor/vendor_thermal-engine.te
+./sm8150-common/sepolicy/vendor/vendor_wcnss_service.te
+./sm8150-common/sepolicy/vendor/vibrate_control.te
+./sm8150-common/sepolicy/vendor/yoda_dongle.te
+./sm8150-common/setup-makefiles.sh
+./sm8150-common/system.prop
+./sm8150-common/system_ext.prop
+./sm8150-common/update-sha1sums.py
+./sm8150-common/vendor.prop
+./sm8150-common/vintf/framework_compatibility_matrix.xml
+./sm8150-common/vintf/manifest-qva.xml
+./sm8150-common/vintf/manifest.xml
+./sm8150-common/wifi/WCNSS_qcom_cfg.ini
+./sm8150-common/wifi/p2p_supplicant_overlay.conf
+./sm8150-common/wifi/wpa_supplicant_overlay.conf
+./system.prop
+./system_ext.prop
+./update-sha1sums.py
+./vendor.prop
+./vintf/framework_compatibility_matrix.xml
+./vintf/manifest-qva.xml
+./vintf/manifest.xml
+./wifi/WCNSS_qcom_cfg.ini
+./wifi/p2p_supplicant_overlay.conf
+./wifi/wpa_supplicant_overlay.conf

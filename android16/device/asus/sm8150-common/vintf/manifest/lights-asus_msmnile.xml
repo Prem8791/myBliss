@@ -1,0 +1,10 @@
+<!--
+    Input:
+        device/asus/sm8150-common/lights/lights-asus_msmnile.xml
+-->
+<manifest version="9.0" type="device">
+    <hal format="aidl">
+        <name>android.hardware.light</name>
+        <fqname>ILights/default</fqname>
+    </hal>
+</manifest>

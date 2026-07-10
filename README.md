@@ -20,11 +20,21 @@ m otapackage
 
 ## Contents
 
-- `MANIFEST.md` — all repos used
+- `MANIFEST.md` — all repos used (Android 14 BlissROM Universe)
 - `CHANGES.md` — every modification made
 - `homelauncher-uncommitted.diff` — latest uncommitted launcher patches
 - `homelauncher-git-log.txt` — full HomeLauncher git history
-- `local_manifests/` — XML to add I001D device repos
+- `local_manifests/` — I001D device repo XMLs (Android 14)
+- `android16/` — **Android 16 (Waterlily) bring-up analysis:**
+  - `findings.android16.md` — full gap analysis (VINTF, fstab, kernel, services, encryption)
+  - `device/` — A16 VINTF manifests, init RC files, fstab, SELinux policy, ramdisk extracted from OTA
+  - `vendor/asus/` — vendor blob inventory + SHA256 diffs (A14 vs A16)
+  - `kernel/asus/I001D/` — kernel config + 812-line A14→A16 config diff
+  - `patches/` — all `.diff` files (fstab, VINTF, kernel, init-target)
+  - `bringup-i001d-to-waterlily.sh` — bring-up script
+  - `extract-vendor.sh` — blob extraction instructions
+  - `local_manifests/waterlily-i001d.xml` — 6 private `StudioKeys-Dumps` repo refs
+  - `android14-configs/` — A14 BoardConfig, device.mk for reference
 
 ## VM
 
