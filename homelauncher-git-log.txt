@@ -1,0 +1,36 @@
+03ec4bd update every time
+e7eab63 Refresh recent card after each minimize
+042b34d Add weather settings and stabilize recent snapshots
+f1322d9 Replace notifications with glance dashboard
+6cc1326 Improve live launcher cards and calendar interactions
+3883b76 Lock launcher to portrait orientation
+9bc7e91 fix: refresh app index via LauncherApps.Callback on package add/remove/change
+c45e64d gapps works
+449aa99 Refine launcher dock and settings workflow
+f019fc4 Keep userdebug build identity in VM ROM integration
+bfe2434 Polish launcher controls and wallpaper flow
+66fd267 purely system app now.
+eae4cc4 Remove hidden API and local broadcast fallbacks
+ddab252 Use platform ActivityTaskManager recents backend
+b0c3684 Back out invalid TaskOrganizer recents backend
+bf2db65 Fix AOSP TaskOrganizer backend compile errors
+8bc020c Fix HomeLauncher VM Soong build inputs
+fad14c5 Implement TaskOrganizer backend, QuickStep service, SEPolicy fix
+9753049 rulebook
+12f044d Add handover.md compiling session 2 findings
+a1346d8 Revert "Remove overlay from product config (breaks gesture nav) + add handover.md"
+9c97817 Remove overlay from product config (breaks gesture nav) + add handover.md
+5fba5e8 Fix ROM integration patches for VM git apply flow
+015e816 Add ROM integration patch 0007/0008 and update docs
+e09fb1a Fix HomeLauncher AOSP Soong build compatibility
+195c883 Add HomeLauncher runtime diagnostics and polling guards
+fb0061b Fix polling backoff, diagnostic logging, and AOSP version alignment
+c5f47aa Add root Android.bp, privapp permissions, and manifest package for AOSP VM build
+fc7fd6a Make HomeLauncher recents owner and allow CPU stats
+30fadda Clean AOSP integration template dependencies
+16c48bc Handle nullable Soong view lookups
+4acdaf7 Tighten Kotlin source compatibility
+f82610d Document AOSP Kotlin compatibility checks
+d852b4f Fix Kotlin view lookup compatibility
+df02e12 Prepare ROM bundled launcher integration
+7046216 Initial launcher project import

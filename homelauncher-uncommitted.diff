@@ -1,0 +1,154 @@
+diff --git a/app/src/aosp/java/com/home/launcher/system/platform/PlatformRecentTasksBackend.kt b/app/src/aosp/java/com/home/launcher/system/platform/PlatformRecentTasksBackend.kt
+index 4696b4d..ffe57a3 100644
+--- a/app/src/aosp/java/com/home/launcher/system/platform/PlatformRecentTasksBackend.kt
++++ b/app/src/aosp/java/com/home/launcher/system/platform/PlatformRecentTasksBackend.kt
+@@ -121,14 +121,7 @@ class PlatformRecentTasksBackend(private val context: Context) : RecentTasksBack
+                 return@runCatching null
+             }
+ 
+-            val orientation = snapshot.orientation
+-            if (orientation == 0) {
+-                bitmap
+-            } else {
+-                val matrix = Matrix()
+-                matrix.postRotate(orientation.toFloat())
+-                Bitmap.createBitmap(bitmap, 0, 0, bitmap.width, bitmap.height, matrix, true)
+-            }
++            bitmap
+         }.onFailure {
+             Log.w(TAG, "getTaskSnapshot failed for task $taskId", it)
+         }.getOrNull()
+diff --git a/app/src/main/java/com/home/launcher/MainActivity.kt b/app/src/main/java/com/home/launcher/MainActivity.kt
+index f8c48e3..c52b9fe 100644
+--- a/app/src/main/java/com/home/launcher/MainActivity.kt
++++ b/app/src/main/java/com/home/launcher/MainActivity.kt
+@@ -322,14 +322,20 @@ class MainActivity : AppCompatActivity() {
+ 
+     private fun updateRecentTileHeight() {
+         recentAppsGrid.post {
+-            val gridH = recentAppsGrid.height
+-            val padTop = recentAppsGrid.paddingTop
+-            val padBottom = recentAppsGrid.paddingBottom
+-            val gap = 0
+-            val rows = 3
+-            val h = ((gridH - padTop - padBottom - (rows - 1) * gap) / rows.toFloat()).roundToInt()
+-            if (h > 0) {
+-                recentAppsAdapter.setTileHeight(h)
++            val gridW = recentAppsGrid.width
++            val padLeft = recentAppsGrid.paddingLeft
++            val padRight = recentAppsGrid.paddingRight
++            val cols = 3
++            val colWidth = (gridW - padLeft - padRight) / cols
++
++            val density = resources.displayMetrics.density
++            val tilePadding = (4 * density).roundToInt()
++            val displayRatio = resources.displayMetrics.widthPixels.toFloat() /
++                resources.displayMetrics.heightPixels.toFloat()
++            val tileH = ((colWidth - tilePadding) / displayRatio + tilePadding).roundToInt()
++
++            if (tileH > 0) {
++                recentAppsAdapter.setTileHeight(tileH)
+                 recentAppsAdapter.notifyDataSetChanged()
+             }
+         }
+diff --git a/app/src/main/java/com/home/launcher/adapter/RecentAppsAdapter.kt b/app/src/main/java/com/home/launcher/adapter/RecentAppsAdapter.kt
+index ca7162b..26962a4 100644
+--- a/app/src/main/java/com/home/launcher/adapter/RecentAppsAdapter.kt
++++ b/app/src/main/java/com/home/launcher/adapter/RecentAppsAdapter.kt
+@@ -137,7 +137,6 @@ class RecentAppsAdapter(
+             val snapshot = thumbnailCache[tile.taskId]
+             if (snapshot != null) {
+                 thumbnail.setImageBitmap(snapshot)
+-                thumbnail.scaleType = ImageView.ScaleType.FIT_CENTER
+                 appIcon.visibility = View.GONE
+             } else {
+                 thumbnail.setImageDrawable(null)
+diff --git a/app/src/main/res/layout/item_recent_tile.xml b/app/src/main/res/layout/item_recent_tile.xml
+index f8ee5dc..4f5e883 100644
+--- a/app/src/main/res/layout/item_recent_tile.xml
++++ b/app/src/main/res/layout/item_recent_tile.xml
+@@ -5,48 +5,30 @@
+     android:background="@drawable/tile_bg"
+     android:padding="2dp">
+ 
+-    <LinearLayout
++    <ImageView
++        android:id="@+id/tileThumbnail"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+-        android:orientation="vertical">
++        android:scaleType="centerCrop" />
+ 
+-        <FrameLayout
+-            android:id="@+id/tileThumbnailFrame"
+-            android:layout_width="match_parent"
+-            android:layout_height="0dp"
+-            android:layout_weight="1">
++    <ImageView
++        android:id="@+id/tileAppIcon"
++        android:layout_width="28dp"
++        android:layout_height="28dp"
++        android:layout_gravity="center"
++        android:visibility="gone" />
+ 
+-            <ImageView
+-                android:id="@+id/tileThumbnail"
+-                android:layout_width="match_parent"
+-                android:layout_height="match_parent"
+-                android:scaleType="centerCrop" />
+-
+-            <ImageView
+-                android:id="@+id/tileAppIcon"
+-                android:layout_width="28dp"
+-                android:layout_height="28dp"
+-                android:layout_gravity="center"
+-                android:visibility="gone" />
+-
+-            <TextView
+-                android:id="@+id/tileTaskId"
+-                android:layout_width="wrap_content"
+-                android:layout_height="wrap_content"
+-                android:layout_gravity="bottom|left"
+-                android:padding="1dp"
+-                android:textColor="#50FFFFFF"
+-                android:textSize="7sp" />
+-        </FrameLayout>
+-
+-        <TextView
+-            android:id="@+id/tileAppLabel"
+-            style="@style/TileTitle"
+-            android:layout_width="match_parent"
+-            android:layout_height="wrap_content"
+-            android:layout_marginTop="1dp"
+-            android:maxLines="1" />
+-    </LinearLayout>
++    <TextView
++        android:id="@+id/tileAppLabel"
++        android:layout_width="match_parent"
++        android:layout_height="wrap_content"
++        android:layout_gravity="bottom"
++        android:padding="4dp"
++        android:maxLines="1"
++        android:ellipsize="end"
++        android:textColor="#FFFFFF"
++        android:textSize="9sp"
++        android:background="#80000000" />
+ 
+     <ImageButton
+         android:id="@+id/tileCloseButton"
+@@ -56,6 +38,14 @@
+         android:background="@drawable/close_button_bg"
+         android:contentDescription="Close"
+         android:src="@drawable/ic_close"
+-        android:visibility="visible"
+         android:padding="3dp" />
++
++    <TextView
++        android:id="@+id/tileTaskId"
++        android:layout_width="wrap_content"
++        android:layout_height="wrap_content"
++        android:layout_gravity="bottom|left"
++        android:padding="1dp"
++        android:textColor="#50FFFFFF"
++        android:textSize="7sp" />
+ </FrameLayout>
